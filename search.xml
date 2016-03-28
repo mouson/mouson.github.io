@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[MoIssue #1]]></title>
+      <url>http://usedfire.net/2015/10/31/MoIssue-1/</url>
+      <content type="html"><![CDATA[<pre><code>發刊日 : 2015/10/20 - 2015/10/31
+本期包含趣味小語、資訊知事、行銷推廣、專案管理以及技術知事
+</code></pre><h1 id="發刊語-murmur"><a href="#發刊語-murmur" class="headerlink" title="發刊語 - murmur"></a>發刊語 - murmur</h1><ul>
+<li><p>會開始整理這份自己的Issue News 是突然發現，常常看到一些寫的很不錯的文章，而總覺得這些需要有一個地方把這些好文章總結記錄下來，一是如此在需要的時候才能順利的找到。有整理過的資訊，才能成為知識。所以開始試著整理這份文件，當累積一定的長度，就發刊。</p>
+</li>
+<li><p><strong>想的到才看的到</strong>，團隊的集體創意需要不斷的累積背景知識，才能夠想，也才能一起看到。</p>
+</li>
+<li><p>看過的只是資訊、整理起來讓自己找的到，知道可以用，這才是知識。</p>
+</li>
+</ul>
+<h1 id="趣味小語"><a href="#趣味小語" class="headerlink" title="趣味小語"></a>趣味小語</h1><pre><code>相關小語來源是這段期間Twitter或訂閱的feedly上被分析出來的熱門文字。
+</code></pre><ul>
+<li><p>越大的公司留下來的是會做人的人，並非會做事的人 - Juppet(@juppet) - <a href="https://twitter.com/juppet/status/657484034004533248" target="_blank" rel="external">October 23, 2015</a></p>
+</li>
+<li><p>使用者要的不是功能 - 他們只想解決問題，讓自己過的爽一點而已。 - <a href="https://www.facebook.com/photo.php?fbid=898970866819364&amp;set=a.331194663596990.69561.100001193773658&amp;type=3&amp;permPage=1" target="_blank" rel="external">October 31, 2015</a></p>
+<ul>
+<li><img src="3McXAUm.jpg" alt=""></li>
+<li>所以，為什麼先有功能，再來嫌使用者不會用？</li>
+<li>功能只是解決問題的方法之一。</li>
+</ul>
+</li>
+<li><p>如果像這樣，我們稱這是「產品的死亡循環」：1. 沒人用產品 → 2.問使用者我們缺少了什麼功能 → 3.補足缺少的功能 → 4.回到第一點。原文：「”This is what I’m calling the product deathcycle.”」- <a href="https://twitter.com/RichRogersHDS/status/657723527542538240?s=04" target="_blank" rel="external">9:01 AM - 24 Oct 2015</a></p>
+<ul>
+<li><img src="CSC0EDXWwAAPrsr.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h1><ul>
+<li><a href="http://www.playpcesor.com/2015/10/file-name-tips.html" target="_blank" rel="external">電腦玩物 - 一看就能採取行動的檔案命名技巧：我的兩大檔名規則</a><ul>
+<li>檔名規則一：數字與符號，排序重要、待辦、計劃、備查檔案<ul>
+<li>透過數字可以有效率的讓檔案依照我的檔名去排列，於是我就能用數字來達到兩個目的：<ol>
+<li>排序檔案或資料夾的重要性（愈重要的排在愈前面）。</li>
+<li>把相關檔案放在一起（讓同一類檔案或資料夾排序在一起）。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>檔名規則二：關鍵字，說明行動-主題-關鍵內容<ul>
+<li>行動：這個檔案目前需要採取什麼行動？如果沒有，可以不寫。</li>
+<li>主題：這是什麼類型、屬性、需求、專案的檔案。</li>
+<li>關鍵內容：這個檔案裡面有什麼獨特內容，可以從人事時地物的角度去想。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="http://www.slideshare.net/warfan/devops-53161280" target="_blank" rel="external">DevOps：建造開發維運的跨界之橋</a></p>
+<ul>
+<li>這份簡報在介紹整體 DevOps 到底在做些什麼事情，還蠻值得一看的。</li>
+<li>DevOps 這詞指的是開發(Development)與維運(Operation)的結合，根據 Wiki 上面的解釋：<blockquote>
+<p>是過程、方法與系統的統稱，用於促進開發（應用程式/軟體工程）、技術運營和質量保障（QA）部門之間的溝通、協作與整合。它的出現是由於軟體行業日益清晰地認識到：為了按時交付軟體產品和服務，開發和運營工作必須緊密合作。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><a href="http://blog-tw.oursky.com/post/132010574375/offline-first-say-goodbye-to-network-connection-error" target="_blank" rel="external">逆流而上的 Offline-First 概念：跟 Network Connection Error 說拜拜</a></p>
+<ul>
+<li>既然一個 App 要以網絡服務為賣點，其實就更應在早期建構時考慮到網絡不穩的問題，所以就出現了所謂 Offline-First 的概念。 <strong>Offline 不是一個 Bug，也不是一個Feature。</strong> 而是每一個手機應用程式都應該具有的基本 Support。</li>
+<li>實際使用過 Offline-First 的設計後，你甚至會發現你的 App 和以往有一些明顯的差別：<ul>
+<li>不再出現莫名其妙的 Data Loss</li>
+<li>任何時候都能運作正常</li>
+<li>整個 App 用起來感覺更順暢更快速</li>
+</ul>
+</li>
+<li>三種處理情境：<ul>
+<li>顯示離線狀態（Offline State UI）</li>
+<li>使用靜態資訊如常運作（Static Cache）</li>
+<li>使用動態資訊進行暫時性作業（Dynamic Cache）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h1><ul>
+<li><a href="http://www.slideshare.net/backtrue/google-analytics-13875934" target="_blank" rel="external">Google analytics教學手冊</a> - by <a href="http://www.slideshare.net/backtrue" target="_blank" rel="external">Brian Chiu</a><ul>
+<li>作者小黑在業界關於SEO、行銷領域還蠻知名的，是之前電商ASAP的行銷總監。</li>
+</ul>
+</li>
+<li><p><strong><a href="https://www.udemy.com/internetrule/?dtcode=2Lz1ARN3SAdB" target="_blank" rel="external">網站經營的法則 - 掌握流量建立屬於你的經營模式（繁體中文）</a></strong></p>
+<ul>
+<li>這是一個 Udemy 的課程，這門課程的講師是知名科技網站癮科技的站長-吳顯二所開立。</li>
+<li>這是一門關於網際網路經營法則的課程，裡面內含他加入這個產業十年的心得，也是關於「線上教學」的下一個實驗。</li>
+<li>這門課呈現在只要1元美金，之後每更新一次課程內容，會加10元，絕對值得花時間去聽。</li>
+<li>我買了</li>
+</ul>
+</li>
+<li><p><a href="http://blog.newsleopard.com/2015/10/22/4%E5%80%8Bcall-to-action%E6%B8%AC%E8%A9%A6%EF%BC%8C%E5%8D%94%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E9%9B%BB%E5%AD%90%E5%A0%B1%E9%BB%9E%E6%93%8A%E7%8E%87/" target="_blank" rel="external">4個call to action測試，協助你提升電子報點擊率</a></p>
+<ul>
+<li>顏色<ul>
+<li>挑選正確的顏色更能讓你的 call to action 更容易被注意到</li>
+</ul>
+</li>
+<li>大小、形狀<ul>
+<li>call to action 的外觀是影響點擊率的因素之一。大小的設定沒有一定的標準答案，可以在電子報中嘗試調整大小所帶來的影響。然而，這裡建議至少是88 <em> 88 pixels (為了好記，或是 100 </em> 100 pixels)，才能方便<a href="http://blog.newsleopard.com/2015/05/21/%e5%88%a5%e5%86%8d%e6%80%aa%e9%96%8b%e4%bf%a1%e7%8e%87%e4%bd%8e%e4%ba%86%ef%bc%8c%e4%bd%a0%e7%9a%84%e9%9b%bb%e5%ad%90%e5%a0%b1mobile-first%e4%ba%86%e5%97%8e%ef%bc%9f/" target="_blank" rel="external">手機使用者</a>點擊。</li>
+</ul>
+</li>
+<li>合理的文字<ul>
+<li>哪種寫法才是正確的？我想答案是：符合當下情境，並能融入訂閱者的寫法。</li>
+</ul>
+</li>
+<li>位置<ul>
+<li>根據 <a href="http://www.slideshare.net/DistilledSEO/peep-lajasearchlove-london-2013?from_search=3" target="_blank" rel="external">ConversionXL 的研究</a>，使用者花 80% 的時間會停在 above the fold上。試著調整 call to action 放在 above the fold 還是 below the fold，或許不同的點擊結果能讓你更了解自己的電子報。</li>
+</ul>
+</li>
+<li>持續測試<ul>
+<li>研究顯示，A/B 測試可以提升 49% 的轉換率，因此沒有必要害怕失敗</li>
+<li>哪一種 call to action 才能真正符合訂閱者當下的情境，進而觸發點擊？或許你應該透過 A/B 測試問問他們。</li>
+</ul>
+</li>
+<li>參考案例<ul>
+<li>stacksocial 的促銷電子報</li>
+<li>techbargains 的促銷電子報</li>
+<li>TigerDirect 的促銷電子報</li>
+<li>Zuzily 的促銷電子報</li>
+<li>fromyouflowers 的促銷電子報</li>
+<li>Groupon 的促銷電子報</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://www.slideshare.net/seanellis/agile-marketing-meetup-slideshare-52690997" target="_blank" rel="external">Agile Marketing Meetup: Moving Beyond the Marketing Plan So You Remain Relevant</a><ul>
+<li>這個投影片談到 <a href="http://growthhacker.com/" target="_blank" rel="external">growthhacker.com</a> 是使用怎樣的流程做自己的 growth，很多細節如怎麼產生 ideas，怎麼為 task 評分，怎麼學習測試結果等，都值得參考。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h1><ul>
+<li><p>文章：<a href="http://www.infoq.com/cn/news/2015/10/Bryanedds-Medium" target="_blank" rel="external">你是否也處在這樣的反模式中</a></p>
+<ul>
+<li>所謂的反模式指的是讓整個團隊、專案往反方向前進</li>
+<li>書摘：<ol>
+<li>業務思維偏愛短期利益</li>
+<li>不合群就會被釘上十字架</li>
+<li>軟件架構師成為政客</li>
+<li>忍受痛苦是你提供的商品</li>
+<li>周圍的同事不支持變革</li>
+<li>總是有人伺機“削（Undercut）”你</li>
+<li>責任心被剝奪</li>
+<li>方法論成為管理工具</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>文章：<a href="http://www.infoq.com/cn/articles/pragmatic-technical-debt" target="_blank" rel="external">實務技術債務管理</a></p>
+<ul>
+<li>技術債發生的原因：<ul>
+<li>產生債務：例如-代碼重複、違反靜態工具規則和代碼異味。</li>
+<li>設計和架構債務：例如-設計異味、違反設計規則和違反架構規則。</li>
+<li>測試債務：例如-缺乏測試、測試覆蓋面不足和不正確的測試設計。</li>
+<li>文檔債務：例如-沒有重大問題的文檔、缺乏文檔和文檔過期。</li>
+<li>戰略債務：-這種類型的債務是在知情的狀況下為了戰略利益（例如首次市場發行）而產生，並長期存在。</li>
+<li>戰術債務：-這種類型的債務是在知情的情況下為了快速收益而產生，通常適用於短期。</li>
+<li>疏忽債務：-不慎產生的債務通常是在不知情的情況由於缺乏知識和意識而產生。</li>
+<li>增量債務：-定期不慎產生的債務導致增量債務。</li>
+</ul>
+</li>
+<li>償還技術債<ol>
+<li>識別、記錄和追踪債務</li>
+<li>優先處理異味</li>
+<li>在每個迭代中分期償還債務</li>
+<li>激勵和獎勵員工保持品質</li>
+<li>遵循“男孩的童子軍規則”</li>
+<li>留意可能出現的大規模的債務償還</li>
+<li>平地償還債務而不是垂直地</li>
+<li>在某些情況下不償還債務</li>
+</ol>
+</li>
+<li>書籍：<a href="http://www.books.com.tw/products/CN11124627" target="_blank" rel="external">Scrum 技術精髓</a><ul>
+<li><img src="Lt0E0gB.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://www.infoq.com/cn/news/2015/10/Technology-Leader" target="_blank" rel="external">如何才能成为一个好的技术领导者？</a></p>
+<ul>
+<li>如果不能从帮助团队获得满足感，那么就不要成为一名领导者</li>
+<li>将自己视为其他开发人员的导师</li>
+<li>随时准备好回答团队成员的问题</li>
+<li>减少具体的编码工作，但仍然要编码</li>
+<li>要谦逊</li>
+<li>要诚实</li>
+</ul>
+</li>
+<li><p><a href="https://sprint.ly/blog/your-developers-arent-slow/" target="_blank" rel="external">Your developers aren’t slow</a> - 有時候進度緩慢，不見得是開發者的問題 from <a href="https://www.facebook.com/yftzeng.tw" target="_blank" rel="external">ant</a></p>
+<ul>
+<li><a href="http://www.inside.com.tw/2015/10/27/your-developers-arent-slow" title="進度落後不是開發者的錯，工作流程可能才是兇手！" target="_blank" rel="external">進度落後不是開發者的錯，工作流程可能才是兇手！</a> - inside 翻譯的中文版文章</li>
+<li>Unclear requirements - 不明確的需求</li>
+<li>Changing requirements - 需求一直變更</li>
+<li>Context switching - 太常打擾工程師，破壞了他們高速開發所需的專注力</li>
+<li>Take responsibility - 給管理者的<ul>
+<li>Help your team understand the vision - 讓整個團對瞭解未來的目標及願景。</li>
+<li>Write well-defined user stories - 定義及撰寫好的規格及使用者故事。</li>
+<li>Reduce context switching costs - 降低工作人員進行資訊交換的成本。</li>
+</ul>
+</li>
+<li>這篇的來源作者是一個線上音樂網站的首席架構師，在他的<a href="https://www.facebook.com/yftzeng.tw/posts/10203624817380411" target="_blank" rel="external">討論串</a>中他也提到了他們公司怎麼做：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">我們工程師不常開會但很常溝通。開會通常有四種原因</span><br><span class="line"></span><br><span class="line">一、例行產品會議:</span><br><span class="line"></span><br><span class="line">只強迫負責產品的工程師參加，不過歡迎有興趣的工程師在旁聆聽。</span><br><span class="line">主要是公司政策都是開放的，原則上不強迫參與</span><br><span class="line">(除非你本來就負責產品)，但要聽也歡迎。</span><br><span class="line"></span><br><span class="line">二、技術分享會議。</span><br><span class="line"></span><br><span class="line">公司偶爾會分享技術，自由參與不強迫。</span><br><span class="line"></span><br><span class="line">三、緊急會議。</span><br><span class="line"></span><br><span class="line">緊急且重大的事，但只會找相關工程師招開臨時會。</span><br><span class="line"></span><br><span class="line">四、一般會議。</span><br><span class="line"></span><br><span class="line">平常工程師會在 channel 溝通，</span><br><span class="line">channel 溝通的好處是不會打斷工程師專心工作，</span><br><span class="line">他們有空閒才會看到 channel 訊息，再來處理即可，</span><br><span class="line">但有時文字溝通的效率不如當面口述加上畫白板，</span><br><span class="line">所以討論若無法聚焦時就會在 channel 約時間，</span><br><span class="line">相關工程師同意後就會自行進會議室開會。</span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> 間的默契大概類似如此。</span><br><span class="line">我覺得這跟架構一樣沒有好與不好，</span><br><span class="line">只要適用團隊的文化即可。</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h1><h2 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h2><ul>
+<li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/" target="_blank" rel="external">How to write unmaintainable PHP code - 如何寫出無法維護的 PHP 程式碼</a></p>
+<ul>
+<li>Ban coding conventions.</li>
+<li>No comments.</li>
+<li>Standardize on Notepad.</li>
+<li>No unit testing.</li>
+<li>No templating engine.</li>
+<li>Version control.</li>
+<li>Build a framework.</li>
+</ul>
+</li>
+<li><p><a href="http://news.oneapm.com/shenjian-oneapm-course/" target="_blank" rel="external">58同城沈劍：好的架構是進化來的，不是設計來的</a></p>
+<ul>
+<li><strong>好的架構不是設計出來的而是演進出來的</strong></li>
+<li>中等規模：流量跨過十萬的階段，數據庫成為瓶頸</li>
+<li>大流量：將整個Windows 技術體系轉向了Java 體系</li>
+<li>當架構變成「蜘蛛網」，人肉已很難搞定！</li>
+</ul>
+</li>
+<li><p><a href="http://www.php-fig.org/" target="_blank" rel="external">PHP FIG 組織</a></p>
+<ul>
+<li><a href="http://www.php-fig.org/psr/psr-1/" target="_blank" rel="external">PSR-1: Basic Coding Standard</a> - 基本的PHP程式碼撰寫標準規範</li>
+<li><a href="http://www.php-fig.org/psr/psr-2/" target="_blank" rel="external">PSR-2: Coding Style Guide</a> - PHP程式碼撰寫標準規範</li>
+<li><a href="http://www.php-fig.org/psr/psr-3/" target="_blank" rel="external">PSR-3: Logger Interface</a> - PHP 在實作 Log 的介面規範</li>
+<li><a href="http://www.php-fig.org/psr/psr-4/" target="_blank" rel="external">PSR-4: Improved Autoloading</a><ul>
+<li>PHP 在 5.3版之後，實作了 Autoloading ，讓PHP程式透過一定結構可以自動載入，不用到處 include ，但由於明確定義規則，因此坊間 Library 有點亂，因此 FIG 定義了這部分的規範。</li>
+</ul>
+</li>
+<li><a href="http://www.php-fig.org/psr/psr-7/" target="_blank" rel="external">PSR-7: HTTP Message Interfaces</a><ul>
+<li>PHP 程式可以自行定義 Web 頁面間 Server - Client 的訊息傳遞，如 HTTP Header 但並沒有明確規範格式，因此 FIG 定義了這部分的規範。</li>
+</ul>
+</li>
+<li>其它還有尚未定義完成的還有 Cache、Security Reporting…</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/tjwei/awesome-tw-foss" target="_blank" rel="external">台灣 developers 建立的 free/open source project 蒐集列表</a></p>
+<ul>
+<li>這邊蒐集了很多台灣開發者們建立的開源專案，舉凡程式語言框架、網站服務、桌面應用程式、CLI程式、瀏覽器外掛等等。</li>
+</ul>
+</li>
+<li><a href="https://github.com/mingderwang/development-note" title="Software Development Notes" target="_blank" rel="external">Software Development Notes</a><ul>
+<li>系統開發工具列表，這邊蒐集了：系統維運、監控、開發、整合的一堆工具</li>
+</ul>
+</li>
+</ul>
+<h2 id="測試工具"><a href="#測試工具" class="headerlink" title="測試工具"></a>測試工具</h2><ul>
+<li><p><strong><a href="http://jaceju.net/2015/10/27/web-testing-with-phpunit-mink/" target="_blank" rel="external">利用 PHPUnit 與 Mink 來做 Web 測試</a></strong></p>
+<ul>
+<li>如果你面對的是以前舊有的 PHP 程式，它改起來很痛苦，一堆不良的 PHP 程式習慣都阻礙你的修正；使得每次調整功能時，到底改得對不對，得要等到上線才知道。想要重寫一個新版本，但太多的實作細節你不清楚；也沒有最新的規格文件，讓你無法為新版本做出功能無誤的保證。</li>
+<li>現在你唯一擁有的，就是已經在線上運作的程式邏輯；雖然它可能還有 bug ，但至少大多數的功能是通過使用者驗證的。那麼先為它買個保險吧！確保之後的修改不會影響到其他功能的正常運作；而最直接的方式，就是把目前程式邏輯所呈現的結果或是使用者的操作，寫成自動化 Web 測試。</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/minkphp/Mink" target="_blank" rel="external">PhantomJS</a></p>
+<ul>
+<li>PhatomJS 很適合拿來作一些網頁介面的自動化測試 (但由於是整合 WebKit，所以無法測試 IE 或者 FF 所呈現的情況)，此外網頁截圖這件事也是很吸引人的小功能。</li>
+<li>參考網站：<a href="http://blog.darkthread.net/post-2013-08-29-phantomjs.aspx" target="_blank" rel="external">使用PhantomJs產生網頁擷圖</a></li>
+<li>參考網站：<a href="http://blog.dm4.tw/blog/2014/05/11/my-first-experience-with-phantomjs/" target="_blank" rel="external">PhantomJS 初體驗</a></li>
+<li>參考網站：<a href="http://syshen.cc/post/15989917365/%E7%94%A8-phantomjs-%E4%BD%9C-web-%E8%87%AA%E5%8B%95%E5%8C%96%E6%B8%AC%E8%A9%A6" target="_blank" rel="external">用 PhantomJS 作 Web 自動化測試</a></li>
+</ul>
+</li>
+<li><p><a href="http://mink.behat.org/en/latest/" target="_blank" rel="external">Mink</a></p>
+<ul>
+<li>一個可以用PHP 5.3以上版本操作瀏覽器的測試工具</li>
+<li><a href="http://www.open-open.com/lib/view/open1430832116976.html" target="_blank" rel="external">Web浏览器模拟测试：Mink</a></li>
+</ul>
+</li>
+<li><p><a href="https://codegeekz.com/12-best-php-automated-test-frameworks/" target="_blank" rel="external">12 Best PHP Automated Test Frameworks</a></p>
+<ol>
+<li><a href="http://www.seleniumhq.org/" target="_blank" rel="external">Selenium</a> - 自動化的瀏覽器呈現頁面測試</li>
+<li><a href="https://phpunit.de/" target="_blank" rel="external">PHPUnit</a> - PHP單元測試框架</li>
+<li><a href="http://docs.behat.org/en/v2.5/" target="_blank" rel="external">Behat</a> - 知名的 BDD (behavior driven development) 測試框架，目標是，定義好規格之後，直接用定義的規格作測試，是一個專案經理、客戶與開發者間，很方面的一個溝通及定規格工具。</li>
+<li><a href="https://github.com/crysalead/kahlan" target="_blank" rel="external">Kahlan</a> - 全功能的單元測試及BDD工具測試框架工具。</li>
+<li><a href="https://github.com/atoum/atoum" target="_blank" rel="external">Atoum</a> - 單元測試工具</li>
+<li><a href="http://codeception.com/" target="_blank" rel="external">Codeception</a> - 全功能的測試工具、框架，方便做各種測試</li>
+<li><a href="http://simpletest.org/" target="_blank" rel="external">SimpleTest</a> - 簡單而容易使用的小測試框架，可以用在 TDD 測試先行開發及一般的單元測試。</li>
+<li><a href="http://datasift.github.io/storyplayer/" target="_blank" rel="external">Storyplayer</a> - 一個全端的測試框架。</li>
+<li><a href="http://peridot-php.github.io/" target="_blank" rel="external">Peridot</a> - 一個輕量的測試框架，是一個事件驅動的框架。</li>
+<li><a href="https://github.com/danielstjules/pho" target="_blank" rel="external">PHO</a> - 一個BDD測試框架。</li>
+<li><a href="https://github.com/padraic/mockery" target="_blank" rel="external">Mockery</a> - 在 PHP Unit Test 裡常常使用的模擬元件工具。</li>
+<li><a href="http://www.phpspec.net/en/latest/" target="_blank" rel="external">PHP Specs</a> - 一個用定義規格，來進行程式測試的 BDD 框架。</li>
+</ol>
+</li>
+</ul>
+<h2 id="PHP-Library-or-工具"><a href="#PHP-Library-or-工具" class="headerlink" title="PHP Library or 工具"></a>PHP Library or 工具</h2><ul>
+<li><a href="http://www.phpclasses.org/package/9423-PHP-Convert-PDF-to-HTML-using-Poppler.html" title="PHP-Convert-PDF-to-HTML-using-Poppler" target="_blank" rel="external">使用PHP進行 PDF to HTML轉換</a><ul>
+<li>在 PHP 將 PDF 檔案轉為 HTML 檔</li>
+<li>底層使用<a href="http://poppler.freedesktop.org/" title="Poppler" target="_blank" rel="external">Poppler</a></li>
+<li>PHP 5.3+</li>
+</ul>
+</li>
+<li><a href="http://carbon.nesbot.com/" target="_blank" rel="external">Carbon</a><ul>
+<li>在處理程式上，處理「時間」非常好用的套件</li>
+<li>PHP 5.4+</li>
+</ul>
+</li>
+<li><a href="http://www.phpclasses.org/package/9431-PHP-Generate-UUID-codes-in-either-version-3-4-or-5.html#information" title="PHP UUID Generation class" target="_blank" rel="external">PHP UUID Generation class</a></li>
+<li><a href="https://github.com/ziadoz/awesome-php/" target="_blank" rel="external">Awesome PHP</a><ul>
+<li>群眾一起整理出來的PHP的各種結構或工具的懶人包，需要什麼功能都可以上去看看</li>
+</ul>
+</li>
+<li><a href="http://php.net/manual/en/types.comparisons.php" target="_blank" rel="external">PHP type comparison tables</a><ul>
+<li>寫PHP的時候常常會不小心因為型別的比較細節而造成一些誤判，在官方整理了PHP各種型別比較的結果，忘記了可以來這邊查詢。</li>
+</ul>
+</li>
+<li><a href="http://designpatternsphp.readthedocs.org/en/latest/" target="_blank" rel="external">PHP Design Patterns 1.0</a> from  <a href="https://www.facebook.com/jace.ju?fref=nf" target="_blank" rel="external">JaceJu</a><ul>
+<li>這本電子書介紹了各種 Design Patterns 如何在 PHP 上的實作，也提到各種實務上的例子。</li>
+<li>但還是要記住： Design Patterns 重意不重形，也不該特意使用。要先理解待解決的問題是什麼，分析出當下能滿足的設計；而不是一開始就思考怎麼用模式去解決問題，並拘泥於模式的實作方式。</li>
+</ul>
+</li>
+<li><p><a href="http://2015.phpconf.tw/" title="PHPConf 2015" target="_blank" rel="external">Taiwan PHP Conf 2015 議程</a></p>
+<ul>
+<li>PHP Conf 的各個議程內容及相關投影片</li>
+<li>共筆筆記 <a href="https://laraveltw.hackpad.com/PHP-Conf-2015--Qczl9WtA4Ip" title="PHP Conf 2015 共筆筆記" target="_blank" rel="external">PHP Conf 2015 共筆筆記</a></li>
+<li><a href="https://github.com/PHPConf-TW/website-2015/tree/master/download" target="_blank" rel="external">投影片列表</a></li>
+<li>值得一看的投影片：<ul>
+<li><a href="https://github.com/PHPConf-TW/website-2015/raw/master/download/%E5%87%8C%E8%8B%A5%E8%99%9B%20-%20%E7%95%B6%E5%B0%88%E6%A1%88%E6%BC%B8%E8%B6%95%EF%BC%8C%E7%95%B6%E9%81%B7%E7%A7%BB%E4%B9%9F%E4%B8%8D%E5%86%8D%E9%82%A3%E9%BA%BC%E9%9B%A3.pdf" target="_blank" rel="external">凌若虛 - 當專案漸趕，當遷移也不再那麼難 (Ship Your Projects with Docker EcoSystem)</a></li>
+<li><a href="https://github.com/PHPConf-TW/website-2015/raw/master/download/%E9%99%B3%E6%AD%A3%E7%91%8B-DevOps%E5%BB%BA%E9%80%A0%E9%96%8B%E7%99%BC%E7%B6%AD%E9%81%8B%E7%9A%84%E8%B7%A8%E7%95%8C%E4%B9%8B%E6%A9%8B.pdf" target="_blank" rel="external">陳正瑋-DevOps建造開發維運的跨界之橋</a></li>
+<li><a href="https://github.com/PHPConf-TW/website-2015/raw/master/download/%E8%8C%83%E8%81%96%E4%BD%91%20-%20%E8%B7%9F%E8%91%97%20Laravel%205.1%20%E4%B8%80%E8%B5%B7%E6%88%90%E7%82%BA%E6%9B%B4%E5%A5%BD%E7%9A%84%20PHP%20%E9%96%8B%E7%99%BC%E8%80%85.pdf" target="_blank" rel="external">范聖佑 - 跟著 Laravel 5.1 一起成為更好的 PHP 開發者</a></li>
+<li><a href="https://github.com/PHPConf-TW/website-2015/raw/master/download/%E6%9B%BE%E7%BE%A9%E5%B3%B0%20-%20Enterprise%20Architecture%20Case%20in%20PHP.pdf" target="_blank" rel="external">曾義峰 - Enterprise Architecture Case in PHP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="http://learninglaravel.net/multiple-authentication-in-laravel-51/link" target="_blank" rel="external">Multiple Authentication in Laravel 5.1</a></p>
+<ul>
+<li>利用 Sarav/Multiauth 這個套件讓你的 Laravel 應用程式支援多重身份，這樣一來前台和後台就可以用不同的身份登入了。</li>
+</ul>
+</li>
+</ul>
+<h2 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h2><ul>
+<li><a href="https://www.gitbook.com/book/frontendmasters/front-end-handbook/details" target="_blank" rel="external">Front-end Handbook</a><ul>
+<li>記錄許多前端開發工具及相關教學</li>
+</ul>
+</li>
+<li><a href="https://github.com/codylindley/frontend-tools" target="_blank" rel="external">Front-end Tools</a><ul>
+<li>前端開發工具整理</li>
+</ul>
+</li>
+<li><a href="http://www.codeply.com/" target="_blank" rel="external">CodePly</a><ul>
+<li>實驗各前端框架 RWD 的好地方，也可以當成簡易的前端頁面開發工具使用。</li>
+</ul>
+</li>
+<li><a href="https://www.flickr.com/photos/girliemac/sets/72157628409467125/" target="_blank" rel="external">HTTP Status Cat</a><ul>
+<li>用貓來比喻 HTTP協定的各種狀態 LoL</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[關於我]]></title>
+      <url>http://usedfire.net/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是墨嗓。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[藏書閣]]></title>
+      <url>http://usedfire.net/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+  
+</search>
