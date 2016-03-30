@@ -8,11 +8,11 @@
       <url>https://usedfire.net/2015/11/10/MoIssue-2/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/10/31 - 2015/11/10
 本期包含：趣事小語、資訊知事、思考＆教育、行銷推廣、專案管理、技術知事
-</code></pre><h1 id="MurMur"><a href="#MurMur" class="headerlink" title="MurMur"></a>MurMur</h1><ul>
+</code></pre><h2 id="MurMur"><a href="#MurMur" class="headerlink" title="MurMur"></a>MurMur</h2><ul>
 <li>「創新」是整個團隊的事情。</li>
 <li>跟波國棒球打輸了，連帶連出刊總結這件事情都 Delay 了！</li>
 </ul>
-<h1 id="趣事小語"><a href="#趣事小語" class="headerlink" title="趣事小語"></a>趣事小語</h1><pre><code>相關小語來源是這段期間 Twitter 或訂閱的 feedly 上被分析出來的熱門文字。
+<h2 id="趣事小語"><a href="#趣事小語" class="headerlink" title="趣事小語"></a>趣事小語</h2><pre><code>相關小語來源是這段期間 Twitter 或訂閱的 feedly 上被分析出來的熱門文字。
 </code></pre><ul>
 <li><a href="http://flipermag.com/2014/08/06/lives-life-2/" target="_blank" rel="external">無中生有的設計咒語：「沒關係你先設計，資料我再補」</a><ul>
 <li>「今天晚上要煮紅燒牛肉，啊！糟糕沒有牛肉了，好吧沒關係那你先煮，等牛肉買回來在丟下去就好……」 好個鬼啊！！最後補牛肉，那牛肉不就根本沒有入味嗎，那前面是在什麼？煮火大的嗎 !!<a id="more"></a></li>
@@ -20,7 +20,7 @@
 </li>
 </ul>
 <hr>
-<h1 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h1><ul>
+<h2 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h2><ul>
 <li><p><a href="http://www.ithome.com.tw/news/99307" target="_blank" rel="external">【專家嚴選】8個DevOps好用工具大介紹</a></p>
 <ul>
 <li>【Docker】自動記錄環境參數加速部署效率</li>
@@ -138,7 +138,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="思考＆教育"><a href="#思考＆教育" class="headerlink" title="思考＆教育"></a>思考＆教育</h1><ul>
+<h2 id="思考＆教育"><a href="#思考＆教育" class="headerlink" title="思考＆教育"></a>思考＆教育</h2><ul>
 <li><a href="http://flipedu.parenting.com.tw/blog-detail?id=2037" target="_blank" rel="external">葉丙成：人不卡，不成器</a><ul>
 <li>職場上要判斷是不是人才，看的是能否解決難題。</li>
 <li>難題之所以難，是因前人沒碰過，要靠破格的思考和不被失敗打垮的韌性來解決。</li>
@@ -147,7 +147,7 @@
 </li>
 </ul>
 <hr>
-<h1 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h1><ul>
+<h2 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h2><ul>
 <li><p><a href="https://www.facebook.com/inboundjournals/photos/a.564421656907554.149292.547757665240620/701198266563225/?type=3" target="_blank" rel="external">不要一下子就講4，要講2＋2</a></p>
 <ul>
 <li><p>根據內容行銷公司LookBookHQ 的研究，可以總結出以下5點：</p>
@@ -297,14 +297,14 @@
 </li>
 </ul>
 <hr>
-<h1 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h1><ul>
+<h2 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h2><ul>
 <li><a href="http://www.app01.com.tw/paper/81f724e5-7f8c-4a8a-99f8-fe066398e17f" target="_blank" rel="external">從產品經理的角度算一算：做一個App需要多少錢？</a><ul>
 <li>作為互聯網從業者，被外行的朋友們問及最多的問題是“做一個網站需要多少錢？”或者“做一個App需要多少錢？”。作為做過完整網站項目和APP的人，今天從產品經理的角度，一起來算一下中小型App從無到有需要做哪些工作，以及為達成使命，需要付出多少金錢代價。</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h1 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h1><h2 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h2><ul>
+<h2 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h2><h3 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h3><ul>
 <li><p><a href="https://secure.phabricator.com/book/phabflavor/article/writing_reviewable_code/" title="Writing Reviewable Code" target="_blank" rel="external">Writing Reviewable Code</a> - 寫一個可以被檢視審視的程式碼</p>
 <ul>
 <li>Each commit should be as small as possible, but no smaller.<ul>
@@ -366,7 +366,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="DevOps-工具"><a href="#DevOps-工具" class="headerlink" title="DevOps 工具"></a>DevOps 工具</h2><ul>
+<h3 id="DevOps-工具"><a href="#DevOps-工具" class="headerlink" title="DevOps 工具"></a>DevOps 工具</h3><ul>
 <li><p><a href="http://dustinrcollins.com/devops-on-osx" target="_blank" rel="external">DevOps on OSX</a></p>
 <ul>
 <li>網站維運開發 DevOps 在 MAC OSX 上面可以用的開發工具列表。</li>
@@ -396,7 +396,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="Library-or-工具"><a href="#Library-or-工具" class="headerlink" title="Library or 工具"></a>Library or 工具</h2><ul>
+<h3 id="Library-or-工具"><a href="#Library-or-工具" class="headerlink" title="Library or 工具"></a>Library or 工具</h3><ul>
 <li><p><a href="https://www.gitbook.com/book/zonble/kkbox-ios-dev/details" target="_blank" rel="external">KKBOX iOS/Mac OS X 基本開發教材</a></p>
 <ul>
 <li>這份教材是為了 KKBOX iOS/Mac OS X 開發部門的新人訓練所設計，目的是培養 出可以開發、維護 KKBOX 的 iOS 與 Mac OS X 版本，以及我們其他軟體產品的 工程師。</li>
@@ -421,10 +421,10 @@
 </ul>
 </li>
 </ul>
-<h2 id="資料庫操作"><a href="#資料庫操作" class="headerlink" title="資料庫操作"></a>資料庫操作</h2><ul>
+<h3 id="資料庫操作"><a href="#資料庫操作" class="headerlink" title="資料庫操作"></a>資料庫操作</h3><ul>
 <li><a href="http://wiki.planetoid.info/index.php/Visual_explanation_of_MySQL_joins" target="_blank" rel="external">圖解資料庫的 Joins (RIGHT Join、LEFT Join、INNER Join、OUTER Join) 的差異</a></li>
 </ul>
-<h2 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h2><ul>
+<h3 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h3><ul>
 <li><p><a href="http://javier.xyz/img2css/" target="_blank" rel="external">Img2CSS</a></p>
 <ul>
 <li>協助將圖片直接轉換成CSS，並且直接顯示在頁面上。</li>
@@ -437,7 +437,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="規劃設計工具"><a href="#規劃設計工具" class="headerlink" title="規劃設計工具"></a>規劃設計工具</h2><ul>
+<h3 id="規劃設計工具"><a href="#規劃設計工具" class="headerlink" title="規劃設計工具"></a>規劃設計工具</h3><ul>
 <li><p><a href="http://www.cooper.com/prototyping-tools" target="_blank" rel="external">Prototyping Tools</a></p>
 <ul>
 <li>這是一篇比較文章，比較了像是 AxureRP、Briefs、Form等知名的 Prototyping 工具，還有一些像是製作一個特定的網頁需要多少時間的時間比較表。</li>
@@ -462,7 +462,7 @@
       <url>https://usedfire.net/2015/10/31/MoIssue-1/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/10/20 - 2015/10/31
 本期包含趣味小語、資訊知事、行銷推廣、專案管理以及技術知事
-</code></pre><h1 id="發刊語-murmur"><a href="#發刊語-murmur" class="headerlink" title="發刊語 - murmur"></a>發刊語 - murmur</h1><ul>
+</code></pre><h2 id="發刊語-murmur"><a href="#發刊語-murmur" class="headerlink" title="發刊語 - murmur"></a>發刊語 - murmur</h2><ul>
 <li><p>會開始整理這份自己的Issue News 是突然發現，常常看到一些寫的很不錯的文章，而總覺得這些需要有一個地方把這些好文章總結記錄下來，一是如此在需要的時候才能順利的找到。有整理過的資訊，才能成為知識。所以開始試著整理這份文件，當累積一定的長度，就發刊。</p>
 </li>
 <li><p><strong>想的到才看的到</strong>，團隊的集體創意需要不斷的累積背景知識，才能夠想，也才能一起看到。</p>
@@ -470,7 +470,7 @@
 <li><p>看過的只是資訊、整理起來讓自己找的到，知道可以用，這才是知識。<a id="more"></a></p>
 </li>
 </ul>
-<h1 id="趣味小語"><a href="#趣味小語" class="headerlink" title="趣味小語"></a>趣味小語</h1><pre><code>相關小語來源是這段期間Twitter或訂閱的feedly上被分析出來的熱門文字。
+<h2 id="趣味小語"><a href="#趣味小語" class="headerlink" title="趣味小語"></a>趣味小語</h2><pre><code>相關小語來源是這段期間Twitter或訂閱的feedly上被分析出來的熱門文字。
 </code></pre><ul>
 <li><p>越大的公司留下來的是會做人的人，並非會做事的人 - Juppet(@juppet) - <a href="https://twitter.com/juppet/status/657484034004533248" target="_blank" rel="external">October 23, 2015</a></p>
 </li>
@@ -488,7 +488,7 @@
 </li>
 </ul>
 <hr>
-<h1 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h1><ul>
+<h2 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h2><ul>
 <li><a href="http://www.playpcesor.com/2015/10/file-name-tips.html" target="_blank" rel="external">電腦玩物 - 一看就能採取行動的檔案命名技巧：我的兩大檔名規則</a><ul>
 <li>檔名規則一：數字與符號，排序重要、待辦、計劃、備查檔案<ul>
 <li>透過數字可以有效率的讓檔案依照我的檔名去排列，於是我就能用數字來達到兩個目的：<ol>
@@ -534,7 +534,7 @@
 </li>
 </ul>
 <hr>
-<h1 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h1><ul>
+<h2 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h2><ul>
 <li><a href="http://www.slideshare.net/backtrue/google-analytics-13875934" target="_blank" rel="external">Google analytics教學手冊</a> - by <a href="http://www.slideshare.net/backtrue" target="_blank" rel="external">Brian Chiu</a><ul>
 <li>作者小黑在業界關於SEO、行銷領域還蠻知名的，是之前電商ASAP的行銷總監。</li>
 </ul>
@@ -589,7 +589,7 @@
 </li>
 </ul>
 <hr>
-<h1 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h1><ul>
+<h2 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h2><ul>
 <li><p>文章：<a href="http://www.infoq.com/cn/news/2015/10/Bryanedds-Medium" target="_blank" rel="external">你是否也處在這樣的反模式中</a></p>
 <ul>
 <li>所謂的反模式指的是讓整個團隊、專案往反方向前進</li>
@@ -666,7 +666,7 @@
 </ul>
 <figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">我們工程師不常開會但很常溝通。開會通常有四種原因</span><br><span class="line"></span><br><span class="line">一、例行產品會議:</span><br><span class="line"></span><br><span class="line">只強迫負責產品的工程師參加，不過歡迎有興趣的工程師在旁聆聽。</span><br><span class="line">主要是公司政策都是開放的，原則上不強迫參與</span><br><span class="line">(除非你本來就負責產品)，但要聽也歡迎。</span><br><span class="line"></span><br><span class="line">二、技術分享會議。</span><br><span class="line"></span><br><span class="line">公司偶爾會分享技術，自由參與不強迫。</span><br><span class="line"></span><br><span class="line">三、緊急會議。</span><br><span class="line"></span><br><span class="line">緊急且重大的事，但只會找相關工程師招開臨時會。</span><br><span class="line"></span><br><span class="line">四、一般會議。</span><br><span class="line"></span><br><span class="line">平常工程師會在 channel 溝通，</span><br><span class="line">channel 溝通的好處是不會打斷工程師專心工作，</span><br><span class="line">他們有空閒才會看到 channel 訊息，再來處理即可，</span><br><span class="line">但有時文字溝通的效率不如當面口述加上畫白板，</span><br><span class="line">所以討論若無法聚焦時就會在 channel 約時間，</span><br><span class="line">相關工程師同意後就會自行進會議室開會。</span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> 間的默契大概類似如此。</span><br><span class="line">我覺得這跟架構一樣沒有好與不好，</span><br><span class="line">只要適用團隊的文化即可。</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h1><h2 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h2><ul>
+<h2 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h2><h3 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h3><ul>
 <li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/" target="_blank" rel="external">How to write unmaintainable PHP code - 如何寫出無法維護的 PHP 程式碼</a></p>
 <ul>
 <li>Ban coding conventions.</li>
@@ -712,7 +712,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="測試工具"><a href="#測試工具" class="headerlink" title="測試工具"></a>測試工具</h2><ul>
+<h3 id="測試工具"><a href="#測試工具" class="headerlink" title="測試工具"></a>測試工具</h3><ul>
 <li><p><strong><a href="http://jaceju.net/2015/10/27/web-testing-with-phpunit-mink/" target="_blank" rel="external">利用 PHPUnit 與 Mink 來做 Web 測試</a></strong></p>
 <ul>
 <li>如果你面對的是以前舊有的 PHP 程式，它改起來很痛苦，一堆不良的 PHP 程式習慣都阻礙你的修正；使得每次調整功能時，到底改得對不對，得要等到上線才知道。想要重寫一個新版本，但太多的實作細節你不清楚；也沒有最新的規格文件，讓你無法為新版本做出功能無誤的保證。</li>
@@ -750,7 +750,7 @@
 </ol>
 </li>
 </ul>
-<h2 id="PHP-Library-or-工具"><a href="#PHP-Library-or-工具" class="headerlink" title="PHP Library or 工具"></a>PHP Library or 工具</h2><ul>
+<h3 id="PHP-Library-or-工具"><a href="#PHP-Library-or-工具" class="headerlink" title="PHP Library or 工具"></a>PHP Library or 工具</h3><ul>
 <li><a href="http://www.phpclasses.org/package/9423-PHP-Convert-PDF-to-HTML-using-Poppler.html" title="PHP-Convert-PDF-to-HTML-using-Poppler" target="_blank" rel="external">使用PHP進行 PDF to HTML轉換</a><ul>
 <li>在 PHP 將 PDF 檔案轉為 HTML 檔</li>
 <li>底層使用<a href="http://poppler.freedesktop.org/" title="Poppler" target="_blank" rel="external">Poppler</a></li>
@@ -796,7 +796,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h2><ul>
+<h3 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h3><ul>
 <li><a href="https://www.gitbook.com/book/frontendmasters/front-end-handbook/details" target="_blank" rel="external">Front-end Handbook</a><ul>
 <li>記錄許多前端開發工具及相關教學</li>
 </ul>

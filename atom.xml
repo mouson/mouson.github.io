@@ -24,11 +24,11 @@
     
     <content type="html">&lt;pre&gt;&lt;code&gt;發刊日 : 2015/10/31 - 2015/11/10
 本期包含：趣事小語、資訊知事、思考＆教育、行銷推廣、專案管理、技術知事
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;MurMur&quot;&gt;&lt;a href=&quot;#MurMur&quot; class=&quot;headerlink&quot; title=&quot;MurMur&quot;&gt;&lt;/a&gt;MurMur&lt;/h1&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;MurMur&quot;&gt;&lt;a href=&quot;#MurMur&quot; class=&quot;headerlink&quot; title=&quot;MurMur&quot;&gt;&lt;/a&gt;MurMur&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;「創新」是整個團隊的事情。&lt;/li&gt;
 &lt;li&gt;跟波國棒球打輸了，連帶連出刊總結這件事情都 Delay 了！&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;趣事小語&quot;&gt;&lt;a href=&quot;#趣事小語&quot; class=&quot;headerlink&quot; title=&quot;趣事小語&quot;&gt;&lt;/a&gt;趣事小語&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;相關小語來源是這段期間 Twitter 或訂閱的 feedly 上被分析出來的熱門文字。
+&lt;h2 id=&quot;趣事小語&quot;&gt;&lt;a href=&quot;#趣事小語&quot; class=&quot;headerlink&quot; title=&quot;趣事小語&quot;&gt;&lt;/a&gt;趣事小語&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;相關小語來源是這段期間 Twitter 或訂閱的 feedly 上被分析出來的熱門文字。
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://flipermag.com/2014/08/06/lives-life-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;無中生有的設計咒語：「沒關係你先設計，資料我再補」&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;「今天晚上要煮紅燒牛肉，啊！糟糕沒有牛肉了，好吧沒關係那你先煮，等牛肉買回來在丟下去就好……」 好個鬼啊！！最後補牛肉，那牛肉不就根本沒有入味嗎，那前面是在什麼？煮火大的嗎 !!&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
@@ -36,7 +36,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.ithome.com.tw/news/99307&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;【專家嚴選】8個DevOps好用工具大介紹&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;【Docker】自動記錄環境參數加速部署效率&lt;/li&gt;
@@ -154,7 +154,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;思考＆教育&quot;&gt;&lt;a href=&quot;#思考＆教育&quot; class=&quot;headerlink&quot; title=&quot;思考＆教育&quot;&gt;&lt;/a&gt;思考＆教育&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;思考＆教育&quot;&gt;&lt;a href=&quot;#思考＆教育&quot; class=&quot;headerlink&quot; title=&quot;思考＆教育&quot;&gt;&lt;/a&gt;思考＆教育&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://flipedu.parenting.com.tw/blog-detail?id=2037&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;葉丙成：人不卡，不成器&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;職場上要判斷是不是人才，看的是能否解決難題。&lt;/li&gt;
 &lt;li&gt;難題之所以難，是因前人沒碰過，要靠破格的思考和不被失敗打垮的韌性來解決。&lt;/li&gt;
@@ -163,7 +163,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;行銷推廣&quot;&gt;&lt;a href=&quot;#行銷推廣&quot; class=&quot;headerlink&quot; title=&quot;行銷推廣&quot;&gt;&lt;/a&gt;行銷推廣&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;行銷推廣&quot;&gt;&lt;a href=&quot;#行銷推廣&quot; class=&quot;headerlink&quot; title=&quot;行銷推廣&quot;&gt;&lt;/a&gt;行銷推廣&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/inboundjournals/photos/a.564421656907554.149292.547757665240620/701198266563225/?type=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;不要一下子就講4，要講2＋2&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;根據內容行銷公司LookBookHQ 的研究，可以總結出以下5點：&lt;/p&gt;
@@ -313,14 +313,14 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;專案管理&quot;&gt;&lt;a href=&quot;#專案管理&quot; class=&quot;headerlink&quot; title=&quot;專案管理&quot;&gt;&lt;/a&gt;專案管理&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;專案管理&quot;&gt;&lt;a href=&quot;#專案管理&quot; class=&quot;headerlink&quot; title=&quot;專案管理&quot;&gt;&lt;/a&gt;專案管理&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.app01.com.tw/paper/81f724e5-7f8c-4a8a-99f8-fe066398e17f&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;從產品經理的角度算一算：做一個App需要多少錢？&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;作為互聯網從業者，被外行的朋友們問及最多的問題是“做一個網站需要多少錢？”或者“做一個App需要多少錢？”。作為做過完整網站項目和APP的人，今天從產品經理的角度，一起來算一下中小型App從無到有需要做哪些工作，以及為達成使命，需要付出多少金錢代價。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;技術知事&quot;&gt;&lt;a href=&quot;#技術知事&quot; class=&quot;headerlink&quot; title=&quot;技術知事&quot;&gt;&lt;/a&gt;技術知事&lt;/h1&gt;&lt;h2 id=&quot;開發心法&quot;&gt;&lt;a href=&quot;#開發心法&quot; class=&quot;headerlink&quot; title=&quot;開發心法&quot;&gt;&lt;/a&gt;開發心法&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;技術知事&quot;&gt;&lt;a href=&quot;#技術知事&quot; class=&quot;headerlink&quot; title=&quot;技術知事&quot;&gt;&lt;/a&gt;技術知事&lt;/h2&gt;&lt;h3 id=&quot;開發心法&quot;&gt;&lt;a href=&quot;#開發心法&quot; class=&quot;headerlink&quot; title=&quot;開發心法&quot;&gt;&lt;/a&gt;開發心法&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://secure.phabricator.com/book/phabflavor/article/writing_reviewable_code/&quot; title=&quot;Writing Reviewable Code&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing Reviewable Code&lt;/a&gt; - 寫一個可以被檢視審視的程式碼&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Each commit should be as small as possible, but no smaller.&lt;ul&gt;
@@ -382,7 +382,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;DevOps-工具&quot;&gt;&lt;a href=&quot;#DevOps-工具&quot; class=&quot;headerlink&quot; title=&quot;DevOps 工具&quot;&gt;&lt;/a&gt;DevOps 工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;DevOps-工具&quot;&gt;&lt;a href=&quot;#DevOps-工具&quot; class=&quot;headerlink&quot; title=&quot;DevOps 工具&quot;&gt;&lt;/a&gt;DevOps 工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://dustinrcollins.com/devops-on-osx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DevOps on OSX&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;網站維運開發 DevOps 在 MAC OSX 上面可以用的開發工具列表。&lt;/li&gt;
@@ -412,7 +412,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;Library-or-工具&quot;&gt;&lt;a href=&quot;#Library-or-工具&quot; class=&quot;headerlink&quot; title=&quot;Library or 工具&quot;&gt;&lt;/a&gt;Library or 工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;Library-or-工具&quot;&gt;&lt;a href=&quot;#Library-or-工具&quot; class=&quot;headerlink&quot; title=&quot;Library or 工具&quot;&gt;&lt;/a&gt;Library or 工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.gitbook.com/book/zonble/kkbox-ios-dev/details&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;KKBOX iOS/Mac OS X 基本開發教材&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;這份教材是為了 KKBOX iOS/Mac OS X 開發部門的新人訓練所設計，目的是培養 出可以開發、維護 KKBOX 的 iOS 與 Mac OS X 版本，以及我們其他軟體產品的 工程師。&lt;/li&gt;
@@ -437,10 +437,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;資料庫操作&quot;&gt;&lt;a href=&quot;#資料庫操作&quot; class=&quot;headerlink&quot; title=&quot;資料庫操作&quot;&gt;&lt;/a&gt;資料庫操作&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;資料庫操作&quot;&gt;&lt;a href=&quot;#資料庫操作&quot; class=&quot;headerlink&quot; title=&quot;資料庫操作&quot;&gt;&lt;/a&gt;資料庫操作&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://wiki.planetoid.info/index.php/Visual_explanation_of_MySQL_joins&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;圖解資料庫的 Joins (RIGHT Join、LEFT Join、INNER Join、OUTER Join) 的差異&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;前端網頁開發工具&quot;&gt;&lt;a href=&quot;#前端網頁開發工具&quot; class=&quot;headerlink&quot; title=&quot;前端網頁開發工具&quot;&gt;&lt;/a&gt;前端網頁開發工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;前端網頁開發工具&quot;&gt;&lt;a href=&quot;#前端網頁開發工具&quot; class=&quot;headerlink&quot; title=&quot;前端網頁開發工具&quot;&gt;&lt;/a&gt;前端網頁開發工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://javier.xyz/img2css/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Img2CSS&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;協助將圖片直接轉換成CSS，並且直接顯示在頁面上。&lt;/li&gt;
@@ -453,7 +453,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;規劃設計工具&quot;&gt;&lt;a href=&quot;#規劃設計工具&quot; class=&quot;headerlink&quot; title=&quot;規劃設計工具&quot;&gt;&lt;/a&gt;規劃設計工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;規劃設計工具&quot;&gt;&lt;a href=&quot;#規劃設計工具&quot; class=&quot;headerlink&quot; title=&quot;規劃設計工具&quot;&gt;&lt;/a&gt;規劃設計工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.cooper.com/prototyping-tools&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Prototyping Tools&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;這是一篇比較文章，比較了像是 AxureRP、Briefs、Form等知名的 Prototyping 工具，還有一些像是製作一個特定的網頁需要多少時間的時間比較表。&lt;/li&gt;
@@ -476,11 +476,11 @@
     
       &lt;pre&gt;&lt;code&gt;發刊日 : 2015/10/31 - 2015/11/10
 本期包含：趣事小語、資訊知事、思考＆教育、行銷推廣、專案管理、技術知事
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;MurMur&quot;&gt;&lt;a href=&quot;#MurMur&quot; class=&quot;headerlink&quot; title=&quot;MurMur&quot;&gt;&lt;/a&gt;MurMur&lt;/h1&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;MurMur&quot;&gt;&lt;a href=&quot;#MurMur&quot; class=&quot;headerlink&quot; title=&quot;MurMur&quot;&gt;&lt;/a&gt;MurMur&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;「創新」是整個團隊的事情。&lt;/li&gt;
 &lt;li&gt;跟波國棒球打輸了，連帶連出刊總結這件事情都 Delay 了！&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;趣事小語&quot;&gt;&lt;a href=&quot;#趣事小語&quot; class=&quot;headerlink&quot; title=&quot;趣事小語&quot;&gt;&lt;/a&gt;趣事小語&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;相關小語來源是這段期間 Twitter 或訂閱的 feedly 上被分析出來的熱門文字。
+&lt;h2 id=&quot;趣事小語&quot;&gt;&lt;a href=&quot;#趣事小語&quot; class=&quot;headerlink&quot; title=&quot;趣事小語&quot;&gt;&lt;/a&gt;趣事小語&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;相關小語來源是這段期間 Twitter 或訂閱的 feedly 上被分析出來的熱門文字。
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://flipermag.com/2014/08/06/lives-life-2/&quot;&gt;無中生有的設計咒語：「沒關係你先設計，資料我再補」&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;「今天晚上要煮紅燒牛肉，啊！糟糕沒有牛肉了，好吧沒關係那你先煮，等牛肉買回來在丟下去就好……」 好個鬼啊！！最後補牛肉，那牛肉不就根本沒有入味嗎，那前面是在什麼？煮火大的嗎 !!
@@ -515,7 +515,7 @@
     
     <content type="html">&lt;pre&gt;&lt;code&gt;發刊日 : 2015/10/20 - 2015/10/31
 本期包含趣味小語、資訊知事、行銷推廣、專案管理以及技術知事
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;發刊語-murmur&quot;&gt;&lt;a href=&quot;#發刊語-murmur&quot; class=&quot;headerlink&quot; title=&quot;發刊語 - murmur&quot;&gt;&lt;/a&gt;發刊語 - murmur&lt;/h1&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;發刊語-murmur&quot;&gt;&lt;a href=&quot;#發刊語-murmur&quot; class=&quot;headerlink&quot; title=&quot;發刊語 - murmur&quot;&gt;&lt;/a&gt;發刊語 - murmur&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;會開始整理這份自己的Issue News 是突然發現，常常看到一些寫的很不錯的文章，而總覺得這些需要有一個地方把這些好文章總結記錄下來，一是如此在需要的時候才能順利的找到。有整理過的資訊，才能成為知識。所以開始試著整理這份文件，當累積一定的長度，就發刊。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;想的到才看的到&lt;/strong&gt;，團隊的集體創意需要不斷的累積背景知識，才能夠想，也才能一起看到。&lt;/p&gt;
@@ -523,7 +523,7 @@
 &lt;li&gt;&lt;p&gt;看過的只是資訊、整理起來讓自己找的到，知道可以用，這才是知識。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;趣味小語&quot;&gt;&lt;a href=&quot;#趣味小語&quot; class=&quot;headerlink&quot; title=&quot;趣味小語&quot;&gt;&lt;/a&gt;趣味小語&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;相關小語來源是這段期間Twitter或訂閱的feedly上被分析出來的熱門文字。
+&lt;h2 id=&quot;趣味小語&quot;&gt;&lt;a href=&quot;#趣味小語&quot; class=&quot;headerlink&quot; title=&quot;趣味小語&quot;&gt;&lt;/a&gt;趣味小語&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;相關小語來源是這段期間Twitter或訂閱的feedly上被分析出來的熱門文字。
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;越大的公司留下來的是會做人的人，並非會做事的人 - Juppet(@juppet) - &lt;a href=&quot;https://twitter.com/juppet/status/657484034004533248&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;October 23, 2015&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -541,7 +541,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.playpcesor.com/2015/10/file-name-tips.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;電腦玩物 - 一看就能採取行動的檔案命名技巧：我的兩大檔名規則&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;檔名規則一：數字與符號，排序重要、待辦、計劃、備查檔案&lt;ul&gt;
 &lt;li&gt;透過數字可以有效率的讓檔案依照我的檔名去排列，於是我就能用數字來達到兩個目的：&lt;ol&gt;
@@ -587,7 +587,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;行銷推廣&quot;&gt;&lt;a href=&quot;#行銷推廣&quot; class=&quot;headerlink&quot; title=&quot;行銷推廣&quot;&gt;&lt;/a&gt;行銷推廣&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;行銷推廣&quot;&gt;&lt;a href=&quot;#行銷推廣&quot; class=&quot;headerlink&quot; title=&quot;行銷推廣&quot;&gt;&lt;/a&gt;行銷推廣&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/backtrue/google-analytics-13875934&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google analytics教學手冊&lt;/a&gt; - by &lt;a href=&quot;http://www.slideshare.net/backtrue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Brian Chiu&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;作者小黑在業界關於SEO、行銷領域還蠻知名的，是之前電商ASAP的行銷總監。&lt;/li&gt;
 &lt;/ul&gt;
@@ -642,7 +642,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;專案管理&quot;&gt;&lt;a href=&quot;#專案管理&quot; class=&quot;headerlink&quot; title=&quot;專案管理&quot;&gt;&lt;/a&gt;專案管理&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;專案管理&quot;&gt;&lt;a href=&quot;#專案管理&quot; class=&quot;headerlink&quot; title=&quot;專案管理&quot;&gt;&lt;/a&gt;專案管理&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;文章：&lt;a href=&quot;http://www.infoq.com/cn/news/2015/10/Bryanedds-Medium&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;你是否也處在這樣的反模式中&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;所謂的反模式指的是讓整個團隊、專案往反方向前進&lt;/li&gt;
@@ -719,7 +719,7 @@
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;我們工程師不常開會但很常溝通。開會通常有四種原因&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;一、例行產品會議:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;只強迫負責產品的工程師參加，不過歡迎有興趣的工程師在旁聆聽。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;主要是公司政策都是開放的，原則上不強迫參與&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(除非你本來就負責產品)，但要聽也歡迎。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;二、技術分享會議。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;公司偶爾會分享技術，自由參與不強迫。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;三、緊急會議。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;緊急且重大的事，但只會找相關工程師招開臨時會。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;四、一般會議。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;平常工程師會在 channel 溝通，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;channel 溝通的好處是不會打斷工程師專心工作，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;他們有空閒才會看到 channel 訊息，再來處理即可，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;但有時文字溝通的效率不如當面口述加上畫白板，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;所以討論若無法聚焦時就會在 channel 約時間，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;相關工程師同意後就會自行進會議室開會。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;RD&lt;/span&gt; 間的默契大概類似如此。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我覺得這跟架構一樣沒有好與不好，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;只要適用團隊的文化即可。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;技術知事&quot;&gt;&lt;a href=&quot;#技術知事&quot; class=&quot;headerlink&quot; title=&quot;技術知事&quot;&gt;&lt;/a&gt;技術知事&lt;/h1&gt;&lt;h2 id=&quot;開發心法&quot;&gt;&lt;a href=&quot;#開發心法&quot; class=&quot;headerlink&quot; title=&quot;開發心法&quot;&gt;&lt;/a&gt;開發心法&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;技術知事&quot;&gt;&lt;a href=&quot;#技術知事&quot; class=&quot;headerlink&quot; title=&quot;技術知事&quot;&gt;&lt;/a&gt;技術知事&lt;/h2&gt;&lt;h3 id=&quot;開發心法&quot;&gt;&lt;a href=&quot;#開發心法&quot; class=&quot;headerlink&quot; title=&quot;開發心法&quot;&gt;&lt;/a&gt;開發心法&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;How to write unmaintainable PHP code - 如何寫出無法維護的 PHP 程式碼&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ban coding conventions.&lt;/li&gt;
@@ -765,7 +765,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;測試工具&quot;&gt;&lt;a href=&quot;#測試工具&quot; class=&quot;headerlink&quot; title=&quot;測試工具&quot;&gt;&lt;/a&gt;測試工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;測試工具&quot;&gt;&lt;a href=&quot;#測試工具&quot; class=&quot;headerlink&quot; title=&quot;測試工具&quot;&gt;&lt;/a&gt;測試工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://jaceju.net/2015/10/27/web-testing-with-phpunit-mink/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;利用 PHPUnit 與 Mink 來做 Web 測試&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如果你面對的是以前舊有的 PHP 程式，它改起來很痛苦，一堆不良的 PHP 程式習慣都阻礙你的修正；使得每次調整功能時，到底改得對不對，得要等到上線才知道。想要重寫一個新版本，但太多的實作細節你不清楚；也沒有最新的規格文件，讓你無法為新版本做出功能無誤的保證。&lt;/li&gt;
@@ -803,7 +803,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;PHP-Library-or-工具&quot;&gt;&lt;a href=&quot;#PHP-Library-or-工具&quot; class=&quot;headerlink&quot; title=&quot;PHP Library or 工具&quot;&gt;&lt;/a&gt;PHP Library or 工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;PHP-Library-or-工具&quot;&gt;&lt;a href=&quot;#PHP-Library-or-工具&quot; class=&quot;headerlink&quot; title=&quot;PHP Library or 工具&quot;&gt;&lt;/a&gt;PHP Library or 工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.phpclasses.org/package/9423-PHP-Convert-PDF-to-HTML-using-Poppler.html&quot; title=&quot;PHP-Convert-PDF-to-HTML-using-Poppler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用PHP進行 PDF to HTML轉換&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;在 PHP 將 PDF 檔案轉為 HTML 檔&lt;/li&gt;
 &lt;li&gt;底層使用&lt;a href=&quot;http://poppler.freedesktop.org/&quot; title=&quot;Poppler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Poppler&lt;/a&gt;&lt;/li&gt;
@@ -849,7 +849,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;前端網頁開發工具&quot;&gt;&lt;a href=&quot;#前端網頁開發工具&quot; class=&quot;headerlink&quot; title=&quot;前端網頁開發工具&quot;&gt;&lt;/a&gt;前端網頁開發工具&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&quot;前端網頁開發工具&quot;&gt;&lt;a href=&quot;#前端網頁開發工具&quot; class=&quot;headerlink&quot; title=&quot;前端網頁開發工具&quot;&gt;&lt;/a&gt;前端網頁開發工具&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/frontendmasters/front-end-handbook/details&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Front-end Handbook&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;記錄許多前端開發工具及相關教學&lt;/li&gt;
 &lt;/ul&gt;
@@ -873,7 +873,7 @@
     
       &lt;pre&gt;&lt;code&gt;發刊日 : 2015/10/20 - 2015/10/31
 本期包含趣味小語、資訊知事、行銷推廣、專案管理以及技術知事
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;發刊語-murmur&quot;&gt;&lt;a href=&quot;#發刊語-murmur&quot; class=&quot;headerlink&quot; title=&quot;發刊語 - murmur&quot;&gt;&lt;/a&gt;發刊語 - murmur&lt;/h1&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;發刊語-murmur&quot;&gt;&lt;a href=&quot;#發刊語-murmur&quot; class=&quot;headerlink&quot; title=&quot;發刊語 - murmur&quot;&gt;&lt;/a&gt;發刊語 - murmur&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;會開始整理這份自己的Issue News 是突然發現，常常看到一些寫的很不錯的文章，而總覺得這些需要有一個地方把這些好文章總結記錄下來，一是如此在需要的時候才能順利的找到。有整理過的資訊，才能成為知識。所以開始試著整理這份文件，當累積一定的長度，就發刊。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;想的到才看的到&lt;/strong&gt;，團隊的集體創意需要不斷的累積背景知識，才能夠想，也才能一起看到。&lt;/p&gt;
