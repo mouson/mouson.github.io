@@ -4,9 +4,9 @@
   <subtitle>已知用火</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://usedfire.net/"/>
+  <link href="https://usedfire.net/"/>
   <updated>2015-11-10T10:00:00.000Z</updated>
-  <id>http://usedfire.net/</id>
+  <id>https://usedfire.net/</id>
   
   <author>
     <name>mouson</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>MoIssue #2 創新，是整個團隊的事</title>
-    <link href="http://usedfire.net/2015/11/10/MoIssue-2/"/>
-    <id>http://usedfire.net/2015/11/10/MoIssue-2/</id>
+    <link href="https://usedfire.net/2015/11/10/MoIssue-2/"/>
+    <id>https://usedfire.net/2015/11/10/MoIssue-2/</id>
     <published>2015-11-09T17:41:41.000Z</published>
     <updated>2015-11-10T10:00:00.000Z</updated>
     
@@ -487,29 +487,29 @@
     
     </summary>
     
-      <category term="MoIssue" scheme="http://usedfire.net/categories/MoIssue/"/>
+      <category term="MoIssue" scheme="https://usedfire.net/categories/MoIssue/"/>
     
     
-      <category term="MoIssue" scheme="http://usedfire.net/tags/MoIssue/"/>
+      <category term="MoIssue" scheme="https://usedfire.net/tags/MoIssue/"/>
     
-      <category term="DevOps" scheme="http://usedfire.net/tags/DevOps/"/>
+      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
-      <category term="PHP" scheme="http://usedfire.net/tags/PHP/"/>
+      <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
-      <category term="Marketing" scheme="http://usedfire.net/tags/Marketing/"/>
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
-      <category term="設計規劃" scheme="http://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
+      <category term="設計規劃" scheme="https://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
     
-      <category term="專案管理" scheme="http://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
+      <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
-      <category term="資訊知事" scheme="http://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
+      <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
     
   </entry>
   
   <entry>
     <title>MoIssue #1 創始號：總要開始，才能完成</title>
-    <link href="http://usedfire.net/2015/10/31/MoIssue-1/"/>
-    <id>http://usedfire.net/2015/10/31/MoIssue-1/</id>
+    <link href="https://usedfire.net/2015/10/31/MoIssue-1/"/>
+    <id>https://usedfire.net/2015/10/31/MoIssue-1/</id>
     <published>2015-10-30T17:41:41.000Z</published>
     <updated>2016-03-25T10:00:00.000Z</updated>
     
@@ -882,18 +882,18 @@
     
     </summary>
     
-      <category term="MoIssue" scheme="http://usedfire.net/categories/MoIssue/"/>
+      <category term="MoIssue" scheme="https://usedfire.net/categories/MoIssue/"/>
     
     
-      <category term="MoIssue" scheme="http://usedfire.net/tags/MoIssue/"/>
+      <category term="MoIssue" scheme="https://usedfire.net/tags/MoIssue/"/>
     
-      <category term="DevOps" scheme="http://usedfire.net/tags/DevOps/"/>
+      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
-      <category term="PHP" scheme="http://usedfire.net/tags/PHP/"/>
+      <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
-      <category term="Marketing" scheme="http://usedfire.net/tags/Marketing/"/>
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
-      <category term="Test" scheme="http://usedfire.net/tags/Test/"/>
+      <category term="Test" scheme="https://usedfire.net/tags/Test/"/>
     
   </entry>
   
