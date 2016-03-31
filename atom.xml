@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://usedfire.net/"/>
-  <updated>2015-11-25T10:00:00.000Z</updated>
+  <updated>2016-03-31T08:27:32.000Z</updated>
   <id>https://usedfire.net/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight</title>
+    <link href="https://usedfire.net/2016/03/31/set-sublime-text-extensions-default-syntax/"/>
+    <id>https://usedfire.net/2016/03/31/set-sublime-text-extensions-default-syntax/</id>
+    <published>2016-03-31T08:27:32.000Z</published>
+    <updated>2016-03-31T08:27:32.000Z</updated>
+    
+    <content type="html">&lt;p&gt;這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;1-開啟無法預設樣式的檔案&quot;&gt;&lt;a href=&quot;#1-開啟無法預設樣式的檔案&quot; class=&quot;headerlink&quot; title=&quot;1. 開啟無法預設樣式的檔案&quot;&gt;&lt;/a&gt;1. 開啟無法預設樣式的檔案&lt;/h2&gt;&lt;p&gt;以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;sublime_01.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-手動設定樣式&quot;&gt;&lt;a href=&quot;#2-手動設定樣式&quot; class=&quot;headerlink&quot; title=&quot;2. 手動設定樣式&quot;&gt;&lt;/a&gt;2. 手動設定樣式&lt;/h2&gt;&lt;p&gt;在 menu -&amp;gt; View -&amp;gt; Syntax -&amp;gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;sublime_02.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後，即可顯示正確的顏色。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;sublime_03.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-設定使該副檔名未來皆以相同-Syntax-顯示&quot;&gt;&lt;a href=&quot;#3-設定使該副檔名未來皆以相同-Syntax-顯示&quot; class=&quot;headerlink&quot; title=&quot;3. 設定使該副檔名未來皆以相同 Syntax 顯示&quot;&gt;&lt;/a&gt;3. 設定使該副檔名未來皆以相同 Syntax 顯示&lt;/h2&gt;&lt;p&gt;在目前已經手動設定好樣式的狀態下，選擇：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows: Prefences &amp;gt; Setting-More &amp;gt; Syntax Specific - User&lt;/li&gt;
+&lt;li&gt;OSX: Sublime Text &amp;gt; Prefences &amp;gt; Setting-More &amp;gt; Syntax Specific - User&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;sublime_04.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 &lt;code&gt;PHP.sublime-settings&lt;/code&gt; 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;sublime_05.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // Which file extensions go with this file type?&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;extensions&amp;quot;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;quot;php&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;quot;inc&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;4-附註：&quot;&gt;&lt;a href=&quot;#4-附註：&quot; class=&quot;headerlink&quot; title=&quot;4. 附註：&quot;&gt;&lt;/a&gt;4. 附註：&lt;/h2&gt;&lt;p&gt;如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows: C:\Users{User Name}\AppData\Roaming\Sublime Text 3\Packages\User\&lt;/li&gt;
+&lt;li&gt;MAC OSX: ~/Library/Application Support/Sublime Text 3/Packages/User&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;只要找到對應要修改的 Syntax 即可。&lt;/p&gt;
+&lt;h2 id=&quot;參考連結：&quot;&gt;&lt;a href=&quot;#參考連結：&quot; class=&quot;headerlink&quot; title=&quot;參考連結：&quot;&gt;&lt;/a&gt;參考連結：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.granneman.com/webdev/editors/sublime-text/configuring-sublime-text/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Configuring Sublime Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="https://usedfire.net/categories/Note/"/>
+    
+    
+      <category term="Sublime" scheme="https://usedfire.net/tags/Sublime/"/>
+    
+      <category term="筆記" scheme="https://usedfire.net/tags/%E7%AD%86%E8%A8%98/"/>
+    
+  </entry>
   
   <entry>
     <title>MoIssue #3 DevOps 正夯</title>
