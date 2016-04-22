@@ -239,15 +239,15 @@
       <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
     
     
+      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
+    
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
       <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
-    
-      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
-    
-      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
   </entry>
   
@@ -416,6 +416,8 @@
       <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
     
     
+      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
       <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
@@ -423,8 +425,6 @@
       <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
-    
-      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
     
   </entry>
   
@@ -903,19 +903,19 @@
       <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
     
     
+      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
       <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
-      <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
-    
-      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
-    
       <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
       <category term="設計規劃" scheme="https://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
+    
+      <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
     
   </entry>
   
@@ -1298,11 +1298,11 @@
       <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
     
     
+      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
       <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
-    
-      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
     
       <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
