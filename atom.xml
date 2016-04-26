@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://usedfire.net/"/>
-  <updated>2016-03-31T08:27:32.000Z</updated>
+  <updated>2016-04-21T16:08:45.000Z</updated>
   <id>https://usedfire.net/</id>
   
   <author>
@@ -14,6 +14,132 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MoClippings #6 唱歌跳舞 加 VR ？！有搞頭嗎？</title>
+    <link href="https://usedfire.net/Clippings/2016/MoClippings-6/"/>
+    <id>https://usedfire.net/Clippings/2016/MoClippings-6/</id>
+    <published>2016-04-07T16:08:45.000Z</published>
+    <updated>2016-04-21T16:08:45.000Z</updated>
+    
+    <content type="html">&lt;pre&gt;&lt;code&gt;發刊日 : 2016/04/08 - 2016/04/22
+本期包含：資訊知事、行銷推廣、專案管理、資訊知事、技術知事
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://forum.gamer.com.tw/C.php?bsn=60599&amp;amp;snA=8760&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;虛擬實境裝置 HTC Vive 開箱＆硬體介紹&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://store.steampowered.com/app/382110/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Steam - Virtual Desktop&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;專案管理&quot;&gt;&lt;a href=&quot;#專案管理&quot; class=&quot;headerlink&quot; title=&quot;專案管理&quot;&gt;&lt;/a&gt;專案管理&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://36kr.com/p/5044602.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;十六条创业黑暗森林法则&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.hbrtaiwan.com/blog_content_705.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;想讓開會更順利？用這些圖表和清單就對了&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;/Clippings/2016/MoClippings-6/noz7OBt.jpg&quot; alt=&quot;[想讓開會更順利？用這些圖表和清單就對了]&quot; title=&quot;[想讓開會更順利？用這些圖表和清單就對了]&quot;&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/life-learning/23-best-productivity-hacks-of-the-year-8cd649b38a9f#.mf2szixob&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;23 Best Productivity Hacks of the Year&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Down With To-Dos, In With Scheduling&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;關掉手機的 Push Notifications&lt;/li&gt;
+&lt;li&gt;To-do lists 是邪惡的，你應該把你想做的事情全部排程&lt;/li&gt;
+&lt;li&gt;先做你最不想做的事情&lt;/li&gt;
+&lt;li&gt;如果有一件事兩分鐘內就可以解決，馬上做它&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;技術知事&quot;&gt;&lt;a href=&quot;#技術知事&quot; class=&quot;headerlink&quot; title=&quot;技術知事&quot;&gt;&lt;/a&gt;技術知事&lt;/h2&gt;&lt;h3 id=&quot;Redmine&quot;&gt;&lt;a href=&quot;#Redmine&quot; class=&quot;headerlink&quot; title=&quot;Redmine&quot;&gt;&lt;/a&gt;Redmine&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/centosadmin/redmine_chat_telegram&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Redmine Chat Telegram plugin&lt;/a&gt; - 利用 Telegram 做 Redmine 的操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.redmine.org/plugins/redmine_chat_telegram&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.redmine.org/plugins/redmine_chat_telegram&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/okkez/redmine_full_text_search&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Redmine Full text search plugin&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL(MariaDB) with Mroonga&lt;/li&gt;
+&lt;li&gt;PostgreSQL with Pgroonga&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.redmine.org/plugins/redmine_zxcvbn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Redmine zxcvbn&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/schmidt/redmine_zxcvbn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/schmidt/redmine_zxcvbn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.easyredmine.com/redmine-mindmap-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Redmine Mindmap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;系統管理&quot;&gt;&lt;a href=&quot;#系統管理&quot; class=&quot;headerlink&quot; title=&quot;系統管理&quot;&gt;&lt;/a&gt;系統管理&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://mroonga.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mroonga&lt;/a&gt; - 使 MySQL 支援全文搜索&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.codeceo.com/article/nginx-php-config.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何正确配置 Nginx + PHP&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;server &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    listen 80;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    server_name foo.com;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    root /path;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    index index.html index.htm index.php;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    location / &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        try_files $uri $uri/ /index.php$is_args$args;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    location ~ /.php$ &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        try_files $uri =404;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        include fastcgi.conf;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        fastcgi_pass 127.0.0.1:9000;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;開發心法&quot;&gt;&lt;a href=&quot;#開發心法&quot; class=&quot;headerlink&quot; title=&quot;開發心法&quot;&gt;&lt;/a&gt;開發心法&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/apigee/restful-api-design-second-edition&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;RESTful API Design, Second Edition&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://racksburg.com/choosing-an-http-status-code/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Choosing an HTTP Status Code — Stop Making It Hard&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://tw.twincl.com/programming/*641y&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;簡明RESTful API設計要點&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;浏览器同源政策及其规避方法&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“同源政策”（same-origin policy）&lt;ul&gt;
+&lt;li&gt;协议相同&lt;/li&gt;
+&lt;li&gt;域名相同&lt;/li&gt;
+&lt;li&gt;端口相同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;測試工具&quot;&gt;&lt;a href=&quot;#測試工具&quot; class=&quot;headerlink&quot; title=&quot;測試工具&quot;&gt;&lt;/a&gt;測試工具&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dropbox/zxcvbn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dropbox-zxcvbn 密碼強度檢測&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bjeavons/zxcvbn-php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PHP-zxcvbn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;PHP-Library-or-工具&quot;&gt;&lt;a href=&quot;#PHP-Library-or-工具&quot; class=&quot;headerlink&quot; title=&quot;PHP Library or 工具&quot;&gt;&lt;/a&gt;PHP Library or 工具&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.codeceo.com/article/php-design-patterns.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PHP 中的设计模式详解&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.dreamfactory.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DreamFactory&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DreamFactory(™) is an open source REST API backend for mobile&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dreamfactorysoftware/dreamfactory&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/dreamfactorysoftware/dreamfactory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      Introduce tag plugins in freemind.
+    
+    </summary>
+    
+      <category term="Clippings" scheme="https://usedfire.net/categories/Clippings/"/>
+    
+      <category term="2016" scheme="https://usedfire.net/categories/Clippings/2016/"/>
+    
+    
+      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
+      <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
+    
+      <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
+    
+      <category term="Redmine" scheme="https://usedfire.net/tags/Redmine/"/>
+    
+      <category term="技術知事" scheme="https://usedfire.net/tags/%E6%8A%80%E8%A1%93%E7%9F%A5%E4%BA%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight</title>
