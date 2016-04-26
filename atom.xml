@@ -17,8 +17,8 @@
   
   <entry>
     <title>Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight</title>
-    <link href="https://usedfire.net/2016/03/31/set-sublime-text-extensions-default-syntax/"/>
-    <id>https://usedfire.net/2016/03/31/set-sublime-text-extensions-default-syntax/</id>
+    <link href="https://usedfire.net/Notes/Sublime/set-sublime-text-extensions-default-syntax/"/>
+    <id>https://usedfire.net/Notes/Sublime/set-sublime-text-extensions-default-syntax/</id>
     <published>2016-03-31T08:27:32.000Z</published>
     <updated>2016-03-31T08:27:32.000Z</updated>
     
@@ -56,7 +56,9 @@
     
     </summary>
     
-      <category term="Note" scheme="https://usedfire.net/categories/Note/"/>
+      <category term="Notes" scheme="https://usedfire.net/categories/Notes/"/>
+    
+      <category term="Sublime" scheme="https://usedfire.net/categories/Notes/Sublime/"/>
     
     
       <category term="Sublime" scheme="https://usedfire.net/tags/Sublime/"/>
@@ -67,8 +69,8 @@
   
   <entry>
     <title>MoClippings #4 總有那麼一群人那麼貼近人心</title>
-    <link href="https://usedfire.net/2015/12/20/MoClippings-4/"/>
-    <id>https://usedfire.net/2015/12/20/MoClippings-4/</id>
+    <link href="https://usedfire.net/Clippings/MoClippings-4/"/>
+    <id>https://usedfire.net/Clippings/MoClippings-4/</id>
     <published>2015-12-19T17:36:24.000Z</published>
     <updated>2015-12-29T17:36:24.000Z</updated>
     
@@ -76,7 +78,7 @@
 本期包含：資訊知事、行銷推廣、專案管理、技術知事
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://laravel-news.com/2016/03/add-laravel-unit-tests-directly-chrome/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Add Laravel Unit Tests Directly From Chrome&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;/2015/12/20/MoClippings-4/chrome-testing.gif&quot; alt=&quot;[Laravel Image Testing]&quot; title=&quot;[Laravel Image Testing]&quot;&gt;
+&lt;li&gt;&lt;img src=&quot;/Clippings/MoClippings-4/chrome-testing.gif&quot; alt=&quot;[Laravel Image Testing]&quot; title=&quot;[Laravel Image Testing]&quot;&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -236,25 +238,25 @@
     
     </summary>
     
-      <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
+      <category term="Clippings" scheme="https://usedfire.net/categories/Clippings/"/>
     
     
       <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
+    
       <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
-    
-      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
   </entry>
   
   <entry>
     <title>MoClippings #3 DevOps 正夯</title>
-    <link href="https://usedfire.net/2015/11/25/MoClippings-3/"/>
-    <id>https://usedfire.net/2015/11/25/MoClippings-3/</id>
+    <link href="https://usedfire.net/Clippings/MoClippings-3/"/>
+    <id>https://usedfire.net/Clippings/MoClippings-3/</id>
     <published>2015-11-24T17:41:41.000Z</published>
     <updated>2015-11-25T10:00:00.000Z</updated>
     
@@ -262,7 +264,8 @@
 本期包含：資訊知事、生活藝文、專案管理、技術知事
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;MurMur&quot;&gt;&lt;a href=&quot;#MurMur&quot; class=&quot;headerlink&quot; title=&quot;MurMur&quot;&gt;&lt;/a&gt;MurMur&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;這樣寫程式好像太 High 了。(from &lt;a href=&quot;https://github.com/JoelBesada/activate-power-mode&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;activate-power-mode&lt;/a&gt;)&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;/2015/11/25/MoClippings-3/eb3bb21eecd8.gif&quot; alt=&quot;&quot;&gt; &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;/Clippings/MoClippings-3/eb3bb21eecd8.gif&quot; alt=&quot;[Activate Power mode]&quot; title=&quot;[Activate Power mode]&quot;&gt; &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -409,14 +412,16 @@
 本期包含：資訊知事、生活藝文、專案管理、技術知事
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;MurMur&quot;&gt;&lt;a href=&quot;#MurMur&quot; class=&quot;headerlink&quot; title=&quot;MurMur&quot;&gt;&lt;/a&gt;MurMur&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;這樣寫程式好像太 High 了。(from &lt;a href=&quot;https://github.com/JoelBesada/activate-power-mode&quot;&gt;activate-power-mode&lt;/a&gt;)&lt;ul&gt;
-&lt;li&gt;&lt;img src=&quot;/2015/11/25/MoClippings-3/eb3bb21eecd8.gif&quot; alt=&quot;&quot;&gt;
+&lt;li&gt;&lt;img src=&quot;/Clippings/MoClippings-3/eb3bb21eecd8.gif&quot; alt=&quot;[Activate Power mode]&quot; title=&quot;[Activate Power mode]&quot;&gt;
     
     </summary>
     
-      <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
+      <category term="Clippings" scheme="https://usedfire.net/categories/Clippings/"/>
     
     
       <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
+      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
@@ -424,14 +429,12 @@
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
     
-      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
-    
   </entry>
   
   <entry>
     <title>MoClippings #2 創新，是整個團隊的事</title>
-    <link href="https://usedfire.net/2015/11/10/MoClippings-2/"/>
-    <id>https://usedfire.net/2015/11/10/MoClippings-2/</id>
+    <link href="https://usedfire.net/Clippings/MoClippings-2/"/>
+    <id>https://usedfire.net/Clippings/MoClippings-2/</id>
     <published>2015-11-09T17:41:41.000Z</published>
     <updated>2015-11-10T10:00:00.000Z</updated>
     
@@ -900,29 +903,29 @@
     
     </summary>
     
-      <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
+      <category term="Clippings" scheme="https://usedfire.net/categories/Clippings/"/>
     
     
       <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
     
+      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
+    
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
+    
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
+    
+      <category term="設計規劃" scheme="https://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
     
       <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
     
-      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
-    
-      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
-    
-      <category term="設計規劃" scheme="https://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
-    
   </entry>
   
   <entry>
     <title>MoClippings #1 創始號：總要開始，才能完成</title>
-    <link href="https://usedfire.net/2015/10/31/MoClippings-1/"/>
-    <id>https://usedfire.net/2015/10/31/MoClippings-1/</id>
+    <link href="https://usedfire.net/Clippings/MoClippings-1/"/>
+    <id>https://usedfire.net/Clippings/MoClippings-1/</id>
     <published>2015-10-30T17:41:41.000Z</published>
     <updated>2016-03-25T10:00:00.000Z</updated>
     
@@ -1295,16 +1298,16 @@
     
     </summary>
     
-      <category term="MoClippings" scheme="https://usedfire.net/categories/MoClippings/"/>
+      <category term="Clippings" scheme="https://usedfire.net/categories/Clippings/"/>
     
     
       <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
     
+      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
+    
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
       <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
-    
-      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
     
       <category term="Test" scheme="https://usedfire.net/tags/Test/"/>
     

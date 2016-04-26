@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight]]></title>
-      <url>https://usedfire.net/2016/03/31/set-sublime-text-extensions-default-syntax/</url>
+      <url>https://usedfire.net/Notes/Sublime/set-sublime-text-extensions-default-syntax/</url>
       <content type="html"><![CDATA[<p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p>
 <a id="more"></a>
 <h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p>
@@ -37,12 +37,12 @@
     
     <entry>
       <title><![CDATA[MoClippings #4 總有那麼一群人那麼貼近人心]]></title>
-      <url>https://usedfire.net/2015/12/20/MoClippings-4/</url>
+      <url>https://usedfire.net/Clippings/MoClippings-4/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/12/20 - 2015/12/30
 本期包含：資訊知事、行銷推廣、專案管理、技術知事
 </code></pre><h2 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h2><ul>
 <li><a href="https://laravel-news.com/2016/03/add-laravel-unit-tests-directly-chrome/" target="_blank" rel="external">Add Laravel Unit Tests Directly From Chrome</a><ul>
-<li><img src="/2015/12/20/MoClippings-4/chrome-testing.gif" alt="[Laravel Image Testing]" title="[Laravel Image Testing]">
+<li><img src="/Clippings/MoClippings-4/chrome-testing.gif" alt="[Laravel Image Testing]" title="[Laravel Image Testing]">
 <a id="more"></a></li>
 </ul>
 </li>
@@ -199,12 +199,13 @@
     
     <entry>
       <title><![CDATA[MoClippings #3 DevOps 正夯]]></title>
-      <url>https://usedfire.net/2015/11/25/MoClippings-3/</url>
+      <url>https://usedfire.net/Clippings/MoClippings-3/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/11/16 - 2015/11/25
 本期包含：資訊知事、生活藝文、專案管理、技術知事
 </code></pre><h2 id="MurMur"><a href="#MurMur" class="headerlink" title="MurMur"></a>MurMur</h2><ul>
 <li>這樣寫程式好像太 High 了。(from <a href="https://github.com/JoelBesada/activate-power-mode" target="_blank" rel="external">activate-power-mode</a>)<ul>
-<li><img src="/2015/11/25/MoClippings-3/eb3bb21eecd8.gif" alt=""> <a id="more"></a></li>
+<li><img src="/Clippings/MoClippings-3/eb3bb21eecd8.gif" alt="[Activate Power mode]" title="[Activate Power mode]"> <a id="more"></a>
+</li>
 </ul>
 </li>
 </ul>
@@ -348,7 +349,7 @@
     
     <entry>
       <title><![CDATA[MoClippings #2 創新，是整個團隊的事]]></title>
-      <url>https://usedfire.net/2015/11/10/MoClippings-2/</url>
+      <url>https://usedfire.net/Clippings/MoClippings-2/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/10/31 - 2015/11/10
 本期包含：趣事小語、資訊知事、思考＆教育、行銷推廣、專案管理、技術知事
 </code></pre><h2 id="MurMur"><a href="#MurMur" class="headerlink" title="MurMur"></a>MurMur</h2><ul>
@@ -802,7 +803,7 @@
     
     <entry>
       <title><![CDATA[MoClippings #1 創始號：總要開始，才能完成]]></title>
-      <url>https://usedfire.net/2015/10/31/MoClippings-1/</url>
+      <url>https://usedfire.net/Clippings/MoClippings-1/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/10/20 - 2015/10/31
 本期包含趣味小語、資訊知事、行銷推廣、專案管理以及技術知事
 </code></pre><h2 id="發刊語-murmur"><a href="#發刊語-murmur" class="headerlink" title="發刊語 - murmur"></a>發刊語 - murmur</h2><ul>
