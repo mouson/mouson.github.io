@@ -68,6 +68,259 @@
   </entry>
   
   <entry>
+    <title>MoClippings #5 不出門也能拿美國碩士學歷？！</title>
+    <link href="https://usedfire.net/Clippings/2016/MoClippings-5/"/>
+    <id>https://usedfire.net/Clippings/2016/MoClippings-5/</id>
+    <published>2016-03-15T15:36:44.000Z</published>
+    <updated>2016-04-08T15:36:44.000Z</updated>
+    
+    <content type="html">&lt;pre&gt;&lt;code&gt;發刊日 : 2016/03/15 - 2016/04/08
+本期包含：資訊知事、行銷推廣、專案管理、技術知事
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&quot;資訊知事&quot;&gt;&lt;a href=&quot;#資訊知事&quot; class=&quot;headerlink&quot; title=&quot;資訊知事&quot;&gt;&lt;/a&gt;資訊知事&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://theinitium.com/article/20160403-dailynews-Coursera/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在家就能拿美國碩士，Coursera報名開始&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;美國伊利諾伊大學香檳分校（UIUC）率先在 Coursera 上推出了完整的數據科學碩士項目（Master of Computer Science in Data Science）。無論你在哪裏，只要符合校方要求被錄取，就可以通過在線學習來拿到碩士學位。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cs.illinois.edu/news/mooc-based-ms-data-science&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://cs.illinois.edu/news/mooc-based-ms-data-science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.inside.com.tw/2015/07/26/rework&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;寫碼容易，讀碼難：工程師 千萬別重寫程式碼&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新程式碼一定比舊程式碼好？ NO，重寫可能會帶來更大的風險&lt;/li&gt;
+&lt;li&gt;當你覺得眼前的舊程式碼很爛時，該怎麼辦？&lt;ul&gt;
+&lt;li&gt;1、程式碼的結構有問題:重構&lt;/li&gt;
+&lt;li&gt;2、程式碼的效率不高：優化速度的1％工作量，會讓你獲得99％的爆炸性提高&lt;/li&gt;
+&lt;li&gt;3、程式碼寫得很醜：重構語法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;從頭開始再寫一遍並不意味著你會寫出比以前更好的程式碼。因為你沒有參與到上一個版本的創建，所以你其實根本就不算有經驗。一旦你準備打掉重寫，你可能會再犯一遍版本一犯過的錯，甚至會產生更多的新問題。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/every-architect-should-study-conway-law&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;每个架构师都应该研究下康威定律&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意，在系统真正地投入生产使用之前，再好的架构都只是假设，产品越晚被使用者使用，失败的成本和风险就越高，而小步行进，通过MVP快速实验，获取客户反馈，迭代演化产品，能有效地减少失败的成本和风险。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.csdn.net/article/2015-10-24/2826028&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;58同城沈剑：好的架构源于不停地衍变，而非设计&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.dataman-inc.com/untitled-10/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;宜人贷系统架构–高并发下的进化之路&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://school.soft-arch.net/blog/101712/lean-perspective-of-multitasking&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多工切換：有趣的 Lean 觀點&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;以電腦運作原理來看，多工、工作切換，代價是 context switch 的 overhead。所以，近代敏捷開發方法論，總是希望在制度設計上盡量降低工作切換，Lean Thinking 提到的一項實驗，違反直覺的第二種方法，為什麼反而比較快（儘管這可能只是後見之明）。不過，我們可能要重新思考「工作切換」這件事情。不能只從微觀的局部角度，更要從整體、flow 的角度去檢視。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://buzzorange.com/techorange/2016/03/30/before-study-software-what-ability-to-be-provided-with/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;想看書自學軟體工程？就從這 6 本輕鬆書打造入門款概念&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;書單：&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://m.sanmin.com.tw/product/index/99c155g7z100n79v103m66g104d129psmfvuz267jlw&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;軟體項目成功之道&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.books.com.tw/products/0010485217&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;軟體構築美學&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.books.com.tw/products/CN10279423&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;程式師修煉之道 – 從小工到專家 – 亨特&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/share/link?uk=3878320221&amp;amp;shareid=2600116234&amp;amp;third=0&amp;amp;adapt=pc&amp;amp;fr=ftw&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;高效程式員的 45 個習慣－敏捷開發修煉之道&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.books.com.tw/products/0010579897&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Clean Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.books.com.tw/products/0010254508&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;人月神話&lt;/a&gt; (你沒看錯，這不是只給管理者看的屁話，裡面也有歷久不衰的設計建議）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://91-tdd.hackpad.com/91–SCin8rM6vpI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;軟體開發書單&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://hk.thenewslens.com/post/305094/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;他一怒之下刪除11行程式碼 互聯網遭殃&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;刪除短短11行程式碼，竟然會令Facebook、Reddit、Netflix及Spotify等大型網站出現錯誤？早前互聯網的一次意外，揭露了不少網站的弱點。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://technews.tw/2016/04/01/tesla-model-3-released/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;特斯拉平價電動車款 Model 3 終於來了！售價訂為 3.5 萬美元&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://pdwtaiwan.ongoodbits.com/2016/03/29/issue-25&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;產品開發週刊 Issue #25&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/seanellis/product-driven-growth-from-lean-product-meetup&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Product Driven Growth from Lean Product Meetup&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;著名 Growth Hacker Sean Ellis 分享他對於以產品為主的成長的心得，投影片內有滿多指引在哪個階段該做怎樣的事情，問什麼問題。我覺得最有收穫的是在找 Product/Market Fit 的時候，應該：&lt;ol&gt;
+&lt;li&gt;找到『非用不可』的用戶：&lt;ul&gt;
+&lt;li&gt;為什麼他們要找新產品&lt;/li&gt;
+&lt;li&gt;他們如何用這個產品&lt;/li&gt;
+&lt;li&gt;如果要他們推薦給別人，他們會怎麼形容這個產品&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;找到產品『最重要的優點』：&lt;ul&gt;
+&lt;li&gt;問第一群人：『什麼是你覺得這產品最重要的優點？』（問答題）&lt;/li&gt;
+&lt;li&gt;問第二群人：『什麼是你覺得這產品最重要的優點？』（用上面的答案做多選），『為什麼這個優點重要？』（問答題）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;行銷推廣&quot;&gt;&lt;a href=&quot;#行銷推廣&quot; class=&quot;headerlink&quot; title=&quot;行銷推廣&quot;&gt;&lt;/a&gt;行銷推廣&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ogdesign.tw/resources&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;設計資源總匯&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;缺一個設計工具的時候，這個網站裡頭有非常多設計資源可以參考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;專案管理&quot;&gt;&lt;a href=&quot;#專案管理&quot; class=&quot;headerlink&quot; title=&quot;專案管理&quot;&gt;&lt;/a&gt;專案管理&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.intercom.io/rice-simple-prioritization-for-product-managers/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;RICE: Simple prioritization for product managers - Inside Intercom&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Reach: 有多少用戶會被影響&lt;/li&gt;
+&lt;li&gt;Impact: 對單一用戶的影響力&lt;/li&gt;
+&lt;li&gt;Confidence: 對這個功能的信心程度，如有個功能沒有數據支持，那信心分數就可以低一點&lt;/li&gt;
+&lt;li&gt;Effort: 實作需要花費的力氣&lt;/li&gt;
+&lt;li&gt;RICE Score = (Reach X Impact X Confidence) / Effort&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;技術知事&quot;&gt;&lt;a href=&quot;#技術知事&quot; class=&quot;headerlink&quot; title=&quot;技術知事&quot;&gt;&lt;/a&gt;技術知事&lt;/h1&gt;&lt;h2 id=&quot;開發心法&quot;&gt;&lt;a href=&quot;#開發心法&quot; class=&quot;headerlink&quot; title=&quot;開發心法&quot;&gt;&lt;/a&gt;開發心法&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sdk.cn/news/2321&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;工程師必須知道的10個演算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000004523659&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HTTPS科普扫盲帖&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;從這篇了解 https&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/9-development-workflow-upgrades-you-should-know-about/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;9 Development Workflow Upgrades You Should Know About&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/imsky/git-fresh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git-fresh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tj/git-extras&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git-extras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pyrech/composer-changelogs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Composer changelogs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mislav/dotfiles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dotfiles&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;DevOps&quot;&gt;&lt;a href=&quot;#DevOps&quot; class=&quot;headerlink&quot; title=&quot;DevOps&quot;&gt;&lt;/a&gt;DevOps&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://phansible.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;phansible&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phansible provides an easy-to-use interface that helps you generate Ansible provisionings for PHP-based projects.&lt;/li&gt;
+&lt;li&gt;快速建立 PHP 環境使用 Ansible&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Phansible/phansible&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Phansible/phansible&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://blog.daocloud.io/docker-meetup-ppt-all/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;史上最全九城 Docker Meetup 全套 PPT 下载&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;系統架構&quot;&gt;&lt;a href=&quot;#系統架構&quot; class=&quot;headerlink&quot; title=&quot;系統架構&quot;&gt;&lt;/a&gt;系統架構&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;amp;mid=404087915&amp;amp;idx=1&amp;amp;sn=075664193f334874a3fc87fd4f712ebc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;缓存架构设计细节二三事&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“淘汰缓存”还是“更新缓存”?&lt;ul&gt;
+&lt;li&gt;更新缓存的优点：缓存不会增加一次miss，命中率高&lt;/li&gt;
+&lt;li&gt;淘汰缓存的优点：简单&lt;/li&gt;
+&lt;li&gt;更新缓存还是淘汰缓存，主要取决于“更新缓存的复杂度”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缓存和数据库的操作时序，究竟采用哪种时序呢？&lt;ul&gt;
+&lt;li&gt;（1）先写数据库，再淘汰缓存&lt;ul&gt;
+&lt;li&gt;先写数据库，再淘汰缓存：第一步写数据库操作成功，第二步淘汰缓存失败，则会出现DB中是新数据，Cache中是旧数据，数据不一致&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;（2）先淘汰缓存，再写数据库&lt;ul&gt;
+&lt;li&gt;假设先淘汰缓存，再写数据库：第一步淘汰缓存成功，第二步写数据库失败，则只会引发一次Cache miss。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结论：数据和缓存的操作时序，结论是清楚的：先淘汰缓存，再写数据库。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;缓存和数据库架构简析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主流优化方案是服务化：加入一个服务层，向上游提供帅气的数据访问接口，向上游屏蔽底层数据存储的细节，这样业务线不需要关注数据是来自于cache还是DB。&lt;/li&gt;
+&lt;li&gt;非主流方案是异步缓存更新：业务线所有的写操作都走数据库，所有的读操作都总缓存，由一个异步的工具来做数据库与缓存之间数据的同步。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;结论强调&lt;br&gt;  （1）淘汰缓存是一种通用的缓存处理方式&lt;br&gt;  （2）先淘汰缓存，再写数据库的时序是毋庸置疑的&lt;br&gt;  （3）服务化是向业务方屏蔽底层数据库与缓存复杂性的一种通用方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;PHP&quot;&gt;&lt;a href=&quot;#PHP&quot; class=&quot;headerlink&quot; title=&quot;PHP&quot;&gt;&lt;/a&gt;PHP&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.startutorial.com/articles/view/master-php-array-functions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Master PHP Array Functions&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;這篇講解了很多 PHP 的 array function 使用。&lt;/li&gt;
+&lt;li&gt;array_map &amp;amp; array_walk&lt;/li&gt;
+&lt;li&gt;array_reduce&lt;/li&gt;
+&lt;li&gt;array_pop&lt;/li&gt;
+&lt;li&gt;array_shift&lt;/li&gt;
+&lt;li&gt;array_push&lt;/li&gt;
+&lt;li&gt;array_unshift&lt;/li&gt;
+&lt;li&gt;array_slice&lt;/li&gt;
+&lt;li&gt;array_merge&lt;/li&gt;
+&lt;li&gt;array_sum&lt;/li&gt;
+&lt;li&gt;array_filter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;前端網頁開發工具&quot;&gt;&lt;a href=&quot;#前端網頁開發工具&quot; class=&quot;headerlink&quot; title=&quot;前端網頁開發工具&quot;&gt;&lt;/a&gt;前端網頁開發工具&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.shejidaren.com/26-wireframe-designs.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;26款高品质 APP UI原型设计灵感&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;amp;mid=405151965&amp;amp;idx=1&amp;amp;sn=1274f74a4a3cb0e1d5f9fe88b15e59d9&amp;amp;scene=0#wechat_redirect&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;10大H5前端框架，让你开发不愁&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://amazeui.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Amaze UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/liulangnan/aui&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/frozenui/frozenui&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Frozen UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/weui/weui&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WeUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sdc-alibaba/sui&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.semantic-ui.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Semantic UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://foundation.zurb.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.getuikit.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UiKit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://purecss.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://tenten.co/blog/how-to-replace-broken-images/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;圖片壞掉失效了要怎麼辦？要怎麼取代叉燒包來優化使用者體驗？&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我們可以將跟文字有關係的放在 img 的標籤上&lt;/li&gt;
+&lt;li&gt;img 這個標籤是個可以取代性元素，所以 :before 跟 :after 通常在 img 上是無效的，但是，當圖片消失或無法載入的時候，偽元素就可以使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://blog.e10t.net/understanding-ecmascript6-note/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《Understanding ECMAScript 6》笔记&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://leanpub.com/understandinges6/read/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Understanding ECMAScript 6&lt;/a&gt; 原文電子書&lt;br&gt;*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://blog.techbridge.cc/2016/04/02/Browser-Rendering-Optimization/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Browser Rendering Optimization&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Browser的渲染過程不止這些，還必須載入js, css, web api等等的資源，因此有所謂的Rendering Pipeline，其順序為：&lt;ol&gt;
+&lt;li&gt;Javascript: 載入與執行JS/CSS&lt;/li&gt;
+&lt;li&gt;Style: 根據js與css計算style&lt;/li&gt;
+&lt;li&gt;Layout: 當style套入元素時，瀏覽器要檢查是否會影響到整個畫面的排列，並進行排列&lt;/li&gt;
+&lt;li&gt;Paint: 排列後有更動到的元素需要重新繪製（第一次載入的話當然是全部繪製）&lt;/li&gt;
+&lt;li&gt;Composite: 最後就是將所有元素重新合成回來（重新繪製的元素與原本的元素）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://courses.reactjsprogram.com/courses/reactjsfundamentals&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Free React.js Fundamentals course&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://simplesharingbuttons.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Simple Sharing Buttons Generator&lt;/a&gt; - 快速簡單的社群分享按鈕產生器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;8vD012e.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://dbpatterns.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;dbpatterns&lt;/a&gt; - 蒐集很多資料庫的 schema 模式，也可以建立自己的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      期間的網路資訊蒐集，就像簡報一樣，本期包含：資訊知事、行銷推廣、專案管理、技術知事
+    
+    </summary>
+    
+      <category term="Clippings" scheme="https://usedfire.net/categories/Clippings/"/>
+    
+    
+      <category term="MoClippings" scheme="https://usedfire.net/tags/MoClippings/"/>
+    
+      <category term="DevOps" scheme="https://usedfire.net/tags/DevOps/"/>
+    
+      <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
+    
+      <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
+    
+      <category term="行銷推廣" scheme="https://usedfire.net/tags/%E8%A1%8C%E9%8A%B7%E6%8E%A8%E5%BB%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MoClippings #4 總有那麼一群人那麼貼近人心</title>
     <link href="https://usedfire.net/Clippings/2015/MoClippings-4/"/>
     <id>https://usedfire.net/Clippings/2015/MoClippings-4/</id>
@@ -245,11 +498,11 @@
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
-      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
-    
       <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
+    
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
     
   </entry>
   
@@ -912,13 +1165,13 @@
     
       <category term="PHP" scheme="https://usedfire.net/tags/PHP/"/>
     
-      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
-    
-      <category term="設計規劃" scheme="https://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
-    
       <category term="專案管理" scheme="https://usedfire.net/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/"/>
     
       <category term="資訊知事" scheme="https://usedfire.net/tags/%E8%B3%87%E8%A8%8A%E7%9F%A5%E4%BA%8B/"/>
+    
+      <category term="Marketing" scheme="https://usedfire.net/tags/Marketing/"/>
+    
+      <category term="設計規劃" scheme="https://usedfire.net/tags/%E8%A8%AD%E8%A8%88%E8%A6%8F%E5%8A%83/"/>
     
   </entry>
   

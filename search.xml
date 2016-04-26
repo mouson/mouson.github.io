@@ -36,6 +36,233 @@
     </entry>
     
     <entry>
+      <title><![CDATA[MoClippings #5 不出門也能拿美國碩士學歷？！]]></title>
+      <url>https://usedfire.net/Clippings/2016/MoClippings-5/</url>
+      <content type="html"><![CDATA[<pre><code>發刊日 : 2016/03/15 - 2016/04/08
+本期包含：資訊知事、行銷推廣、專案管理、技術知事
+</code></pre><hr>
+<h1 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h1><ul>
+<li><p><a href="https://theinitium.com/article/20160403-dailynews-Coursera/" target="_blank" rel="external">在家就能拿美國碩士，Coursera報名開始</a></p>
+<ul>
+<li>美國伊利諾伊大學香檳分校（UIUC）率先在 Coursera 上推出了完整的數據科學碩士項目（Master of Computer Science in Data Science）。無論你在哪裏，只要符合校方要求被錄取，就可以通過在線學習來拿到碩士學位。</li>
+<li><a href="https://cs.illinois.edu/news/mooc-based-ms-data-science" target="_blank" rel="external">https://cs.illinois.edu/news/mooc-based-ms-data-science</a></li>
+</ul>
+</li>
+<li><p><a href="http://www.inside.com.tw/2015/07/26/rework" target="_blank" rel="external">寫碼容易，讀碼難：工程師 千萬別重寫程式碼</a></p>
+<ul>
+<li>新程式碼一定比舊程式碼好？ NO，重寫可能會帶來更大的風險</li>
+<li>當你覺得眼前的舊程式碼很爛時，該怎麼辦？<ul>
+<li>1、程式碼的結構有問題:重構</li>
+<li>2、程式碼的效率不高：優化速度的1％工作量，會讓你獲得99％的爆炸性提高</li>
+<li>3、程式碼寫得很醜：重構語法</li>
+</ul>
+</li>
+<li>從頭開始再寫一遍並不意味著你會寫出比以前更好的程式碼。因為你沒有參與到上一個版本的創建，所以你其實根本就不算有經驗。一旦你準備打掉重寫，你可能會再犯一遍版本一犯過的錯，甚至會產生更多的新問題。<a id="more"></a></li>
+</ul>
+</li>
+<li><p><a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law" target="_blank" rel="external">每个架构师都应该研究下康威定律</a></p>
+<ul>
+<li>注意，在系统真正地投入生产使用之前，再好的架构都只是假设，产品越晚被使用者使用，失败的成本和风险就越高，而小步行进，通过MVP快速实验，获取客户反馈，迭代演化产品，能有效地减少失败的成本和风险。</li>
+<li><a href="http://www.csdn.net/article/2015-10-24/2826028" target="_blank" rel="external">58同城沈剑：好的架构源于不停地衍变，而非设计</a></li>
+<li><a href="http://blog.dataman-inc.com/untitled-10/" target="_blank" rel="external">宜人贷系统架构–高并发下的进化之路</a></li>
+</ul>
+</li>
+<li><p><a href="http://school.soft-arch.net/blog/101712/lean-perspective-of-multitasking" target="_blank" rel="external">多工切換：有趣的 Lean 觀點</a></p>
+<ul>
+<li>以電腦運作原理來看，多工、工作切換，代價是 context switch 的 overhead。所以，近代敏捷開發方法論，總是希望在制度設計上盡量降低工作切換，Lean Thinking 提到的一項實驗，違反直覺的第二種方法，為什麼反而比較快（儘管這可能只是後見之明）。不過，我們可能要重新思考「工作切換」這件事情。不能只從微觀的局部角度，更要從整體、flow 的角度去檢視。</li>
+</ul>
+</li>
+<li><p><a href="http://buzzorange.com/techorange/2016/03/30/before-study-software-what-ability-to-be-provided-with/" target="_blank" rel="external">想看書自學軟體工程？就從這 6 本輕鬆書打造入門款概念</a></p>
+<ul>
+<li>書單：<ol>
+<li><a href="http://m.sanmin.com.tw/product/index/99c155g7z100n79v103m66g104d129psmfvuz267jlw" target="_blank" rel="external">軟體項目成功之道</a></li>
+<li><a href="http://www.books.com.tw/products/0010485217" target="_blank" rel="external">軟體構築美學</a></li>
+<li><a href="http://www.books.com.tw/products/CN10279423" target="_blank" rel="external">程式師修煉之道 – 從小工到專家 – 亨特</a></li>
+<li><a href="http://pan.baidu.com/share/link?uk=3878320221&amp;shareid=2600116234&amp;third=0&amp;adapt=pc&amp;fr=ftw" target="_blank" rel="external">高效程式員的 45 個習慣－敏捷開發修煉之道</a></li>
+<li><a href="http://www.books.com.tw/products/0010579897" target="_blank" rel="external">Clean Code</a></li>
+<li><a href="http://www.books.com.tw/products/0010254508" target="_blank" rel="external">人月神話</a> (你沒看錯，這不是只給管理者看的屁話，裡面也有歷久不衰的設計建議）</li>
+</ol>
+</li>
+<li><a href="https://91-tdd.hackpad.com/91–SCin8rM6vpI" target="_blank" rel="external">軟體開發書單</a></li>
+</ul>
+</li>
+<li><p><a href="http://hk.thenewslens.com/post/305094/" target="_blank" rel="external">他一怒之下刪除11行程式碼 互聯網遭殃</a></p>
+<ul>
+<li>刪除短短11行程式碼，竟然會令Facebook、Reddit、Netflix及Spotify等大型網站出現錯誤？早前互聯網的一次意外，揭露了不少網站的弱點。</li>
+</ul>
+</li>
+<li><p><a href="http://technews.tw/2016/04/01/tesla-model-3-released/" target="_blank" rel="external">特斯拉平價電動車款 Model 3 終於來了！售價訂為 3.5 萬美元</a></p>
+</li>
+<li><p><a href="https://pdwtaiwan.ongoodbits.com/2016/03/29/issue-25" target="_blank" rel="external">產品開發週刊 Issue #25</a></p>
+<ul>
+<li><a href="http://www.slideshare.net/seanellis/product-driven-growth-from-lean-product-meetup" target="_blank" rel="external">Product Driven Growth from Lean Product Meetup</a><ul>
+<li>著名 Growth Hacker Sean Ellis 分享他對於以產品為主的成長的心得，投影片內有滿多指引在哪個階段該做怎樣的事情，問什麼問題。我覺得最有收穫的是在找 Product/Market Fit 的時候，應該：<ol>
+<li>找到『非用不可』的用戶：<ul>
+<li>為什麼他們要找新產品</li>
+<li>他們如何用這個產品</li>
+<li>如果要他們推薦給別人，他們會怎麼形容這個產品</li>
+</ul>
+</li>
+<li>找到產品『最重要的優點』：<ul>
+<li>問第一群人：『什麼是你覺得這產品最重要的優點？』（問答題）</li>
+<li>問第二群人：『什麼是你覺得這產品最重要的優點？』（用上面的答案做多選），『為什麼這個優點重要？』（問答題）</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h1><ul>
+<li><a href="http://www.ogdesign.tw/resources" target="_blank" rel="external">設計資源總匯</a><ul>
+<li>缺一個設計工具的時候，這個網站裡頭有非常多設計資源可以參考</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h1><ul>
+<li><a href="https://blog.intercom.io/rice-simple-prioritization-for-product-managers/" target="_blank" rel="external">RICE: Simple prioritization for product managers - Inside Intercom</a><ul>
+<li>Reach: 有多少用戶會被影響</li>
+<li>Impact: 對單一用戶的影響力</li>
+<li>Confidence: 對這個功能的信心程度，如有個功能沒有數據支持，那信心分數就可以低一點</li>
+<li>Effort: 實作需要花費的力氣</li>
+<li>RICE Score = (Reach X Impact X Confidence) / Effort</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h1><h2 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h2><ul>
+<li><a href="https://www.sdk.cn/news/2321" target="_blank" rel="external">工程師必須知道的10個演算法</a></li>
+<li><p><a href="https://segmentfault.com/a/1190000004523659" target="_blank" rel="external">HTTPS科普扫盲帖</a></p>
+<ul>
+<li>從這篇了解 https</li>
+</ul>
+</li>
+<li><p><a href="http://www.sitepoint.com/9-development-workflow-upgrades-you-should-know-about/" target="_blank" rel="external">9 Development Workflow Upgrades You Should Know About</a></p>
+<ol>
+<li><a href="https://github.com/imsky/git-fresh" target="_blank" rel="external">git-fresh</a></li>
+<li><a href="https://github.com/tj/git-extras" target="_blank" rel="external">git-extras</a></li>
+<li><a href="https://github.com/pyrech/composer-changelogs" target="_blank" rel="external">Composer changelogs</a></li>
+<li><a href="https://github.com/mislav/dotfiles" target="_blank" rel="external">Dotfiles</a></li>
+</ol>
+</li>
+</ul>
+<h2 id="DevOps"><a href="#DevOps" class="headerlink" title="DevOps"></a>DevOps</h2><ul>
+<li><p><a href="http://phansible.com/" target="_blank" rel="external">phansible</a></p>
+<ul>
+<li>Phansible provides an easy-to-use interface that helps you generate Ansible provisionings for PHP-based projects.</li>
+<li>快速建立 PHP 環境使用 Ansible</li>
+<li><a href="https://github.com/Phansible/phansible" target="_blank" rel="external">https://github.com/Phansible/phansible</a></li>
+</ul>
+</li>
+<li><p><a href="http://blog.daocloud.io/docker-meetup-ppt-all/" target="_blank" rel="external">史上最全九城 Docker Meetup 全套 PPT 下载</a></p>
+</li>
+</ul>
+<h2 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h2><ul>
+<li><p><a href="http://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;mid=404087915&amp;idx=1&amp;sn=075664193f334874a3fc87fd4f712ebc" target="_blank" rel="external">缓存架构设计细节二三事</a></p>
+<ul>
+<li>“淘汰缓存”还是“更新缓存”?<ul>
+<li>更新缓存的优点：缓存不会增加一次miss，命中率高</li>
+<li>淘汰缓存的优点：简单</li>
+<li>更新缓存还是淘汰缓存，主要取决于“更新缓存的复杂度”</li>
+</ul>
+</li>
+<li>缓存和数据库的操作时序，究竟采用哪种时序呢？<ul>
+<li>（1）先写数据库，再淘汰缓存<ul>
+<li>先写数据库，再淘汰缓存：第一步写数据库操作成功，第二步淘汰缓存失败，则会出现DB中是新数据，Cache中是旧数据，数据不一致</li>
+</ul>
+</li>
+<li>（2）先淘汰缓存，再写数据库<ul>
+<li>假设先淘汰缓存，再写数据库：第一步淘汰缓存成功，第二步写数据库失败，则只会引发一次Cache miss。</li>
+</ul>
+</li>
+<li><strong>结论：数据和缓存的操作时序，结论是清楚的：先淘汰缓存，再写数据库。</strong></li>
+</ul>
+</li>
+<li><p>缓存和数据库架构简析</p>
+<ul>
+<li>主流优化方案是服务化：加入一个服务层，向上游提供帅气的数据访问接口，向上游屏蔽底层数据存储的细节，这样业务线不需要关注数据是来自于cache还是DB。</li>
+<li>非主流方案是异步缓存更新：业务线所有的写操作都走数据库，所有的读操作都总缓存，由一个异步的工具来做数据库与缓存之间数据的同步。</li>
+</ul>
+</li>
+<li><p>结论强调<br>  （1）淘汰缓存是一种通用的缓存处理方式<br>  （2）先淘汰缓存，再写数据库的时序是毋庸置疑的<br>  （3）服务化是向业务方屏蔽底层数据库与缓存复杂性的一种通用方式</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><ul>
+<li><a href="http://www.startutorial.com/articles/view/master-php-array-functions" target="_blank" rel="external">Master PHP Array Functions</a><ul>
+<li>這篇講解了很多 PHP 的 array function 使用。</li>
+<li>array_map &amp; array_walk</li>
+<li>array_reduce</li>
+<li>array_pop</li>
+<li>array_shift</li>
+<li>array_push</li>
+<li>array_unshift</li>
+<li>array_slice</li>
+<li>array_merge</li>
+<li>array_sum</li>
+<li>array_filter</li>
+</ul>
+</li>
+</ul>
+<h2 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h2><ul>
+<li><p><a href="http://www.shejidaren.com/26-wireframe-designs.html" target="_blank" rel="external">26款高品质 APP UI原型设计灵感</a></p>
+</li>
+<li><p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;mid=405151965&amp;idx=1&amp;sn=1274f74a4a3cb0e1d5f9fe88b15e59d9&amp;scene=0#wechat_redirect" target="_blank" rel="external">10大H5前端框架，让你开发不愁</a></p>
+<ul>
+<li><a href="http://getbootstrap.com/" target="_blank" rel="external">Bootstrap</a></li>
+<li><a href="http://amazeui.org/" target="_blank" rel="external">Amaze UI</a></li>
+<li><a href="https://github.com/liulangnan/aui" target="_blank" rel="external">AUI</a></li>
+<li><a href="https://github.com/frozenui/frozenui" target="_blank" rel="external">Frozen UI</a></li>
+<li><a href="https://github.com/weui/weui" target="_blank" rel="external">WeUI</a></li>
+<li><a href="https://github.com/sdc-alibaba/sui" target="_blank" rel="external">SUI</a></li>
+<li><a href="http://www.semantic-ui.cn/" target="_blank" rel="external">Semantic UI</a></li>
+<li><a href="http://foundation.zurb.com/" target="_blank" rel="external">Foundation</a></li>
+<li><a href="http://www.getuikit.com/" target="_blank" rel="external">UiKit</a></li>
+<li><a href="http://purecss.io/" target="_blank" rel="external">Pure</a></li>
+</ul>
+</li>
+<li><p><a href="https://tenten.co/blog/how-to-replace-broken-images/" target="_blank" rel="external">圖片壞掉失效了要怎麼辦？要怎麼取代叉燒包來優化使用者體驗？</a></p>
+<ul>
+<li>我們可以將跟文字有關係的放在 img 的標籤上</li>
+<li>img 這個標籤是個可以取代性元素，所以 :before 跟 :after 通常在 img 上是無效的，但是，當圖片消失或無法載入的時候，偽元素就可以使用。</li>
+</ul>
+</li>
+<li><p><a href="http://blog.e10t.net/understanding-ecmascript6-note/" target="_blank" rel="external">《Understanding ECMAScript 6》笔记</a></p>
+<ul>
+<li><a href="https://leanpub.com/understandinges6/read/" target="_blank" rel="external">Understanding ECMAScript 6</a> 原文電子書<br>*</li>
+</ul>
+</li>
+<li><p><a href="http://blog.techbridge.cc/2016/04/02/Browser-Rendering-Optimization/" target="_blank" rel="external">Browser Rendering Optimization</a></p>
+<ul>
+<li>Browser的渲染過程不止這些，還必須載入js, css, web api等等的資源，因此有所謂的Rendering Pipeline，其順序為：<ol>
+<li>Javascript: 載入與執行JS/CSS</li>
+<li>Style: 根據js與css計算style</li>
+<li>Layout: 當style套入元素時，瀏覽器要檢查是否會影響到整個畫面的排列，並進行排列</li>
+<li>Paint: 排列後有更動到的元素需要重新繪製（第一次載入的話當然是全部繪製）</li>
+<li>Composite: 最後就是將所有元素重新合成回來（重新繪製的元素與原本的元素）</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><a href="http://courses.reactjsprogram.com/courses/reactjsfundamentals" target="_blank" rel="external">Free React.js Fundamentals course</a></p>
+</li>
+<li><p><a href="https://simplesharingbuttons.com/" target="_blank" rel="external">Simple Sharing Buttons Generator</a> - 快速簡單的社群分享按鈕產生器</p>
+<ul>
+<li><img src="8vD012e.png" alt=""></li>
+</ul>
+</li>
+<li><p><a href="http://dbpatterns.com/" target="_blank" rel="external">dbpatterns</a> - 蒐集很多資料庫的 schema 模式，也可以建立自己的。</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[MoClippings #4 總有那麼一群人那麼貼近人心]]></title>
       <url>https://usedfire.net/Clippings/2015/MoClippings-4/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2015/12/20 - 2015/12/30
