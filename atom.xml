@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://usedfire.net/"/>
-  <updated>2016-04-21T16:08:45.000Z</updated>
+  <updated>2016-04-26T18:47:39.000Z</updated>
   <id>https://usedfire.net/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Hexo] 使文章依文章分類為資料夾名稱置放</title>
+    <link href="https://usedfire.net/Notes/Hexo/make-hexo-post-category-by-folder/"/>
+    <id>https://usedfire.net/Notes/Hexo/make-hexo-post-category-by-folder/</id>
+    <published>2016-04-26T18:47:39.000Z</published>
+    <updated>2016-04-26T18:47:39.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;轉戰 Hexo 並且開始剛開始以 Hexo 做完技術或資訊相關知識分享的部落格平台，已經有一兩個禮拜了，隨著文章數目越來越多，開始發現，hexo 在原始的方法中，文章一多之後，將很難管理 &lt;code&gt;post&lt;/code&gt; 這個資料夾的文章原始檔案。翻了一遍&lt;a href=&quot;https://hexo.io/zh-tw/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方教學&lt;/a&gt;提到的方法，也僅提到可以將 &lt;code&gt;_config.yml&lt;/code&gt; 中的 &lt;code&gt;new_post_name&lt;/code&gt; 新文章檔案名稱的參數，修改為以檔案產生日期為檔名，來作為檔案管理方便尋找。但這方法在文章非常多的時候，還是會造成不容易尋找。為了找解決方案，因此出現了這篇筆記。 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;二、最終結果&quot;&gt;&lt;a href=&quot;#二、最終結果&quot; class=&quot;headerlink&quot; title=&quot;二、最終結果&quot;&gt;&lt;/a&gt;二、最終結果&lt;/h2&gt;&lt;p&gt;在透過相關設定後，文章的網址將設定為像以下的結構：&lt;/p&gt;
+&lt;h3 id=&quot;一-hexo-文章網址的結構如下&quot;&gt;&lt;a href=&quot;#一-hexo-文章網址的結構如下&quot; class=&quot;headerlink&quot; title=&quot;(一) hexo 文章網址的結構如下&quot;&gt;&lt;/a&gt;(一) hexo 文章網址的結構如下&lt;/h3&gt;&lt;figure class=&quot;highlight dust&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;http://&lt;/span&gt;&lt;span class=&quot;template-variable&quot;&gt;&amp;#123;domain.com&amp;#125;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;template-variable&quot;&gt;&amp;#123;folder_name&amp;#125;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;template-variable&quot;&gt;&amp;#123;title_name&amp;#125;&lt;/span&gt;&lt;span class=&quot;xml&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;說明：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;domain name: 你的網域名稱
+folder name: 設定的資料夾名稱
+title name: 文章的標題名稱
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;二-hexo-source-post-資料夾底下的結構如下&quot;&gt;&lt;a href=&quot;#二-hexo-source-post-資料夾底下的結構如下&quot; class=&quot;headerlink&quot; title=&quot;(二) hexo source/_post 資料夾底下的結構如下&quot;&gt;&lt;/a&gt;(二) hexo source/_post 資料夾底下的結構如下&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;make-hexo-post-category-by-folder＿01.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;以本站的文章為例，我的 &lt;a href=&quot;https://usedfire.net/categories/Clippings/&quot;&gt;Clippings 剪報類文章&lt;/a&gt;，結構上在 &lt;code&gt;_post&lt;/code&gt; 底下有兩層資料夾，除了第一層 Clippings 為資料夾名稱外，還再加上以 2016 也就是依年度再做一次資料夾分類。而其他筆記類的，當然也就可以依據筆記類型、文章屬性等做資料夾分層分類，如此在找文章原始檔的時候，便可以較輕易的找到所需要的內容。&lt;/p&gt;
+&lt;h2 id=&quot;三、Hexo-設定&quot;&gt;&lt;a href=&quot;#三、Hexo-設定&quot; class=&quot;headerlink&quot; title=&quot;三、Hexo 設定&quot;&gt;&lt;/a&gt;三、Hexo 設定&lt;/h2&gt;&lt;h3 id=&quot;一-hexo-config-yml-設定檔設定&quot;&gt;&lt;a href=&quot;#一-hexo-config-yml-設定檔設定&quot; class=&quot;headerlink&quot; title=&quot;(一) hexo _config.yml 設定檔設定&quot;&gt;&lt;/a&gt;(一) hexo _config.yml 設定檔設定&lt;/h3&gt;&lt;p&gt;找到 _config.yml 檔做編輯，將 URL 的部分一下做設定：&lt;/p&gt;
+&lt;figure class=&quot;highlight groovy&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;url:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;https:&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//&amp;#123;domain name&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;root:&lt;/span&gt; /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;permalink:&lt;/span&gt; :title/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可以看到，關於 &lt;code&gt;permalink&lt;/code&gt; 永久連結的部分，只設定了 &lt;code&gt;:title/&lt;/code&gt; ，這部分有兩個說明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在 hexo 的環境中，目前實驗出來的結果知道，hexo在產生文章網址的時候，會以 &lt;code&gt;_post&lt;/code&gt; 資料夾起，直到你的文章原始檔的路徑，視為 &lt;code&gt;title&lt;/code&gt; 文章名稱，同樣以我的 &lt;a href=&quot;https://usedfire.net/categories/Clippings/&quot;&gt;Clippings 剪報類文章&lt;/a&gt; 為例子，我把創刊號放在 &lt;code&gt;_post&lt;/code&gt; 下的路徑「Clippings/2015/MoClippings-1.md」，因此 &lt;code&gt;hexo&lt;/code&gt; 會認為該篇文章的文章名稱為 「Clippings/2015/MoClippings-1」。&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;permalink&lt;/code&gt; 我在 &lt;code&gt;:title&lt;/code&gt; 的後面加了 &lt;code&gt;/&lt;/code&gt; 符號，這部分是因為&lt;strong&gt;我設定了&lt;/strong&gt; &lt;code&gt;post_asset_folder = true&lt;/code&gt; ，意思是產生文章的時候，順便產生與文章同名的資料夾。目的是為了管理資源，使同一篇文章的圖片或檔案，都收錄在同一資料夾中。因此，如果沒有加上 &lt;code&gt;/&lt;/code&gt; 符號，在做 hexo 文章產出 &lt;code&gt;hexo generate&lt;/code&gt; 的時候，會&lt;strong&gt;發生 hexo 有錯誤&lt;/strong&gt;，顯示某些檔案不存在或不為資料夾。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;二-hexo-post-下資料夾設定&quot;&gt;&lt;a href=&quot;#二-hexo-post-下資料夾設定&quot; class=&quot;headerlink&quot; title=&quot;(二) hexo _post 下資料夾設定&quot;&gt;&lt;/a&gt;(二) hexo _post 下資料夾設定&lt;/h3&gt;&lt;p&gt;在 &lt;code&gt;_post&lt;/code&gt; 資料夾下，基本上也僅需要定義好各個資料夾名稱，把相對應的文章做妥善的資料夾分類即可。&lt;/p&gt;
+&lt;p&gt;同樣在以我的 &lt;a href=&quot;https://usedfire.net/categories/Clippings/&quot;&gt;Clippings 剪報類文章&lt;/a&gt; 為例子，因為我的剪輯一個月可能就兩三篇了，一年會有三四十篇同質的文章，因此我把它設計為文章分類下，再建立年份資料夾，這樣未來就不會產生太多文章而找不到自己想找的內容。&lt;/p&gt;
+&lt;p&gt;當然，如果是其他類型的文章，也可以做不一樣的分類，這部分自由度就相當高了。&lt;/p&gt;
+&lt;h3 id=&quot;三-Hexo-版本&quot;&gt;&lt;a href=&quot;#三-Hexo-版本&quot; class=&quot;headerlink&quot; title=&quot;(三) Hexo 版本&quot;&gt;&lt;/a&gt;(三) Hexo 版本&lt;/h3&gt;&lt;p&gt;這篇文章目前在 &lt;code&gt;Hexo 3.2.0&lt;/code&gt; 的環境驗證測試正常。如為其他版本，需要再額外驗證。&lt;/p&gt;
+&lt;h2 id=&quot;四、結論&quot;&gt;&lt;a href=&quot;#四、結論&quot; class=&quot;headerlink&quot; title=&quot;四、結論&quot;&gt;&lt;/a&gt;四、結論&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;就 Hexo 來說，我們是以自定義的文章分類名稱作為資料夾名稱，這與 &lt;code&gt;Hexo&lt;/code&gt; 的 &lt;code&gt;Front-matter&lt;/code&gt; 裡頭設定的文章分類 &lt;code&gt;categories&lt;/code&gt; 是不一樣的，本來還曾經測試過設定 &lt;code&gt;permalink&lt;/code&gt; 為 &lt;code&gt;:category/:title/&lt;/code&gt;，但執行 &lt;code&gt;hexo generate&lt;/code&gt; 之後，產生的連結會是文章內 &lt;code&gt;Front-matter&lt;/code&gt; 設定的分類資料夾再加上 &lt;code&gt;_post&lt;/code&gt; 後各個資料夾的名稱加&lt;code&gt;title&lt;/code&gt;為連結名稱，這重複了，因此驗證 hexo 並不會看到資料夾名稱與 &lt;code&gt;Front-matter&lt;/code&gt; 設定的文章類別一致，就不再產生資料夾。所以才出現這篇文章的解法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如大家習慣以 &lt;code&gt;hexo new draft&lt;/code&gt; 作草稿編輯，那在進行 &lt;code&gt;hexo publish {title}&lt;/code&gt; 後，hexo 僅會將原本在 &lt;code&gt;_draft&lt;/code&gt; 的文章搬到 &lt;code&gt;_post&lt;/code&gt; 在搬妥之後還需要自行建立對應的資料夾並搬過去的動作，這部分比較麻煩一些。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;希望這篇文章可以幫助到一些人。&lt;/p&gt;
+&lt;p&gt;P.S. 在快寫文這篇文章之後才發現，點燈坊也有一篇類似的文章&lt;a href=&quot;http://oomusou.io/hexo/hexo-uri-category/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何使Hexo以文章分類為URI?&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      管理 Hexo 的 post 資料夾，使文章以文章分類為資料夾名稱置放
+    
+    </summary>
+    
+      <category term="Note" scheme="https://usedfire.net/categories/Note/"/>
+    
+      <category term="Hexo" scheme="https://usedfire.net/categories/Note/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://usedfire.net/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>MoClippings #6 唱歌跳舞 加 VR ？！有搞頭嗎？</title>
