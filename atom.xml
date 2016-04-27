@@ -58,9 +58,9 @@ title name: 文章的標題名稱
     
     </summary>
     
-      <category term="Note" scheme="https://usedfire.net/categories/Note/"/>
+      <category term="Notes" scheme="https://usedfire.net/categories/Notes/"/>
     
-      <category term="Hexo" scheme="https://usedfire.net/categories/Note/Hexo/"/>
+      <category term="Hexo" scheme="https://usedfire.net/categories/Notes/Hexo/"/>
     
     
       <category term="Hexo" scheme="https://usedfire.net/tags/Hexo/"/>
