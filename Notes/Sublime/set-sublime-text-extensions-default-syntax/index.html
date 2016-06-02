@@ -203,16 +203,16 @@
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Notes/Sublime/">
-                    Sublime <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Notes/Hexo/">
+                    Hexo <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Notes/Hexo/">
-                    Hexo <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Notes/Sublime/">
+                    Sublime <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -333,7 +333,7 @@
             (function() {
                 var d = document,
                     s = d.createElement('script');
-                s.src = '//usedfire.disqus.com/embed.js';
+                s.src = '//usedfire..disqus.com/embed.js';
                 s.setAttribute('data-timestamp', + new Date());
                 (d.head || d.body).appendChild(s);
             })();
@@ -406,11 +406,11 @@
 
     <noscript>
     <div class="noscript">
-        <p class="center-align">当前浏览器不支持博客完整功能。如果要获得最佳体验，请点击右上角···，复制链接，并在其它浏览器打开</p>
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
     </div>
 </noscript>
 <div class="noscript">
-    <p class="center-align">当前浏览器不支持博客完整功能。如果要获得最佳体验，请点击右上角···，复制链接，并在其它浏览器打开</p>
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
 </div>
 
 
@@ -481,7 +481,14 @@
             
 
             // 搜索功能
-            $('.modal-trigger').leanModal();
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
             var searchXml = "search.xml";
             if (searchXml.length == 0) {
              	searchXml = "search.xml";
