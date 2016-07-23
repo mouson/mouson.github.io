@@ -4,6 +4,249 @@
   
     
     <entry>
+      <title><![CDATA[MoClippings #8 進入了一個百家機器人爭鳴的年代]]></title>
+      <url>https://usedfire.net/Clippings/2016/MoClippings-8/</url>
+      <content type="html"><![CDATA[<pre><code>發刊日 : 2016/05/09 - 2016/07/23
+</code></pre><h2 id="圈內趣事小語"><a href="#圈內趣事小語" class="headerlink" title="圈內趣事小語"></a>圈內趣事小語</h2><pre><code>相關小語來源是這段期間Twitter或訂閱的feedly上被分析出來的熱門文字。
+</code></pre><ul>
+<li><a href="https://twitter.com/m13253/status/756288075546759168" target="_blank" rel="external">星之光 StarBrilliant 在 Twitter：”小明登录进选课系统，输入学号之后看见两个按钮：退学、复学。 本着好奇的心理，他点了一下退学，系统直接提示：“退学成功！” 他懵了，竟然没有弹出确认。想起来有个复学按钮，点下去：“对不起，你不是本校学生，无法使用本系统！” #严重的逻辑bug”</a></li>
+</ul>
+<hr>
+<h2 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h2><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2016/05/time-management.html" target="_blank" rel="external">时间管理的七句话</a><ul>
+<li>进程切换非常昂贵，避免多任务，保持单进程。</li>
+<li>研究表明，集中注意力、高效工作，每天最多4小时。</li>
+<li>划分任务的优先级，不要把’急切’当作’重要’。</li>
+<li>起床后，不要查看邮件和微信。</li>
+<li>避免开会，因为人类已知的最浪费时间的事情，就是开会。</li>
+<li>早晨4点起床，到了中午，你就完成了一天的任务。</li>
+<li>你没空时不会做的事情，有空了也不会做。</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><a href="http://rocket.cafe/talks/75643" target="_blank" rel="external">設計筆記：聊天介面的設計規範</a><ul>
+<li>輸入驗證</li>
+<li>轉換任務</li>
+<li>回頭追蹤</li>
+<li>定時離開</li>
+<li>等待緊急輸入</li>
+<li>從清單中選擇</li>
+</ul>
+</li>
+<li><p>[設計筆記：淺談聊天介面與人機互動設計]</p>
+<ul>
+<li>GUI與CUI的使用時機<ul>
+<li>GUI圖像介面：應用於呈現「圖勝於文」的內容</li>
+<li>CUI聊天介面：適合用來觸發繁多且瑣碎的項目</li>
+</ul>
+</li>
+<li>機器人的聊天環境規劃<ul>
+<li><img src="uq9salP.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="http://www.ifanr.com/658538" target="_blank" rel="external">Google I/O 最全记录，看完我们睡不着了！</a></p>
+<ul>
+<li>Google Assistant: 一句 OK, Google，多少手指都用不上了</li>
+<li>Google Home：一个能与你谈天说地的音箱</li>
+<li>Allo：比你还会“撩妹”的聊天应用</li>
+<li>当年重头的 Android，如今成了配角</li>
+<li>Android Wear 2.0：你可以丢掉手机，在手表上打字了！</li>
+<li>开车不分心，可完全语音操控的新版 Android Auto</li>
+<li>看完这一场关于未来的发布会，我们为何睡意全无？<ul>
+<li>简而言之，这场关于未来的发布会，Google 希望把人工智能植入到你生活的每一个场景，表面上像 Siri 的 Google Assistant，像 echo 的 Google Home，像微信的 Allo，其实都藏着一个对你更主动的机器之心。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://azure.microsoft.com/zh-tw/documentation/articles/multi-factor-authentication/" target="_blank" rel="external">什麼是 Azure Multi-Factor Authentication？ | Microsoft Azure</a></p>
+<ul>
+<li>多因素驗證 (MFA) 是需要使用多種驗證方法，並在使用者登入和交易中新增重要的第二層安全性的驗證方法。</li>
+<li>其運作方式需要下列其中任何二或多個驗證方法：<ul>
+<li>您知道的某些資訊 (通常是密碼)</li>
+<li>您擁有的某些東西 (不容易輕易複製的信任裝置，例如電話)</li>
+<li>您身上的某些特徵 (生物識別技術)</li>
+</ul>
+</li>
+<li>Multi-Factor Authentication 是除了使用使用者名稱與密碼之外，需要再利用其他方法驗證您的身份的驗證方法。它可以為使用者登入和交易提供第二層安全性。</li>
+<li>Multi-Factor Authentication 有助於保護對資料與應用程式的存取，同時可以滿足使用者對簡單登入程序的需求。它可以透過一些簡單的驗證選項 (例如電話、文字訊息，或行動應用程式通知或驗證代碼，以及第三方 OATH 權杖) 來提供強大的驗證功能。</li>
+</ul>
+</li>
+<li><p><a href="http://yenlung-blog.logdown.com/posts/773053-keynote-code-highlighting" target="_blank" rel="external">[Keynote] 程式碼高亮化 « yenlung’s Blog</a> - 做簡報時如果需要貼程式碼，又需要讓其可以顯示 Highlight ，那可以參考這篇文章的作法。</p>
+</li>
+<li><p><a href="https://blog.liang2.tw/2015Talk-Chinese-Search/" target="_blank" rel="external">Chinese Search 中文搜尋經驗分享</a> - 關於中文搜尋斷字、切割的基本原理介紹，以及中文斷字會遇到的困難及其解決方案。</p>
+</li>
+<li><p><a href="https://stories.buffer.com/people-dont-buy-products-they-buy-better-versions-of-themselves-5d6552aad4c6#.5vh57hlmk" target="_blank" rel="external">人们不是买产品，而是买一个更好的自己</a></p>
+<blockquote>
+<p>很多公司宣传产品的时候都是功能优先，仿佛功能多的就比较好卖似得。应该让用户明白，买你的产品后他们能得到什么好处。</p>
+<p>“A feature is what your product does; a benefit is what the customer can do with your product.”</p>
+<p>例子：</p>
+</blockquote>
+<ul>
+<li>iPod: 1,000 songs in your pocket</li>
+<li>Evernote: Remember Everything</li>
+<li>LinkedIn: Be great at what you do.</li>
+<li>Github: Build software better, together</li>
+</ul>
+</li>
+<li><p><a href="https://uxdesign.cc/design-better-forms-96fadca0f49c#.yb26vw4zg" target="_blank" rel="external">Design Better Forms — uxdesign.cc – User Experience Design</a> - 如何設計好體驗的表格，這篇文章中介紹了設計表單時，可能犯的錯，以及怎麼做會更好的介紹。</p>
+</li>
+<li><p><a href="https://developer.ibm.com/recipes/tutorials/ui-dashboard-for-iot-device-data-using-node-red/" target="_blank" rel="external">UI Dashboard for IoT Device data using node red - developerWorks Recipes</a> - IBM 正個搞的東西，可以在上面像組 IC 一樣串出自己的東西</p>
+</li>
+<li><p>第一銀行 ATM 盜領事件相關彙整：</p>
+<ul>
+<li><a href="http://orson.tw/2016/07/12/%e9%8d%b5%e7%9b%a4%e6%9f%af%e5%8d%97-%e4%b8%80%e9%8a%80atm%e7%9b%9c%e9%a0%98%e4%ba%8b%e4%bb%b6/" target="_blank" rel="external">鍵盤柯南 – 一銀ATM盜領事件 – 綠紅黃白黑</a></li>
+<li><a href="http://orson.tw/2016/07/12/%e6%8a%80%e8%a1%93%e5%88%86%e6%9e%90-%e5%a6%82%e4%bd%95%e9%81%99%e6%8e%a7atm%e5%90%90%e9%8c%a2/" target="_blank" rel="external">技術分析 – 如何遙控ATM吐錢 – 綠紅黃白黑</a></li>
+</ul>
+</li>
+<li><p><a href="https://www.zerodium.com/program.html" target="_blank" rel="external">ZERODIUM - How to Sell Your 0day Exploit to ZERODIUM</a> - 如果找到關於 0day 攻擊時，應該如何賣？文中提到相關的價格</p>
+</li>
+</ul>
+<hr>
+<h2 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h2><ul>
+<li><p><a href="https://tagmanager.google.com/" target="_blank" rel="external">Google Tag Manager</a> - Google 提供的追蹤管理工具，可以協助設定多組不一樣的追蹤 code ，設定一次，即不需要在修改 Production 上的程式碼，在管理介面上執行即可。</p>
+<ul>
+<li><a href="https://analyticsacademy.withgoogle.com/course/5" target="_blank" rel="external">Analytics Academy</a>  - GTM 官方教學課程</li>
+<li><a href="http://www.slideshare.net/ssuser9805a7/google-tag-managerweb-analytics101-63573918" target="_blank" rel="external">Google tag manager-web analytics101</a> - GTM 初階教學</li>
+<li><a href="http://www.slideshare.net/wjames1118/gtm-ga-event" target="_blank" rel="external">GTM 埋設 GA 與 Event (事件) 時的小陷阱與三種解法</a></li>
+<li><a href="http://www.slideshare.net/usergeorgechang/google-analytics-user-explorer" target="_blank" rel="external">Google Analytics 使用者多層檢視 User Explorer</a></li>
+</ul>
+</li>
+<li><p><a href="http://www.slideshare.net/segacheng/marketing-zen" target="_blank" rel="external">Marketing Zen 行銷心法</a> </p>
+<ul>
+<li>行銷的思考方式及其架構</li>
+<li>LIVEhouse 的 Sega 簡報</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h2><ul>
+<li><p><a href="http://www.books.com.tw/products/0010712916" target="_blank" rel="external">使用者故事對照</a></p>
+<ul>
+<li><a href="http://www.slideshare.net/ruddylee/user-story-mapping-43373448" target="_blank" rel="external">User Story Mapping</a> - Slide</li>
+</ul>
+</li>
+<li><p><a href="http://blog.chengweichen.com/2016/02/agile-tour-taipei-2015-scrum-estimation.html" target="_blank" rel="external">艦長，你有事嗎？: Agile Tour Taipei 2015 筆記與心得（五）| Scrum Estimation Model - Joey Chen (91)</a></p>
+</li>
+<li><p><a href="https://dotblogs.com.tw/hatelove/2015/12/24/scrum-estimation-model" target="_blank" rel="external">Scrum Estimation－Scrum Estimation Model | In 91 - 點部落</a></p>
+</li>
+<li><p><a href="https://dotblogs.com.tw/hatelove/2015/12/19/scrum-project-schedule-estimation" target="_blank" rel="external">Scrum Estimation－如何估算專案時程 | In 91 - 點部落</a></p>
+</li>
+<li><p><a href="https://peihsinsu.gitbooks.io/docker-note-book/content/" target="_blank" rel="external">Introduction · Docker學習筆記</a> - 滿滿的一整本 Docker 的學習記錄書</p>
+</li>
+<li><p><a href="https://ruddyblog.wordpress.com/2016/07/21/%e6%95%8f%e6%8d%b7%e9%96%8b%e7%99%bc%e7%82%ba%e4%bd%95%e6%9c%83%e6%af%94%e8%bc%83%e5%bf%ab/" target="_blank" rel="external">敏捷開發為何會比較快? | Ruddy Lee 分享空間</a></p>
+</li>
+<li><p><a href="http://www.slideshare.net/segacheng/google-how-google-works" target="_blank" rel="external">Google 模式 - How Google Works</a></p>
+<ul>
+<li>LIVEhouse 的 sega 做的關於 <code>Google 模式</code> 這本書的簡報。</li>
+<li>這份簡報把 <code>Google 模式</code> 這本書所要傳達的核心概念講的非常好。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="技術知事"><a href="#技術知事" class="headerlink" title="技術知事"></a>技術知事</h2><h3 id="開發心法"><a href="#開發心法" class="headerlink" title="開發心法"></a>開發心法</h3><ul>
+<li><p><a href="http://blog.dj1020.net/" target="_blank" rel="external">PHP 也有 Day #26 - REST API 與前端整合之踩雷心得@RickySu | 閃亮亮大師之路</a></p>
+</li>
+<li><p><a href="http://taobaofed.org/blog/2016/05/03/promise-anti-patterns/" target="_blank" rel="external">Promise 反模式 | Taobao FED | 淘宝前端团队</a></p>
+</li>
+<li><p><a href="https://medium.com/@rayshih771012/mvc-%E6%9E%B6%E6%A7%8B%E6%BC%94%E9%80%B2-single-source-of-truth-2720f5a5facd#.x7ww5xgbn" target="_blank" rel="external">MVC 架構演進 — Single Source of Truth — Medium</a></p>
+</li>
+<li><p><a href="http://i.imgur.com/xRSA0Ns.jpg" target="_blank" rel="external">“HTTPS”安全在哪里？ - 技术分享 - Bugly - Powered by Bugly!</a></p>
+</li>
+<li><p><a href="https://github.com/jgrossi/corcel" target="_blank" rel="external">Use WordPress backend with any PHP framework</a></p>
+<ul>
+<li><a href="http://www.phpclasses.org/package/9769-PHP-Use-the-WordPress-backend-with-any-PHP-application.html" target="_blank" rel="external">Corcel (Laravel + WordPress): Use the WordPress backend with any PHP application</a></li>
+</ul>
+</li>
+<li><p><a href="http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA%3D%3D&amp;from=timeline&amp;idx=1&amp;isappinstalled=0&amp;mid=2651659581&amp;scene=2&amp;sn=c5ca9f41d7d8e415b5ef961fee9fafac&amp;srcid=0506aKQtceUKjBAnXBCP3CcP" target="_blank" rel="external">前Googler：Docker从上手到差点放弃</a></p>
+<ul>
+<li>小姐身子丫鬟命：Docker Engine （Runtime）<ul>
+<li>每次跑一个Docker程序的时候都要担心，我们会担心这个Docker有没有处理好僵尸进程的问题。</li>
+<li>你也可以理解为一个木马，发一个指令就跑一个程序，而且跑的还有问题，我们不如直接SSH连接上运行这个程序，都比这个靠谱，当时很难受。</li>
+</ul>
+</li>
+<li>Docker daemon？坑坑坑！</li>
+<li>鸡肋的Docker Image：一个不那么圆的轮子<ul>
+<li>这个东西都是扯淡，因为我们内网一秒好几百M，省出10M的磁盘空间对我们来说是省几毫秒。</li>
+<li>Docker的核心问题，或者是Image核心问题一是编译代码，二是打包成镜像发出去。怎么编译，怎么打包，这两件事是完全分开的，不应该搀在一起。</li>
+<li>我们第一个镜像是打包完3G多，当时我们震惊了，这么辛苦写了这么多的代码吗，运行程序就达到3G。</li>
+</ul>
+</li>
+<li>实践1：Build&amp;Package&amp;Run<ul>
+<li>如果不产生价值你是在给Docker打工，盲目跟从Docker，他说这么干就这么干，他如果改了你这些东西就浪费了。如果你抓住本质，Docker怎么改对你就没有影响。</li>
+</ul>
+</li>
+<li>实践2：去其糟粕，取其精华</li>
+<li>实践3：工具化、代码化、半自动化<ul>
+<li>代码化把人才知道的东西都写到机器里，对我来说不关心数据库的IP是什么，我只要知道它的域名找到对应的机器连接就行了。</li>
+<li>这是最关键的点，不管你怎么干，你最后都要干一个类似的事，就是把生产环境代码化。</li>
+<li>搞了一个小工具，这些工具是提供原子性的操作。up是启动，down是干掉，rollingupdate是一个个更新，保证每个更新完了可以启动进行下一个更新，对研发来说就需要这个东西，他们都理解。</li>
+</ul>
+</li>
+<li>总结一下，第一点，想要把容器化、或想要把分布式系统做好，你要定死接口，放手实现，对你来说只需要三个接口，build、package、run，能满足效果，能运行就行了，每个项目都有不同的需求，不可能强求它完全一致。</li>
+<li>第二个，生产环境容器化。</li>
+<li>针对DEVOPS实现代码化、工具化，最后实现自动化就行了</li>
+</ul>
+</li>
+<li><p><a href="http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins?utm_source=wanqu.co&amp;utm_campaign=Wanqu+Daily&amp;utm_medium=website" target="_blank" rel="external">Visual Representation of SQL Joins - CodeProject</a> - 畫圖解釋了 inner join、left join、right join、outer join 等的區別，文章最後也給出了示例表格，解釋得還算清楚。</p>
+</li>
+<li><p><a href="http://blog.jobbole.com/100349/" target="_blank" rel="external">如果有人问你数据库的原理，叫他看这篇文章</a></p>
+</li>
+</ul>
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul>
+<li><p><a href="http://www.cockos.com/licecap/" target="_blank" rel="external">Cockos Incorporated | LICEcap</a> - 在 MAC 及 Windows 上錄製 gif 圖檔的免費工具。</p>
+</li>
+<li><p><a href="https://screentogif.codeplex.com/" target="_blank" rel="external">ScreenToGif - Home</a> - Windows 上面 gif 製作的好工具。</p>
+</li>
+<li><a href="http://www.pixelegg.me/capture-gif" target="_blank" rel="external">Capture Gif - The most simple way to make Screen Recording into GIF on Mac OS X</a> - MAC 上面錄製 GIF 的好工具，可以自定畫面範圍。免費版本限制 20秒，無法調整每張圖片的速度。</li>
+<li><p><a href="https://itunes.apple.com/tw/app/giphy-capture.-the-gif-maker/id668208984?l=zh&amp;mt=12" target="_blank" rel="external">GIPHY CAPTURE. The GIF Maker：在 Mac App Store 上的 App</a> - MAC 上面的免費 GIF 製作工具，提供正轉、正轉倒轉、倒轉等模式，但限制視窗大小。</p>
+</li>
+<li><p><a href="https://github.com/comdan66/weather" target="_blank" rel="external">comdan66/weather: 想查詢每個地方的天氣嗎！？藉由 Google Maps API 的地圖服務，以及中央氣象局網站的天氣預報，讓你快速輕鬆的查詢台灣 368 個鄉鎮的天氣概況！</a></p>
+</li>
+</ul>
+<h3 id="PHP-Library"><a href="#PHP-Library" class="headerlink" title="PHP Library"></a>PHP Library</h3><ul>
+<li><p><a href="https://github.com/muxx/slack-redmine-bot" target="_blank" rel="external">muxx/slack-redmine-bot: Redmine issue name expender for Slack</a></p>
+</li>
+<li><p><a href="https://github.com/eliangcs/http-prompt" target="_blank" rel="external">eliangcs/http-prompt: HTTPie + prompt_toolkit = an interactive command-line HTTP client featuring autocomplete and syntax highlighting</a></p>
+</li>
+<li><p><a href="https://docs.google.com/presentation/d/1BOnouihveYVoqmlnf59bDeRMfexCw92AVbEHZO9ir8g/edit#slide=id.g35f391192_00" target="_blank" rel="external">物件導向基礎與物件導向設計入門 (PHP the day)</a></p>
+</li>
+<li><p><a href="http://robo.li/" target="_blank" rel="external">Robo</a> - Modern Task Runner for PHP</p>
+<ul>
+<li>寫 PHP 工作程式的好工具好 Framework</li>
+<li>聖佑寫的 Robo ZSH-plugin - <a href="https://github.com/shengyou/robo-zsh-plugin" target="_blank" rel="external">A oh-my-zsh plugin for robo command completion.</a></li>
+</ul>
+</li>
+<li><p><a href="http://www.slideshare.net/shootingstar1020/phpspec-tdd-phpday25by" target="_blank" rel="external">PhpSpec TDD 紅燈-綠燈-重構流程-PHP也有day#25<em>by</em>閃亮亮</a></p>
+<ul>
+<li><a href="https://github.com/dj1020/Phpspec_Bowling_Kata_TDD/commits/master" target="_blank" rel="external">Commits · dj1020/Phpspec_Bowling_Kata_TDD</a></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/EFTEC/BladeOne" target="_blank" rel="external">EFTEC/BladeOne: The standalone version Blade Template Engine from Laravel in a single php file</a></p>
+</li>
+<li><p><a href="http://www.phpclasses.org/package/9831-PHP-Resize-images-to-a-given-width-and-height.html#usage" target="_blank" rel="external">PHP Image Sizer: Resize images to a given width and height - PHP Classes</a></p>
+</li>
+<li><p><a href="http://www.phpclasses.org/package/9828-PHP-Identify-files-via-MIME-type-and-file-signatures.html#usage" target="_blank" rel="external">PHP Detect File Type: Identify files via MIME type and file signatures - PHP Classes</a></p>
+</li>
+</ul>
+<h3 id="前端網頁開發工具"><a href="#前端網頁開發工具" class="headerlink" title="前端網頁開發工具"></a>前端網頁開發工具</h3><ul>
+<li><p><a href="https://blog.prottapp.com/" target="_blank" rel="external">Prott Blog - All you need for mobile prototyping</a> - Prototype 驗證工具</p>
+</li>
+<li><p><a href="http://bunnymoon0326.weebly.com/1/post/2014/03/css-px-pt-em-rem.html" target="_blank" rel="external">CSS 字型大小 px, pt , em , rem,% - HELLO</a></p>
+</li>
+<li><p><a href="https://speakerdeck.com/kurotanshi/di-ci-yong-vue-dot-js-jiu-ai-shang-gai" target="_blank" rel="external">第一次用 Vue.js 就愛上 [改] // Speaker Deck</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jXdZlbH_ut8&amp;feature=youtu.be" target="_blank" rel="external">Vuedinner #1 第一次用 Vue.js 就愛上 by Kuro - YouTube</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[MoClippings #7 在溝通的過程中，就把事情做完，似乎是個趨勢]]></title>
       <url>https://usedfire.net/Clippings/2016/MoClippings-7/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2016/04/25 - 2016/05/08
