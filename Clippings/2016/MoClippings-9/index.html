@@ -7,15 +7,15 @@
 
     
 
-    <title>Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight | 已知用火</title>
+    <title>MoClippings #9  | 已知用火</title>
     <meta name="author" content="墨嗓 陳佑竹">
     
-    <meta name="description" content="這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。">
+    <meta name="description" content="墨嗓的網路資訊蒐集，就像剪報一樣，本期包含：資訊知事、行銷推廣、專案管理、技術知事。此為第九集。">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight"/>
+    <meta property="og:title" content="MoClippings #9 "/>
     <meta property="og:site_name" content="已知用火"/>
 
     
@@ -248,7 +248,7 @@
             
     
     
-    <a class="breadcrumb" href="/categories/Notes/">Notes</a><a class="breadcrumb" href="/categories/Notes/Sublime/">Sublime</a>
+    <a class="breadcrumb" href="/categories/Clippings/">Clippings</a>
 
 
         
@@ -265,55 +265,159 @@
             <div class="article-title">
                 
     
-        <h1>Sublime：針對特定副檔名設定預設樣式( Syntax ) Highlight</h1>
+        <h1>MoClippings #9 </h1>
     
 
 
             </div>
-            <time class="pink-link-context" datetime="2016-03-31T08:27:32.000Z"><a href="/Notes/Sublime/set-sublime-text-extensions-default-syntax/">2016-03-31</a></time>
+            <time class="pink-link-context" datetime="2016-07-23T12:40:56.000Z"><a href="/Clippings/2016/MoClippings-9/">2016-07-23</a></time>
 
             
     <div class="tags-row">
         
-            <a href="/tags/Sublime/" class="chip pink lighten-1">Sublime</a>
+            <a href="/tags/MoClippings/" class="chip pink lighten-1">MoClippings</a>
         
-            <a href="/tags/筆記/" class="chip pink lighten-1">筆記</a>
+            <a href="/tags/DevOps/" class="chip pink lighten-1">DevOps</a>
+        
+            <a href="/tags/PHP/" class="chip pink lighten-1">PHP</a>
+        
+            <a href="/tags/專案管理/" class="chip pink lighten-1">專案管理</a>
+        
+            <a href="/tags/資訊知事/" class="chip pink lighten-1">資訊知事</a>
         
     </div>
 
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#1-開啟無法預設樣式的檔案"><span class="section table-of-contents-text">1. 開啟無法預設樣式的檔案</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#2-手動設定樣式"><span class="section table-of-contents-text">2. 手動設定樣式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#3-設定使該副檔名未來皆以相同-Syntax-顯示"><span class="section table-of-contents-text">3. 設定使該副檔名未來皆以相同 Syntax 顯示</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#4-附註："><span class="section table-of-contents-text">4. 附註：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#參考連結："><span class="section table-of-contents-text">參考連結：</span></a></li></ol>
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#行銷推廣"><span class="section table-of-contents-text">行銷推廣</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#專案管理"><span class="section table-of-contents-text">專案管理</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#資訊知事"><span class="section table-of-contents-text">資訊知事</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#工具軟體"><span class="section table-of-contents-text">工具軟體</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#網站開發"><span class="section table-of-contents-text">網站開發</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#系統架構"><span class="section table-of-contents-text">系統架構</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#前端"><span class="section table-of-contents-text">前端</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#行動開發"><span class="section table-of-contents-text">行動開發</span></a></li></ol></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
-                <p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p>
-<a id="more"></a>
-<h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p>
-<p><img src="sublime_01.png" alt=""></p>
-<h2 id="2-手動設定樣式"><a href="#2-手動設定樣式" class="headerlink" title="2. 手動設定樣式"></a>2. 手動設定樣式</h2><p>在 menu -&gt; View -&gt; Syntax -&gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。</p>
-<p><img src="sublime_02.png" alt=""></p>
-<p>設定完成後，即可顯示正確的顏色。</p>
-<p><img src="sublime_03.png" alt=""></p>
-<h2 id="3-設定使該副檔名未來皆以相同-Syntax-顯示"><a href="#3-設定使該副檔名未來皆以相同-Syntax-顯示" class="headerlink" title="3. 設定使該副檔名未來皆以相同 Syntax 顯示"></a>3. 設定使該副檔名未來皆以相同 Syntax 顯示</h2><p>在目前已經手動設定好樣式的狀態下，選擇：</p>
-<ul>
-<li>Windows: Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
-<li>OSX: Sublime Text &gt; Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
+                <pre><code>發刊日 : 2016/07/23 - 2016/07/31
+</code></pre><h2 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h2><ul>
+<li><a href="http://www.slideshare.net/wanjuwang7/ss-64271678" target="_blank" rel="external">優化宅的日常-數據分析篇</a> - 關於數據分析在做什麼，可以做到什麼？很棒的一篇入門簡報</li>
 </ul>
-<p><img src="sublime_04.png" alt=""></p>
-<p>可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 <code>PHP.sublime-settings</code> 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。</p>
-<p><img src="sublime_05.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    // Which file extensions go with this file type?</div><div class="line">    &quot;extensions&quot;:</div><div class="line">    [</div><div class="line">        &quot;php&quot;,</div><div class="line">        &quot;inc&quot;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="4-附註："><a href="#4-附註：" class="headerlink" title="4. 附註："></a>4. 附註：</h2><p>如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：</p>
-<ul>
-<li>Windows: C:\Users{User Name}\AppData\Roaming\Sublime Text 3\Packages\User\</li>
-<li>MAC OSX: ~/Library/Application Support/Sublime Text 3/Packages/User</li>
-</ul>
-<p>只要找到對應要修改的 Syntax 即可。</p>
-<h2 id="參考連結："><a href="#參考連結：" class="headerlink" title="參考連結："></a>參考連結：</h2><ol>
-<li><a href="http://www.granneman.com/webdev/editors/sublime-text/configuring-sublime-text/" target="_blank" rel="external">Configuring Sublime Text</a></li>
+<h2 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h2><ul>
+<li><a href="http://kanban.leanlabs.io/" target="_blank" rel="external">GitLab kanban board</a> 把 GitLab 的 Issue Tracking 變成可以支援看板方法</li>
+<li><p><a href="https://www.youtube.com/watch?v=a4ueO_6AqTk" target="_blank" rel="external">GitLab Kanban Board overview - YouTube</a></p>
+</li>
+<li><p><a href="http://leanvalidation.hanno.co/process.html" target="_blank" rel="external">The Process · The Lean Validation Playbook</a> - 精實『驗證』程序手冊</p>
+<blockquote>
+<p>因為最怕的是花時間做出沒人要的東西，因此，Hanno (一個顧問公司）發表了一套驗證的方法，希望避免類似的錯誤。<br>方法分成4個階段：</p>
+</blockquote>
+<ol>
+<li>驗證問題是否值得解決</li>
+<li>驗證市場是否存在（需要解決這個問題的人是否夠多）</li>
+<li>驗證產品是否真的解決問題</li>
+<li>驗證付費的意願</li>
 </ol>
+</li>
+</ul>
+<a id="more"></a>
+<h2 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h2><ul>
+<li><a href="https://speakerdeck.com/eddie/use-git-to-control-your-life" target="_blank" rel="external">Use Git to Control Your Life // Speaker Deck</a> - 高見龍 - 「五倍紅寶石 Git 課程「人生不能重來，但 Git 可以」投影片</li>
+<li><p><a href="http://www.ithome.com.tw/news/107294" target="_blank" rel="external">【詳細圖解】駭客入侵一銀ATM流程追追追 | iThome</a> - 遙控臺北、臺中22家第一銀行分行內41臺ATM的操作指令，竟來自遠在1萬公里外的英國，一臺第一銀行倫敦分行內鎖在鐵櫃中的電話錄音伺服器主機，成了駭客遠端遙控ATM大吐鈔的跳板。根據調查局目前揭露的資料，可以將駭客入侵一銀ATM的流程，分成6個階段</p>
+<ul>
+<li><img src="14694370081496.jpg" alt=""></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/FallibleInc/security-guide-for-developers" target="_blank" rel="external">FallibleInc/security-guide-for-developers: Security Guide for Developers</a> - 給工程師的網站安全指南 - 可以把內容當做試 check-list 做檢驗查看。</p>
+</li>
+<li><p>「拿代码量算KPI……跟程序员们来这套？」全集 - 當開始拿寫的程式碼行數去計算開發者的績效時，會發生什麼事情？一起來看看這上下兩集的漫畫吧！</p>
+<ul>
+<li><a href="http://chuansong.me/n/458871148658" target="_blank" rel="external">拿代码量算KPI……跟程序员们来这套？(上）_神秘的程序员们_【传送门】</a></li>
+<li><a href="http://chuansong.me/n/465267848858" target="_blank" rel="external">拿代码量算KPI……跟程序员们来这套？(下）_神秘的程序员们_【传送门】</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="工具軟體"><a href="#工具軟體" class="headerlink" title="工具軟體"></a>工具軟體</h2><ul>
+<li><a href="https://free.com.tw/all-in-one-messenger/" target="_blank" rel="external">All-in-One Messenger 同時用 WhatsApp、Messenger 等27種即時通訊服務</a></li>
+</ul>
+<h2 id="網站開發"><a href="#網站開發" class="headerlink" title="網站開發"></a>網站開發</h2><h3 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h3><ul>
+<li><a href="https://blog.docker.com/2016/07/docker-for-mac-and-windows-production-ready/" target="_blank" rel="external">Docker for Mac and Windows is Now Generally Available and Ready for Production | Docker Blog</a><ul>
+<li>可以正式在 Mac and Windows 上面使用 Docker 了！！！</li>
+</ul>
+</li>
+<li><p><a href="https://about.gitlab.com/2016/07/27/the-11-rules-of-gitlab-flow/" target="_blank" rel="external">The 11 Rules of GitLab Flow | GitLab</a></p>
+<ol>
+<li>Use feature branches, no direct commits on master.</li>
+<li>Test all commits, not only ones on master.</li>
+<li>Run all the tests on all commits (if your tests run longer than 5 minutes have them run in parallel).</li>
+<li>Perform code reviews before merges into master, not afterwards.</li>
+<li>Deployments are automatic, based on branches or tags.</li>
+<li>Tags are set by the user, not by CI.</li>
+<li>Releases are based on tags.</li>
+<li>Pushed commits are never rebased.</li>
+<li>Everyone starts from master, and targets master.</li>
+<li>Fix bugs in master first and release branches second.</li>
+<li>Commit messages reflect intent. </li>
+</ol>
+<ul>
+<li>中文翻譯：<ol>
+<li>使用 feature branches，不要直接存取主幹 master</li>
+<li>對所有的 commit 進行測試，而不是只測試 master 上面的</li>
+<li>對所有的 commit 進行所有的測試。如果你的測試要跑超過五分鐘，請開始進行平行化測試。</li>
+<li>在 merge 到 master 前就進行 code review 而不是之後。</li>
+<li>讓佈署程式自動化，並且以分支或 tag 為基礎做佈署。</li>
+<li>Tag 應該由人工設定，不要由 CI 做。</li>
+<li>發佈版本應該由 tag 進行。</li>
+<li>不要對已經 push 的 commit 再進行 rebase 。</li>
+<li>由 master 開始，由 master 結束。</li>
+<li>修改 bug 先在 master 分支進行，其次才是 release 的分支。</li>
+<li>撰寫 commit message 時，必須寫清楚目的與意圖。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/RedSign77/dp2" target="_blank" rel="external">RedSign77/dp2: Design patterns II.</a> - PHP Design Patterns Examples. - 以 PHP 所撰寫的 Design Pattern 範例。</p>
+<ul>
+<li>Facade pattern</li>
+<li>Strategy pattern</li>
+<li>Command pattern</li>
+<li>Proxy pattern</li>
+</ul>
+</li>
+<li><a href="https://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB: the open-source database for the realtime web</a> - 即時資料庫</li>
+<li><p><a href="https://www.youtube.com/watch?v=CRaiwg-SLh0" target="_blank" rel="external">PHP 也有 Day #26 - REST API 與前端整合之踩雷心得 by Ricky - YouTube</a> </p>
+<ul>
+<li>投影片: <a href="https://goo.gl/dN4wW8" target="_blank" rel="external">https://goo.gl/dN4wW8</a> </li>
+<li><a href="http://blog.dj1020.net/PHP%E4%B9%9F%E6%9C%89day-26_REST_API_%E8%88%87%E5%89%8D%E7%AB%AF%E6%95%B4%E5%90%88%E4%B9%8B%E8%B8%A9%E9%9B%B7%E5%BF%83%E5%BE%97/" target="_blank" rel="external">PHP 也有 Day #26 - REST API 與前端整合之踩雷心得@RickySu | 閃亮亮大師之路</a></li>
+</ul>
+</li>
+<li><p><a href="http://coolshell.cn/articles/17416.html" target="_blank" rel="external">缓存更新的套路 | 酷 壳 - CoolShell.cn</a> </p>
+<ul>
+<li>更新缓存的的Design Pattern有四种：Cache aside, Read through, Write through, Write behind caching</li>
+<li>Cache Aside Pattern<ul>
+<li>失效：应用程序先从cache取数据，没有得到，则从数据库中取数据，成功后，放到缓存中。</li>
+<li>命中：应用程序从cache中取数据，取到后返回。</li>
+<li>更新：先把数据存到数据库中，成功后，再让缓存失效</li>
+</ul>
+</li>
+<li><p>Read/Write Through Pattern</p>
+<ul>
+<li><img src="14696700886657.png" alt=""></li>
+</ul>
+</li>
+<li><p>Write Behind Caching Pattern</p>
+<ul>
+<li><img src="14696698340338.png" alt=""></li>
+<li>在更新数据的时候，只更新缓存，不更新数据库，而我们的缓存会异步地批量更新数据库。这个设计的好处就是让数据的I/O操作飞快无比（因为直接操作内存嘛 ），因为异步，write backg还可以合并对同一个数据的多次操作，所以性能的提高是相当可观的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul>
+<li><a href="https://segmentfault.com/a/1190000006016817" target="_blank" rel="external">GUI应用程序架构的十年变迁:MVC,MVP,MVVM,Unidirectional,Clean - 某熊的全栈之路 - SegmentFault</a> - 圖型化介面這十年來的變遷。</li>
+<li><a href="http://class.turn.tw/portfolio/html-and-css/" target="_blank" rel="external">自學網頁の嬰兒教材：HTML與CSS | 轉個彎教室</a> - 一些關於 HTML、CSS 的基本教學教材。</li>
+</ul>
+<h3 id="行動開發"><a href="#行動開發" class="headerlink" title="行動開發"></a>行動開發</h3><ul>
+<li><p><a href="https://github.com/JackyAndroid/AndroidInterview-Q-A/blob/master/README-CN.md" target="_blank" rel="external">AndroidInterview-Q-A/README-CN.md at master · JackyAndroid/AndroidInterview-Q-A</a> - 中國百度、小米、新浪等等公司 Android 面試題庫，這篇記錄了六七十個面試時碰到的問題。</p>
+</li>
+<li><p><a href="http://www.slideshare.net/Happy.Prototyper/prototyping-wesley" target="_blank" rel="external">想像力不是使用者的超能力—Prototyping 淺入淺出（Wesley）</a> - 這份簡報介紹了為什麼需要 Prototype ，跟如何開始做 Prototype 值得看。</p>
+</li>
+</ul>
 
             </div>
         </div>
@@ -327,8 +431,8 @@
         <div id="disqus_thread"></div>
         <script>
             var disqus_config = function() {
-                this.page.url = 'https://usedfire.net/Notes/Sublime/set-sublime-text-extensions-default-syntax/';
-                this.page.identifier = 'Notes/Sublime/set-sublime-text-extensions-default-syntax/';
+                this.page.url = 'https://usedfire.net/Clippings/2016/MoClippings-9/';
+                this.page.identifier = 'Clippings/2016/MoClippings-9/';
             };
             (function() {
                 var d = document,

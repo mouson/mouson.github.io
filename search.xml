@@ -4,6 +4,136 @@
   
     
     <entry>
+      <title><![CDATA[MoClippings #9 ]]></title>
+      <url>https://usedfire.net/Clippings/2016/MoClippings-9/</url>
+      <content type="html"><![CDATA[<pre><code>發刊日 : 2016/07/23 - 2016/07/31
+</code></pre><h2 id="行銷推廣"><a href="#行銷推廣" class="headerlink" title="行銷推廣"></a>行銷推廣</h2><ul>
+<li><a href="http://www.slideshare.net/wanjuwang7/ss-64271678" target="_blank" rel="external">優化宅的日常-數據分析篇</a> - 關於數據分析在做什麼，可以做到什麼？很棒的一篇入門簡報</li>
+</ul>
+<h2 id="專案管理"><a href="#專案管理" class="headerlink" title="專案管理"></a>專案管理</h2><ul>
+<li><a href="http://kanban.leanlabs.io/" target="_blank" rel="external">GitLab kanban board</a> 把 GitLab 的 Issue Tracking 變成可以支援看板方法</li>
+<li><p><a href="https://www.youtube.com/watch?v=a4ueO_6AqTk" target="_blank" rel="external">GitLab Kanban Board overview - YouTube</a></p>
+</li>
+<li><p><a href="http://leanvalidation.hanno.co/process.html" target="_blank" rel="external">The Process · The Lean Validation Playbook</a> - 精實『驗證』程序手冊</p>
+<blockquote>
+<p>因為最怕的是花時間做出沒人要的東西，因此，Hanno (一個顧問公司）發表了一套驗證的方法，希望避免類似的錯誤。<br>方法分成4個階段：</p>
+</blockquote>
+<ol>
+<li>驗證問題是否值得解決</li>
+<li>驗證市場是否存在（需要解決這個問題的人是否夠多）</li>
+<li>驗證產品是否真的解決問題</li>
+<li>驗證付費的意願</li>
+</ol>
+</li>
+</ul>
+<a id="more"></a>
+<h2 id="資訊知事"><a href="#資訊知事" class="headerlink" title="資訊知事"></a>資訊知事</h2><ul>
+<li><a href="https://speakerdeck.com/eddie/use-git-to-control-your-life" target="_blank" rel="external">Use Git to Control Your Life // Speaker Deck</a> - 高見龍 - 「五倍紅寶石 Git 課程「人生不能重來，但 Git 可以」投影片</li>
+<li><p><a href="http://www.ithome.com.tw/news/107294" target="_blank" rel="external">【詳細圖解】駭客入侵一銀ATM流程追追追 | iThome</a> - 遙控臺北、臺中22家第一銀行分行內41臺ATM的操作指令，竟來自遠在1萬公里外的英國，一臺第一銀行倫敦分行內鎖在鐵櫃中的電話錄音伺服器主機，成了駭客遠端遙控ATM大吐鈔的跳板。根據調查局目前揭露的資料，可以將駭客入侵一銀ATM的流程，分成6個階段</p>
+<ul>
+<li><img src="14694370081496.jpg" alt=""></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/FallibleInc/security-guide-for-developers" target="_blank" rel="external">FallibleInc/security-guide-for-developers: Security Guide for Developers</a> - 給工程師的網站安全指南 - 可以把內容當做試 check-list 做檢驗查看。</p>
+</li>
+<li><p>「拿代码量算KPI……跟程序员们来这套？」全集 - 當開始拿寫的程式碼行數去計算開發者的績效時，會發生什麼事情？一起來看看這上下兩集的漫畫吧！</p>
+<ul>
+<li><a href="http://chuansong.me/n/458871148658" target="_blank" rel="external">拿代码量算KPI……跟程序员们来这套？(上）_神秘的程序员们_【传送门】</a></li>
+<li><a href="http://chuansong.me/n/465267848858" target="_blank" rel="external">拿代码量算KPI……跟程序员们来这套？(下）_神秘的程序员们_【传送门】</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="工具軟體"><a href="#工具軟體" class="headerlink" title="工具軟體"></a>工具軟體</h2><ul>
+<li><a href="https://free.com.tw/all-in-one-messenger/" target="_blank" rel="external">All-in-One Messenger 同時用 WhatsApp、Messenger 等27種即時通訊服務</a></li>
+</ul>
+<h2 id="網站開發"><a href="#網站開發" class="headerlink" title="網站開發"></a>網站開發</h2><h3 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h3><ul>
+<li><a href="https://blog.docker.com/2016/07/docker-for-mac-and-windows-production-ready/" target="_blank" rel="external">Docker for Mac and Windows is Now Generally Available and Ready for Production | Docker Blog</a><ul>
+<li>可以正式在 Mac and Windows 上面使用 Docker 了！！！</li>
+</ul>
+</li>
+<li><p><a href="https://about.gitlab.com/2016/07/27/the-11-rules-of-gitlab-flow/" target="_blank" rel="external">The 11 Rules of GitLab Flow | GitLab</a></p>
+<ol>
+<li>Use feature branches, no direct commits on master.</li>
+<li>Test all commits, not only ones on master.</li>
+<li>Run all the tests on all commits (if your tests run longer than 5 minutes have them run in parallel).</li>
+<li>Perform code reviews before merges into master, not afterwards.</li>
+<li>Deployments are automatic, based on branches or tags.</li>
+<li>Tags are set by the user, not by CI.</li>
+<li>Releases are based on tags.</li>
+<li>Pushed commits are never rebased.</li>
+<li>Everyone starts from master, and targets master.</li>
+<li>Fix bugs in master first and release branches second.</li>
+<li>Commit messages reflect intent. </li>
+</ol>
+<ul>
+<li>中文翻譯：<ol>
+<li>使用 feature branches，不要直接存取主幹 master</li>
+<li>對所有的 commit 進行測試，而不是只測試 master 上面的</li>
+<li>對所有的 commit 進行所有的測試。如果你的測試要跑超過五分鐘，請開始進行平行化測試。</li>
+<li>在 merge 到 master 前就進行 code review 而不是之後。</li>
+<li>讓佈署程式自動化，並且以分支或 tag 為基礎做佈署。</li>
+<li>Tag 應該由人工設定，不要由 CI 做。</li>
+<li>發佈版本應該由 tag 進行。</li>
+<li>不要對已經 push 的 commit 再進行 rebase 。</li>
+<li>由 master 開始，由 master 結束。</li>
+<li>修改 bug 先在 master 分支進行，其次才是 release 的分支。</li>
+<li>撰寫 commit message 時，必須寫清楚目的與意圖。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/RedSign77/dp2" target="_blank" rel="external">RedSign77/dp2: Design patterns II.</a> - PHP Design Patterns Examples. - 以 PHP 所撰寫的 Design Pattern 範例。</p>
+<ul>
+<li>Facade pattern</li>
+<li>Strategy pattern</li>
+<li>Command pattern</li>
+<li>Proxy pattern</li>
+</ul>
+</li>
+<li><a href="https://www.rethinkdb.com/" target="_blank" rel="external">RethinkDB: the open-source database for the realtime web</a> - 即時資料庫</li>
+<li><p><a href="https://www.youtube.com/watch?v=CRaiwg-SLh0" target="_blank" rel="external">PHP 也有 Day #26 - REST API 與前端整合之踩雷心得 by Ricky - YouTube</a> </p>
+<ul>
+<li>投影片: <a href="https://goo.gl/dN4wW8" target="_blank" rel="external">https://goo.gl/dN4wW8</a> </li>
+<li><a href="http://blog.dj1020.net/PHP%E4%B9%9F%E6%9C%89day-26_REST_API_%E8%88%87%E5%89%8D%E7%AB%AF%E6%95%B4%E5%90%88%E4%B9%8B%E8%B8%A9%E9%9B%B7%E5%BF%83%E5%BE%97/" target="_blank" rel="external">PHP 也有 Day #26 - REST API 與前端整合之踩雷心得@RickySu | 閃亮亮大師之路</a></li>
+</ul>
+</li>
+<li><p><a href="http://coolshell.cn/articles/17416.html" target="_blank" rel="external">缓存更新的套路 | 酷 壳 - CoolShell.cn</a> </p>
+<ul>
+<li>更新缓存的的Design Pattern有四种：Cache aside, Read through, Write through, Write behind caching</li>
+<li>Cache Aside Pattern<ul>
+<li>失效：应用程序先从cache取数据，没有得到，则从数据库中取数据，成功后，放到缓存中。</li>
+<li>命中：应用程序从cache中取数据，取到后返回。</li>
+<li>更新：先把数据存到数据库中，成功后，再让缓存失效</li>
+</ul>
+</li>
+<li><p>Read/Write Through Pattern</p>
+<ul>
+<li><img src="14696700886657.png" alt=""></li>
+</ul>
+</li>
+<li><p>Write Behind Caching Pattern</p>
+<ul>
+<li><img src="14696698340338.png" alt=""></li>
+<li>在更新数据的时候，只更新缓存，不更新数据库，而我们的缓存会异步地批量更新数据库。这个设计的好处就是让数据的I/O操作飞快无比（因为直接操作内存嘛 ），因为异步，write backg还可以合并对同一个数据的多次操作，所以性能的提高是相当可观的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><ul>
+<li><a href="https://segmentfault.com/a/1190000006016817" target="_blank" rel="external">GUI应用程序架构的十年变迁:MVC,MVP,MVVM,Unidirectional,Clean - 某熊的全栈之路 - SegmentFault</a> - 圖型化介面這十年來的變遷。</li>
+<li><a href="http://class.turn.tw/portfolio/html-and-css/" target="_blank" rel="external">自學網頁の嬰兒教材：HTML與CSS | 轉個彎教室</a> - 一些關於 HTML、CSS 的基本教學教材。</li>
+</ul>
+<h3 id="行動開發"><a href="#行動開發" class="headerlink" title="行動開發"></a>行動開發</h3><ul>
+<li><p><a href="https://github.com/JackyAndroid/AndroidInterview-Q-A/blob/master/README-CN.md" target="_blank" rel="external">AndroidInterview-Q-A/README-CN.md at master · JackyAndroid/AndroidInterview-Q-A</a> - 中國百度、小米、新浪等等公司 Android 面試題庫，這篇記錄了六七十個面試時碰到的問題。</p>
+</li>
+<li><p><a href="http://www.slideshare.net/Happy.Prototyper/prototyping-wesley" target="_blank" rel="external">想像力不是使用者的超能力—Prototyping 淺入淺出（Wesley）</a> - 這份簡報介紹了為什麼需要 Prototype ，跟如何開始做 Prototype 值得看。</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[MoClippings #8 進入了一個百家機器人爭鳴的年代]]></title>
       <url>https://usedfire.net/Clippings/2016/MoClippings-8/</url>
       <content type="html"><![CDATA[<pre><code>發刊日 : 2016/05/09 - 2016/07/23
