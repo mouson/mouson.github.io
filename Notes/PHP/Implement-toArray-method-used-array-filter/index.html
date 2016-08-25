@@ -7,13 +7,15 @@
 
     
 
-    <title>彙整：2015/11 | 已知用火</title>
+    <title>PHP - 使用 array_filter 讓你的程式碼更簡潔易讀 | 已知用火</title>
     <meta name="author" content="墨嗓 陳佑竹">
+    
+    <meta name="description" content="Introduce tag plugins in freemind.">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="PHP - 使用 array_filter 讓你的程式碼更簡潔易讀"/>
     <meta property="og:site_name" content="已知用火"/>
 
     
@@ -247,46 +249,97 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">當前位置（彙整）</span>
+        <span class="breadcrumb">當前位置（分類目錄）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/Notes/">Notes</a><a class="breadcrumb" href="/categories/Notes/PHP/">PHP</a>
+
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>PHP - 使用 array_filter 讓你的程式碼更簡潔易讀</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
+            </div>
+            <time class="pink-link-context" datetime="2016-08-25T01:52:52.000Z"><a href="/Notes/PHP/Implement-toArray-method-used-array-filter/">2016-08-25</a></time>
+
+            
+    <div class="tags-row">
         
+            <a href="/tags/PHP/" class="chip pink lighten-1">PHP</a>
         
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2015
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/Clippings/2015/MoClippings-3/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2015-11-24T17:41:41.000Z">2015-11-25</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                MoClippings #3 DevOps 正夯
-                            </a>
-                        
-                            <a href="/Clippings/2015/MoClippings-2/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2015-11-09T17:41:41.000Z">2015-11-10</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                MoClippings #2 創新，是整個團隊的事
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
+            <a href="/tags/Note/" class="chip pink lighten-1">Note</a>
         
-    </ul>
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>早上看到了這一篇關於 PHP 技巧的文章：<a href="https://murze.be/2016/08/improving-readability-using-array_filter/" target="_blank" rel="external">Improving readability using array_filter - murze.be</a> 中文翻譯大概可以說是，用 <code>array_filter</code> 使之更具有可讀性。看到也實際測試了一下，覺得不錯，因此作了一些實驗，也發現一些小坑，所以順便作一下記錄。</p>
+<p>以往要在 PHP 的 class 中實作 <code>toArray()</code> method 我們會寫類似的程式碼：</p>
+<a id="more"></a>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> $name;</div><div class="line">    <span class="keyword">private</span> $city;</div><div class="line">    <span class="keyword">private</span> $street_line1;</div><div class="line">    <span class="keyword">private</span> $street_line2;</div><div class="line">    ...</div><div class="line">    </div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        $address = [</div><div class="line">            <span class="string">'name'</span> =&gt; <span class="keyword">$this</span>-&gt;name,</div><div class="line">            <span class="string">'city'</span> =&gt; <span class="keyword">$this</span>-&gt;city,</div><div class="line">            <span class="string">'street_line1'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line1,</div><div class="line">        ];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> (<span class="keyword">$this</span>-&gt;street_line2 != <span class="string">''</span>) &#123;</div><div class="line">            $address[<span class="string">'street_line2'</span>] = <span class="keyword">$this</span>-&gt;street_line2;</div><div class="line">        &#125;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>member data 不多的時候，看起來還好。但再多幾個，上面判斷是否為空白的 if 判斷式就會變得非常多，很不好看，也不簡潔。文章內提供的方法就是使用 <code>array_filter</code> 改寫。改寫後的程式碼像這樣。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> $name;</div><div class="line">    <span class="keyword">private</span> $city;</div><div class="line">    <span class="keyword">private</span> $street_line1;</div><div class="line">    <span class="keyword">private</span> $street_line2;</div><div class="line">    ...</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span> array_filter([</div><div class="line">            <span class="string">'name'</span> =&gt; <span class="keyword">$this</span>-&gt;name,</div><div class="line">            <span class="string">'city'</span> =&gt; <span class="keyword">$this</span>-&gt;city,</div><div class="line">            <span class="string">'street_line1'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line1,</div><div class="line">            <span class="string">'street_line2'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line2,</div><div class="line">            ...</div><div class="line">        ]);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>整體看起來簡潔多了。使用的就是 <code>array_filter</code> <a href="http://php.net/manual/en/function.array-filter.php" target="_blank" rel="external">PHP: array_filter - Manual</a> 的特性。當 <code>array_filter</code> 的第二個參數不帶入 callback function 時，預設的處理方法：「當遇到成員內容為空值或為 null 時，不輸出」。</p>
+<p>因此，在使用的時候也要特別小心。舉例來說，假設 street_line1, street_line2 是空字串，則輸出就會只有 name 及 city：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</div><div class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </div><div class="line">    <span class="keyword">private</span> $street_line1 = <span class="string">''</span>;</div><div class="line">    <span class="keyword">private</span> $street_line2 = <span class="string">''</span>;</div><div class="line">    ...</div><div class="line">    </div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">$address = <span class="keyword">new</span> Address();</div><div class="line">print_r($address-&gt;toArray());</div><div class="line"></div><div class="line"><span class="comment">// Array</span></div><div class="line"><span class="comment">//(</span></div><div class="line"><span class="comment">//    [name] =&gt; User 1</span></div><div class="line"><span class="comment">//    [city] =&gt; Taipei</span></div><div class="line"><span class="comment">//)</span></div></pre></td></tr></table></figure>
+<p>而如果直接輸出不存在的 member 也是。如：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</div><div class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </div><div class="line">    <span class="comment">// private $street_line1 = '';</span></div><div class="line">    <span class="comment">// private $street_line2 = '';</span></div><div class="line">    ...</div><div class="line">    </div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">$address = <span class="keyword">new</span> Address();</div><div class="line">print_r($address-&gt;toArray());</div><div class="line"></div><div class="line"><span class="comment">// Array</span></div><div class="line"><span class="comment">//(</span></div><div class="line"><span class="comment">//    [name] =&gt; User 1</span></div><div class="line"><span class="comment">//    [city] =&gt; Taipei</span></div><div class="line"><span class="comment">//)</span></div></pre></td></tr></table></figure>
+<p>還有，遇到直接是 null 的時候也是：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</div><div class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </div><div class="line">    <span class="keyword">private</span> $street_line1 = <span class="keyword">null</span>;</div><div class="line">    <span class="keyword">private</span> $street_line2 = <span class="keyword">null</span>;</div><div class="line">    ...</div><div class="line">    </div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">$address = <span class="keyword">new</span> Address();</div><div class="line">print_r($address-&gt;toArray());</div><div class="line"></div><div class="line"><span class="comment">// Array</span></div><div class="line"><span class="comment">//(</span></div><div class="line"><span class="comment">//    [name] =&gt; User 1</span></div><div class="line"><span class="comment">//    [city] =&gt; Taipei</span></div><div class="line"><span class="comment">//)</span></div></pre></td></tr></table></figure>
+<p><code>array_filter</code> 遇到空字串、null、不存在時的這些特性就要特別注意。像是無論如何就算是空字串也要輸出佔一個位置的，就要在額外特別處理了。</p>
+<p>看到這樣的運用並且實際作實驗的感覺還蠻有趣的。跟 <a href="https://murze.be/2016/08/improving-readability-using-array_filter/" target="_blank" rel="external">Improving readability using array_filter - murze.be</a> 作者一樣，第一次發現 <code>array_filter</code> 可以這樣用。</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function() {
+                this.page.url = 'https://usedfire.net/Notes/PHP/Implement-toArray-method-used-array-filter/';
+                this.page.identifier = 'Notes/PHP/Implement-toArray-method-used-array-filter/';
+            };
+            (function() {
+                var d = document,
+                    s = d.createElement('script');
+                s.src = '//usedfire..disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+        </noscript>
+    </section>
+
 
 
 </div>
