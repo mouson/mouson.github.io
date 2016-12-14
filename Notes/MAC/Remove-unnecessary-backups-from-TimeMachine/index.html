@@ -208,14 +208,6 @@
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Notes/Hexo/">
-                    Hexo <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Notes/MAC/">
                     MAC <span class="right">1 篇</span></a>
                 </a>
@@ -234,6 +226,14 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Notes/Sublime/">
                     Sublime <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Notes/Hexo/">
+                    Hexo <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -301,6 +301,11 @@
             </div>
             <time class="pink-link-context" datetime="2016-09-17T11:11:15.000Z"><a href="/Notes/MAC/Remove-unnecessary-backups-from-TimeMachine/">2016-09-17</a></time>
 
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
             
     <div class="tags-row">
         
@@ -340,7 +345,24 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo hdiutil compact /path/to/disk-image</div></pre></td></tr></table></figure>
 <p>清除完畢之後，就可以獲得可用的空間了。我自己在執行 <code>tmutil delete</code> 時候發現，單獨刪除一個系統本身都還是需要重新計算一次變異，因此效率不是很好。刪除一個 1xG 的快照在無線網路的環境下刪了快半小時。所以，在使用 <code>tmutil</code> 做刪除時，如果時間不允許，砍掉重練或許也是一招。(這什麼結論呀！XD) </p>
 
+                
+<p class="pink-link-context">
+    <a href="/Notes/Utility/Utility-copy-hyperlink-as-markdown-format/" rel="next" title="[Utility] 在 Chrome 把連結複製成 Markdown 格式">
+    上一篇：[Utility] 在 Chrome 把連結複製成 Markdown 格式
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/Clippings/2016/MoClippings-11/" rel="next" title="MoClippings #11 站在嘴砲金字塔的頂點">
+    下一篇：MoClippings #11 站在嘴砲金字塔的頂點core
+  </a>
+</p>
+
+
             </div>
+			
         </div>
     </div>
 </article>
@@ -388,7 +410,7 @@
     <div class="container">
         <div class="row">
             
-            <div class="social-group col m3 s12">
+            <div class="social-group col m4 s12">
                 <h5 class="white-text">社交</h5>
                 
                     <a class="social-link" href="https://www.facebook.com/mouson" target="_blank">
@@ -403,11 +425,22 @@
                         <i class="fa fa-2x fa-rss"></i>
                     </a>
                 
+                <div class="site-visitors-container white-text">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>
+                        <i class="fa fa-eye"></i>
+                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+                    </span>
+                </div>
             </div>
             
 
             
-            <div class="col m9 s12">
+            <div class="col m8 s12">
                 <h5 class="white-text">友情連結</h5>
                 
                     <a class="social-link" href="http://blog.dj1020.net/" target="_blank">閃亮亮大師之路</a>
@@ -441,6 +474,8 @@
 
 <script src="/js/jquery.min.js"></script>
 <script src="/js/materialize.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
 <script>
     (function($) {
