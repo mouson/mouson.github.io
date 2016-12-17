@@ -830,7 +830,7 @@
 <li><p><a href="https://hackmd.io/p/SyHcq1jO#/" target="_blank" rel="external">學 Laravel 一定要知道的 Restful Resource - HackMD</a></p>
 <ul>
 <li><p><code>Route::resouce(&#39;user&#39;, &#39;UserController&#39;);</code></p>
-<figure class="highlight nsis"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Route::resource(‘<span class="literal">user</span>’, ‘UserController’)<span class="comment">;</span></div><div class="line">/<span class="literal">user</span> =&gt; index(GET)</div><div class="line">/<span class="literal">user</span>/create =&gt; create(GET)</div><div class="line">/<span class="literal">user</span> =&gt; store(POST)</div><div class="line">/<span class="literal">user</span>/&#123;id&#125; =&gt; <span class="literal">show</span>(GET)</div><div class="line">/usr/&#123;id&#125;/edit =&gt; edit(GET)</div><div class="line">/<span class="literal">user</span>/&#123;id&#125; =&gt; update(PUT/PATCH)</div><div class="line">/<span class="literal">user</span>/&#123;id&#125; =&gt; destroy(DELETE)</div></pre></td></tr></table></figure>
+<figure class="highlight nsis"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class">Route::resource</span>(‘<span class="literal">user</span>’, ‘UserController’)<span class="comment">;</span></div><div class="line">/<span class="literal">user</span> =&gt; index(GET)</div><div class="line">/<span class="literal">user</span>/create =&gt; create(GET)</div><div class="line">/<span class="literal">user</span> =&gt; store(POST)</div><div class="line">/<span class="literal">user</span>/&#123;id&#125; =&gt; <span class="literal">show</span>(GET)</div><div class="line">/usr/&#123;id&#125;/edit =&gt; edit(GET)</div><div class="line">/<span class="literal">user</span>/&#123;id&#125; =&gt; update(PUT/PATCH)</div><div class="line">/<span class="literal">user</span>/&#123;id&#125; =&gt; destroy(DELETE)</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -1360,7 +1360,7 @@
 </ul>
 </li>
 <li><p><a href="http://www.inside.com.tw/2015/02/16/coding-fast-bug-less" target="_blank" rel="external">大神工程師教你怎麼練就「coding 速度快、bug 數量少」的境界</a></p>
-  <figure class="highlight gcode"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">for<span class="comment">(;;)</span></div><div class="line">    practics<span class="comment">()</span>;</div></pre></td></tr></table></figure>
+  <figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">for(<span class="comment">;;)</span></div><div class="line">    practics()<span class="comment">;</span></div></pre></td></tr></table></figure>
 <p>  如果你在最初編寫程式時沒有註意可重用性，不要欺騙自己相信程式可以很神奇地被重用。相反，應該從一種情形著手，保持程式的具體性。如果值得修改程式讓它一般化，那麼應該做好徹底重寫的準備。</p>
 </li>
 <li><p><a href="https://blog.wu-boy.com/2016/04/git-flow-tips/" target="_blank" rel="external">Git Flow 與團隊合作</a> - 關於 Git 在團隊合作開發時的對策及方案。</p>
