@@ -1001,6 +1001,7 @@ figure.highlight .gutter {
   font-size: 20px;
   text-shadow: 1px 1px 1px #000;
   line-height: 30px;
+  background: rgba(100,100,100,0.6);
 }
 .about-page .project-item .card-tag {
   position: absolute;
