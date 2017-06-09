@@ -7,15 +7,15 @@
 
     
 
-    <title>Sublime - 針對特定副檔名設定預設樣式( Syntax ) Highlight | 已知用火</title>
+    <title>Utility - 使用 WebSiteBackupTools 備份網站 | 已知用火</title>
     <meta name="author" content="墨嗓 陳佑竹">
     
-    <meta name="description" content="這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。">
+    <meta name="description" content="說明 WebSiteBackupTools 備份工具的使用">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="Sublime - 針對特定副檔名設定預設樣式( Syntax ) Highlight"/>
+    <meta property="og:title" content="Utility - 使用 WebSiteBackupTools 備份網站"/>
     <meta property="og:site_name" content="已知用火"/>
 
     
@@ -253,7 +253,7 @@
             
     
     
-    <a class="breadcrumb" href="/categories/Notes/">Notes</a><a class="breadcrumb" href="/categories/Notes/Sublime/">Sublime</a>
+    <a class="breadcrumb" href="/categories/Notes/">Notes</a><a class="breadcrumb" href="/categories/Notes/Utility/">Utility</a>
 
 
         
@@ -270,12 +270,12 @@
             <div class="article-title">
                 
     
-        <h1>Sublime - 針對特定副檔名設定預設樣式( Syntax ) Highlight</h1>
+        <h1>Utility - 使用 WebSiteBackupTools 備份網站</h1>
     
 
 
             </div>
-            <time class="pink-link-context" datetime="2016-03-31T08:27:32.000Z"><a href="/Notes/Sublime/set-sublime-text-extensions-default-syntax/">2016-03-31</a></time>
+            <time class="pink-link-context" datetime="2017-06-10T10:11:14.000Z"><a href="/Notes/Utility/Utility-HowToUsingWebSiteBackupTools/">2017-06-10</a></time>
 
             <span id="busuanzi_container_page_pv" class="read-times-container">
     <i class="fa fa-eye"></i>
@@ -285,54 +285,63 @@
             
     <div class="tags-row">
         
-            <a href="/tags/Sublime/" class="chip pink lighten-1">Sublime</a>
+            <a href="/tags/DevOps/" class="chip pink lighten-1">DevOps</a>
         
-            <a href="/tags/筆記/" class="chip pink lighten-1">筆記</a>
+            <a href="/tags/Note/" class="chip pink lighten-1">Note</a>
+        
+            <a href="/tags/Shell/" class="chip pink lighten-1">Shell</a>
         
     </div>
 
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#1-開啟無法預設樣式的檔案"><span class="section table-of-contents-text">1. 開啟無法預設樣式的檔案</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#2-手動設定樣式"><span class="section table-of-contents-text">2. 手動設定樣式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#3-設定使該副檔名未來皆以相同-Syntax-顯示"><span class="section table-of-contents-text">3. 設定使該副檔名未來皆以相同 Syntax 顯示</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#4-附註："><span class="section table-of-contents-text">4. 附註：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#參考連結："><span class="section table-of-contents-text">參考連結：</span></a></li></ol>
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#前言及緣由"><span class="section table-of-contents-text">前言及緣由</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#一、下載"><span class="section table-of-contents-text">一、下載</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#二、環境設定"><span class="section table-of-contents-text">二、環境設定</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#三、實際操作"><span class="section table-of-contents-text">三、實際操作</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#四、結語"><span class="section table-of-contents-text">四、結語</span></a></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
-                <p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p>
-<a id="more"></a>
-<h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p>
-<p><img src="sublime_01.png" alt=""></p>
-<h2 id="2-手動設定樣式"><a href="#2-手動設定樣式" class="headerlink" title="2. 手動設定樣式"></a>2. 手動設定樣式</h2><p>在 menu -&gt; View -&gt; Syntax -&gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。</p>
-<p><img src="sublime_02.png" alt=""></p>
-<p>設定完成後，即可顯示正確的顏色。</p>
-<p><img src="sublime_03.png" alt=""></p>
-<h2 id="3-設定使該副檔名未來皆以相同-Syntax-顯示"><a href="#3-設定使該副檔名未來皆以相同-Syntax-顯示" class="headerlink" title="3. 設定使該副檔名未來皆以相同 Syntax 顯示"></a>3. 設定使該副檔名未來皆以相同 Syntax 顯示</h2><p>在目前已經手動設定好樣式的狀態下，選擇：</p>
-<ul>
-<li>Windows: Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
-<li>OSX: Sublime Text &gt; Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
-</ul>
-<p><img src="sublime_04.png" alt=""></p>
-<p>可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 <code>PHP.sublime-settings</code> 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。</p>
-<p><img src="sublime_05.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    // Which file extensions go with this file type?</div><div class="line">    &quot;extensions&quot;:</div><div class="line">    [</div><div class="line">        &quot;php&quot;,</div><div class="line">        &quot;inc&quot;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="4-附註："><a href="#4-附註：" class="headerlink" title="4. 附註："></a>4. 附註：</h2><p>如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：</p>
-<ul>
-<li>Windows: C:\Users{User Name}\AppData\Roaming\Sublime Text 3\Packages\User\</li>
-<li>MAC OSX: ~/Library/Application Support/Sublime Text 3/Packages/User</li>
-</ul>
-<p>只要找到對應要修改的 Syntax 即可。</p>
-<h2 id="參考連結："><a href="#參考連結：" class="headerlink" title="參考連結："></a>參考連結：</h2><ol>
-<li><a href="http://www.granneman.com/webdev/editors/sublime-text/configuring-sublime-text/" target="_blank" rel="external">Configuring Sublime Text</a></li>
+                <h2 id="前言及緣由"><a href="#前言及緣由" class="headerlink" title="前言及緣由"></a>前言及緣由</h2><p>找了好一陣子，一直沒能弄到自己喜歡＆順手的網站備份工具，想一想自己想要的需求應該不會太難，主要應該要有以下需求：</p>
+<ol>
+<li>使用設定檔方便一台主機上有多個網站需要進行不同的備份</li>
+<li>備份的內容包含檔案及資料庫</li>
+<li>備份檔案上傳 Dropbox</li>
+<li>只保留一週的備份檔</li>
 </ol>
+<p>但，一直沒能找到自己順手的…於是，就自己動手了一個基本符合自己需求的工具 -  <a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="external">WebSiteBackupTools</a> ， 這個工具使用了 <a href="https://github.com/andreafabrizi/Dropbox-Uploader/" target="_blank" rel="external">Dropbox-Uploader</a> 這個 Dropbox Uploader is a BASH script 也不用再自己額外寫 Dropbox API 的功能，且持續的更新中，不致於發生功能壞掉沒能修的問題。</p>
+<p>以下就繼續說明該如何使用囉！</p>
+<a id="more"></a>
+<h2 id="一、下載"><a href="#一、下載" class="headerlink" title="一、下載"></a>一、下載</h2><ul>
+<li><p>參考位置：<a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="external">mouson/WebSiteBackupTools: WebStie Backup Tools Support Backup to Dropbox</a></p>
+</li>
+<li><p>直接下載原始檔案</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/mouson/WebSiteBackupTools/releases/download/v0.1/WebSiteBackupTools.zip</div></pre></td></tr></table></figure>
+<ul>
+<li>clone source file</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/mouson/WebSiteBackupTools.git</div><div class="line">cd /root/WebSiteBackupTools</div><div class="line">git submodule update --init</div></pre></td></tr></table></figure>
+<h2 id="二、環境設定"><a href="#二、環境設定" class="headerlink" title="二、環境設定"></a>二、環境設定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /root/WebSiteBackupTools</div><div class="line">cp Config/config.sh.sample Config/config.sh</div><div class="line">vim Config/config.sh</div></pre></td></tr></table></figure>
+<p>其中 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div><div class="line"># 備份的名稱</div><div class="line">backup_name=&apos;BackupName&apos;</div><div class="line"></div><div class="line"># 設定後網站檔案資料備份檔名為：BackupName_web_YYYY-MM-DD.sql.bz2</div><div class="line"># 設定後網站檔案資料備份檔名為：BackupName_db_YYYY-MM-DD.sql.bz2</div><div class="line"></div><div class="line"># Path Setting</div><div class="line"># 備份資料夾的路徑</div><div class="line">website_folder=&apos;/var/www/website&apos;</div><div class="line"># 備份工作處理期間，相關檔案的暫存路徑</div><div class="line">working_folder=&apos;/home/username/working&apos;</div><div class="line"># 上傳到 Dropbox 的什麼資料夾名稱</div><div class="line">dropbox_folder=&apos;backup&apos;</div><div class="line"># 備份資料夾中需要排除什麼資料夾</div><div class="line">exclude=&apos;wp-content/cache/*&apos;</div><div class="line"></div><div class="line"># MySQL information: replace it with your own</div><div class="line"># 資料庫位置</div><div class="line">hostname=&apos;localhost&apos;</div><div class="line"># 資料庫使用帳號</div><div class="line">username=&apos;user&apos;</div><div class="line"># 帳號使用的密碼</div><div class="line">password=&apos;password&apos;</div><div class="line"># 資料庫名稱</div><div class="line">database=&apos;daname&apos;</div></pre></td></tr></table></figure>
+<h2 id="三、實際操作"><a href="#三、實際操作" class="headerlink" title="三、實際操作"></a>三、實際操作</h2><p>執行以下指令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh config.sh</div></pre></td></tr></table></figure>
+<p>當你有多組網站需要備份，也可以這樣使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website1_config.sh</div><div class="line">sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website2_config.sh</div></pre></td></tr></table></figure>
+<p>如果需要設定 cronjob 排程，也可以進行以下設定：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">crontab -e</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">0 2 * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website1_config.sh &gt; /dev/null 2&gt;&amp;1</div><div class="line">10 2 * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website2_config.sh &gt; /dev/null 2&gt;&amp;1</div></pre></td></tr></table></figure>
+<h2 id="四、結語"><a href="#四、結語" class="headerlink" title="四、結語"></a>四、結語</h2><p>這份工具目前還不是我心目中最完美的備份工具，但堪用，之後會持續的更新它，讓它變成我最愛的工具。生日的這天，完成這小工具，還蠻有意思的。</p>
+<p>有任何需求會任何 bug 也歡迎回報。</p>
 
                 
+
+
 <p class="pink-link-context">
-    <a href="/Notes/Hexo/make-hexo-post-category-by-folder/" rel="next" title="Hexo - 使文章依文章分類為資料夾名稱置放">
-    上一篇：Hexo - 使文章依文章分類為資料夾名稱置放
+    <a href="/Notes/Utility/Utility-copy-hyperlink-as-markdown-format/" rel="next" title="Utility - 在 Chrome 把連結複製成 Markdown 格式">
+    下一篇：Utility - 在 Chrome 把連結複製成 Markdown 格式core
   </a>
 </p>
-
-
 
 
             </div>
@@ -348,8 +357,8 @@
         <div id="disqus_thread"></div>
         <script>
             var disqus_config = function() {
-                this.page.url = 'https://usedfire.net/Notes/Sublime/set-sublime-text-extensions-default-syntax/';
-                this.page.identifier = 'Notes/Sublime/set-sublime-text-extensions-default-syntax/';
+                this.page.url = 'https://usedfire.net/Notes/Utility/Utility-HowToUsingWebSiteBackupTools/';
+                this.page.identifier = 'Notes/Utility/Utility-HowToUsingWebSiteBackupTools/';
             };
             (function() {
                 var d = document,

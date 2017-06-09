@@ -4,6 +4,65 @@
   
     
     <entry>
+      <title><![CDATA[Utility - 使用 WebSiteBackupTools 備份網站]]></title>
+      <url>https://usedfire.net/Notes/Utility/Utility-HowToUsingWebSiteBackupTools/</url>
+      <content type="html"><![CDATA[<h2 id="前言及緣由"><a href="#前言及緣由" class="headerlink" title="前言及緣由"></a>前言及緣由</h2><p>找了好一陣子，一直沒能弄到自己喜歡＆順手的網站備份工具，想一想自己想要的需求應該不會太難，主要應該要有以下需求：</p>
+<ol>
+<li>使用設定檔方便一台主機上有多個網站需要進行不同的備份</li>
+<li>備份的內容包含檔案及資料庫</li>
+<li>備份檔案上傳 Dropbox</li>
+<li>只保留一週的備份檔</li>
+</ol>
+<p>但，一直沒能找到自己順手的…於是，就自己動手了一個基本符合自己需求的工具 -  <a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="external">WebSiteBackupTools</a> ， 這個工具使用了 <a href="https://github.com/andreafabrizi/Dropbox-Uploader/" target="_blank" rel="external">Dropbox-Uploader</a> 這個 Dropbox Uploader is a BASH script 也不用再自己額外寫 Dropbox API 的功能，且持續的更新中，不致於發生功能壞掉沒能修的問題。</p>
+<p>以下就繼續說明該如何使用囉！</p>
+<a id="more"></a>
+<h2 id="一、下載"><a href="#一、下載" class="headerlink" title="一、下載"></a>一、下載</h2><ul>
+<li><p>參考位置：<a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="external">mouson/WebSiteBackupTools: WebStie Backup Tools Support Backup to Dropbox</a></p>
+</li>
+<li><p>直接下載原始檔案</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/mouson/WebSiteBackupTools/releases/download/v0.1/WebSiteBackupTools.zip</div></pre></td></tr></table></figure>
+<ul>
+<li>clone source file</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/mouson/WebSiteBackupTools.git</div><div class="line">cd /root/WebSiteBackupTools</div><div class="line">git submodule update --init</div></pre></td></tr></table></figure>
+<h2 id="二、環境設定"><a href="#二、環境設定" class="headerlink" title="二、環境設定"></a>二、環境設定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /root/WebSiteBackupTools</div><div class="line">cp Config/config.sh.sample Config/config.sh</div><div class="line">vim Config/config.sh</div></pre></td></tr></table></figure>
+<p>其中 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div><div class="line"># 備份的名稱</div><div class="line">backup_name=&apos;BackupName&apos;</div><div class="line"></div><div class="line"># 設定後網站檔案資料備份檔名為：BackupName_web_YYYY-MM-DD.sql.bz2</div><div class="line"># 設定後網站檔案資料備份檔名為：BackupName_db_YYYY-MM-DD.sql.bz2</div><div class="line"></div><div class="line"># Path Setting</div><div class="line"># 備份資料夾的路徑</div><div class="line">website_folder=&apos;/var/www/website&apos;</div><div class="line"># 備份工作處理期間，相關檔案的暫存路徑</div><div class="line">working_folder=&apos;/home/username/working&apos;</div><div class="line"># 上傳到 Dropbox 的什麼資料夾名稱</div><div class="line">dropbox_folder=&apos;backup&apos;</div><div class="line"># 備份資料夾中需要排除什麼資料夾</div><div class="line">exclude=&apos;wp-content/cache/*&apos;</div><div class="line"></div><div class="line"># MySQL information: replace it with your own</div><div class="line"># 資料庫位置</div><div class="line">hostname=&apos;localhost&apos;</div><div class="line"># 資料庫使用帳號</div><div class="line">username=&apos;user&apos;</div><div class="line"># 帳號使用的密碼</div><div class="line">password=&apos;password&apos;</div><div class="line"># 資料庫名稱</div><div class="line">database=&apos;daname&apos;</div></pre></td></tr></table></figure>
+<h2 id="三、實際操作"><a href="#三、實際操作" class="headerlink" title="三、實際操作"></a>三、實際操作</h2><p>執行以下指令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh config.sh</div></pre></td></tr></table></figure>
+<p>當你有多組網站需要備份，也可以這樣使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website1_config.sh</div><div class="line">sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website2_config.sh</div></pre></td></tr></table></figure>
+<p>如果需要設定 cronjob 排程，也可以進行以下設定：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">crontab -e</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">0 2 * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website1_config.sh &gt; /dev/null 2&gt;&amp;1</div><div class="line">10 2 * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website2_config.sh &gt; /dev/null 2&gt;&amp;1</div></pre></td></tr></table></figure>
+<h2 id="四、結語"><a href="#四、結語" class="headerlink" title="四、結語"></a>四、結語</h2><p>這份工具目前還不是我心目中最完美的備份工具，但堪用，之後會持續的更新它，讓它變成我最愛的工具。生日的這天，完成這小工具，還蠻有意思的。</p>
+<p>有任何需求會任何 bug 也歡迎回報。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notes </category>
+            
+            <category> Utility </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> DevOps </tag>
+            
+            <tag> Note </tag>
+            
+            <tag> Shell </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Utility - 在 Chrome 把連結複製成 Markdown 格式]]></title>
       <url>https://usedfire.net/Notes/Utility/Utility-copy-hyperlink-as-markdown-format/</url>
       <content type="html"><![CDATA[<p>這篇筆記的重點不只推薦 <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="external">Create Link</a> 這個 Chrome 的套件，也記錄怎麼樣設定，讓 Create Link 可以用快速鍵直接複製為 Markdown 格式的連結。</p>
