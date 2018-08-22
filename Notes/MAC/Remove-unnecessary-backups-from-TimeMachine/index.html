@@ -184,6 +184,14 @@
         
 
             <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Notes/PHP/">
+                    PHP <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Notes/Hexo/">
                     Hexo <span class="right">1 篇</span></a>
                 </a>
@@ -194,14 +202,6 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Notes/MAC/">
                     MAC <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Notes/PHP/">
-                    PHP <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -303,22 +303,22 @@
                 <p>這幾天在整理自己 NAS 的空間，發現 TimeMachine 佔掉硬碟裡許多的空間，甚至比我的 MacBook Air 本身 256G 的空間都還大上好幾倍，大概有個 1.x T的大小。進入細查之後才發現，原來從買了 MAC 之後，就沒有做過備份空間的清除，這就恐怖了。於是試著進入 TimeMachine 中刪除比較舊的備份。</p>
 <p>進入 TimeMachine 之後，可以由右邊的時間軸點選你要選擇的時間點。</p>
 <a id="more"></a>
-<p><img src="14741135039721.png" alt="官方 Time Machine 備份"><br>(Image from : <a href="https://support.apple.com/en-us/HT201250" target="_blank" rel="external">Use Time Machine to back up or restore your Mac - Apple Support</a>)</p>
+<p><img src="14741135039721.png" alt="官方 Time Machine 備份"><br>(Image from : <a href="https://support.apple.com/en-us/HT201250" target="_blank" rel="noopener">Use Time Machine to back up or restore your Mac - Apple Support</a>)</p>
 <p>選擇到要刪除的備份快照後，點選如下圖上方的齒輪，即可以看到刪除的樣式。</p>
 <p><img src="14741137605729.jpg" alt=""></p>
 <p>很明顯的，這個方案只適合只有幾個需要刪除的情況。於是找到 Apple Develop 手冊上的說法，關於 TimeMachine 有一個 <code>tmutil</code>  (Time Machine Utility) 的工具指令可以使用，<code>tmutil</code> 的功能非常多，舉凡建立新的快照、備份，甚至是進行兩個快照之間的差異比對他都可以。針對刪除不想要的 TimeMachine 備份則可以下以下指令。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/backup-name</div></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/backup-name</span><br></pre></td></tr></table></figure>
 <p>以我自己的 MacBook Air 的話，備份路徑就是：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air</span></div></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air</span></span><br></pre></td></tr></table></figure>
 <p>完整路徑可能就是：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air/2016-09-14-073950</span></div></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air/2016-09-14-073950</span></span><br></pre></td></tr></table></figure>
 <p>可以看到 Time Machine 備份方式每個快照都會以時間日期的方式建立資料夾內容。因此我們就可以透過指令刪除一系列的就備份。</p>
 <p>例如我要刪除 2014 年 1 月的所有備份，就可以執行以下指令：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/2014-01-*</div></pre></td></tr></table></figure>
-<p>網路上也可以找到有人寫了簡易的批次檔，如這個部落格：<a href="http://thegreyblog.blogspot.tw/2014/03/shrink-your-time-machine-backups-and.html" target="_blank" rel="external">The Grey Blog: Shrink Your Time Machine Backups and Free Disk Space</a> 所提供的範例。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ sudo bash</div><div class="line">Password:</div><div class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> /Volumes/Time\ Machine\ Backups/Backups.backupdb/iMac/2014-01* ; \</div><div class="line">  <span class="keyword">do</span> \</div><div class="line">    tmutil delete <span class="string">"<span class="variable">$i</span>"</span> ; \</div><div class="line">  <span class="keyword">done</span></div></pre></td></tr></table></figure>
-<p>清除之後，在下次 Time Machine 備份的時候，系統就會使用掉你刪除的空間。而如果需要馬上清除空間，也可以使用 MAC 提供的另外一個工具：<code>hdiutil</code> 詳細的用法可以參考官方手冊：<a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/tmutil.8.html" target="_blank" rel="external">tmutil(8) Mac OS X Manual Page</a>，清除的方法如下：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo hdiutil compact /path/to/disk-image</div></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/2014-01-*</span><br></pre></td></tr></table></figure>
+<p>網路上也可以找到有人寫了簡易的批次檔，如這個部落格：<a href="http://thegreyblog.blogspot.tw/2014/03/shrink-your-time-machine-backups-and.html" target="_blank" rel="noopener">The Grey Blog: Shrink Your Time Machine Backups and Free Disk Space</a> 所提供的範例。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sudo bash</span><br><span class="line">Password:</span><br><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> /Volumes/Time\ Machine\ Backups/Backups.backupdb/iMac/2014-01* ; \</span><br><span class="line">  <span class="keyword">do</span> \</span><br><span class="line">    tmutil delete <span class="string">"<span class="variable">$i</span>"</span> ; \</span><br><span class="line">  <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>清除之後，在下次 Time Machine 備份的時候，系統就會使用掉你刪除的空間。而如果需要馬上清除空間，也可以使用 MAC 提供的另外一個工具：<code>hdiutil</code> 詳細的用法可以參考官方手冊：<a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/tmutil.8.html" target="_blank" rel="noopener">tmutil(8) Mac OS X Manual Page</a>，清除的方法如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo hdiutil compact /path/to/disk-image</span><br></pre></td></tr></table></figure>
 <p>清除完畢之後，就可以獲得可用的空間了。我自己在執行 <code>tmutil delete</code> 時候發現，單獨刪除一個系統本身都還是需要重新計算一次變異，因此效率不是很好。刪除一個 1xG 的快照在無線網路的環境下刪了快半小時。所以，在使用 <code>tmutil</code> 做刪除時，如果時間不允許，砍掉重練或許也是一招。(這什麼結論呀！XD) </p>
 
                 
