@@ -616,7 +616,7 @@ a.social-link:hover {
   position: fixed;
   top: 0px;
   margin-top: 15%;
-  left: calc(50% + 350px);
+  left: calc(50% + 400px);
 }
 .toc ol {
   list-style-type: none;
