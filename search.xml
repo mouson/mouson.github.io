@@ -68,17 +68,17 @@
       <content type="html"><![CDATA[<p>這篇筆記的重點不只推薦 <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="noopener">Create Link</a> 這個 Chrome 的套件，也記錄怎麼樣設定，讓 Create Link 可以用快速鍵直接複製為 Markdown 格式的連結。</p>
 <p>由於現在很習慣的使用 Markdown 格式做筆記，所以把想記錄的網址複製為 Markdown 格式是很正常的事情，因此「製作連結」這件事情，就變成了很常做的事情，原本需要自己輸入中括弧、小括弧，而後依據把顯示的名稱、連結貼上去，但做久了覺得麻煩，便開始尋找套件，後來在朋友推薦下，於是知道了  <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="noopener">Create Link</a> ，安裝完之後，在網頁上的右鍵，就可以有複製成 markdown 的選項了。</p>
 <a id="more"></a>
-<p><img src="14746148858927.jpg" alt=""></p>
+<p><img src="14746148858927.jpg" alt></p>
 <p>如下圖，安裝完之後，選擇右鍵即可出現 <code>Create Link</code> 選項，而內容中，即有 Plain text、HTML、markdown、mediaWiki 格式。選擇後，即可把 Chrome 該 Tab 的網址，複製為 markdown 格式。</p>
-<p><img src="14746148495883.jpg" alt=""></p>
+<p><img src="14746148495883.jpg" alt></p>
 <p>很好用。已經節省了好幾個步驟。但，人是貪心的，當複製的東西越多，就會覺得，這功能還是不夠快速，如果可以在複製的時候，就直接變成 markdown 格式的話，似乎會更好。於是，我發現了這個功能。</p>
-<p><img src="14746151151072.jpg" alt=""></p>
+<p><img src="14746151151072.jpg" alt></p>
 <p>在右上角 <code>Create Link</code> 的 icon 地方，選擇 <code>Configure...</code> 進入後，可以看到以下的畫面。發現一個 Default is currently 的選項。</p>
-<p><img src="14746151939558.jpg" alt=""></p>
+<p><img src="14746151939558.jpg" alt></p>
 <p>預設是 (not selected)，這時候只要把它設定為 <code>markdown</code>，而後，在點選畫面中出現的 <code>Configure shortcut</code>，點選進入設定。</p>
-<p><img src="14746153524118.jpg" alt=""></p>
+<p><img src="14746153524118.jpg" alt></p>
 <p>接著，找到「擴充功能和應用程式專用鍵盤快速鍵」，找到這個套件<code>Create Link</code>中，<code>Current tab in default format</code>這個選項，在這邊設定您想要的快速鍵，如我使用<code>Ctrl+C</code>，設定完，關閉畫面後，就可以完成使用某個快速鍵，選擇完畢後，即把該 Tab 複製為 Markdown 格式的連結了。</p>
-<p><img src="14746154233318.jpg" alt=""></p>
+<p><img src="14746154233318.jpg" alt></p>
 ]]></content>
       
         <categories>
@@ -108,7 +108,7 @@
 <a id="more"></a>
 <p><img src="14741135039721.png" alt="官方 Time Machine 備份"><br>(Image from : <a href="https://support.apple.com/en-us/HT201250" target="_blank" rel="noopener">Use Time Machine to back up or restore your Mac - Apple Support</a>)</p>
 <p>選擇到要刪除的備份快照後，點選如下圖上方的齒輪，即可以看到刪除的樣式。</p>
-<p><img src="14741137605729.jpg" alt=""></p>
+<p><img src="14741137605729.jpg" alt></p>
 <p>很明顯的，這個方案只適合只有幾個需要刪除的情況。於是找到 Apple Develop 手冊上的說法，關於 TimeMachine 有一個 <code>tmutil</code>  (Time Machine Utility) 的工具指令可以使用，<code>tmutil</code> 的功能非常多，舉凡建立新的快照、備份，甚至是進行兩個快照之間的差異比對他都可以。針對刪除不想要的 TimeMachine 備份則可以下以下指令。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/backup-name</span><br></pre></td></tr></table></figure>
 <p>以我自己的 MacBook Air 的話，備份路徑就是：</p>
@@ -195,7 +195,7 @@
 <pre><code>domain name: 你的網域名稱
 folder name: 設定的資料夾名稱
 title name: 文章的標題名稱
-</code></pre><h3 id="二-hexo-source-post-資料夾底下的結構如下"><a href="#二-hexo-source-post-資料夾底下的結構如下" class="headerlink" title="(二) hexo source/_post 資料夾底下的結構如下"></a>(二) hexo source/_post 資料夾底下的結構如下</h3><p><img src="make-hexo-post-category-by-folder＿01.png" alt=""></p>
+</code></pre><h3 id="二-hexo-source-post-資料夾底下的結構如下"><a href="#二-hexo-source-post-資料夾底下的結構如下" class="headerlink" title="(二) hexo source/_post 資料夾底下的結構如下"></a>(二) hexo source/_post 資料夾底下的結構如下</h3><p><img src="make-hexo-post-category-by-folder＿01.png" alt></p>
 <p>以本站的文章為例，我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a>，結構上在 <code>_post</code> 底下有兩層資料夾，除了第一層 Clippings 為資料夾名稱外，還再加上以 2016 也就是依年度再做一次資料夾分類。而其他筆記類的，當然也就可以依據筆記類型、文章屬性等做資料夾分層分類，如此在找文章原始檔的時候，便可以較輕易的找到所需要的內容。</p>
 <h2 id="三、Hexo-設定"><a href="#三、Hexo-設定" class="headerlink" title="三、Hexo 設定"></a>三、Hexo 設定</h2><h3 id="一-hexo-config-yml-設定檔設定"><a href="#一-hexo-config-yml-設定檔設定" class="headerlink" title="(一) hexo _config.yml 設定檔設定"></a>(一) hexo _config.yml 設定檔設定</h3><p>找到 _config.yml 檔做編輯，將 URL 的部分一下做設定：</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">url:</span> <span class="string">https:</span><span class="comment">//&#123;domain name&#125;</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :title/</span><br></pre></td></tr></table></figure>
@@ -241,19 +241,19 @@ title name: 文章的標題名稱
       <content type="html"><![CDATA[<p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p>
 <a id="more"></a>
 <h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p>
-<p><img src="sublime_01.png" alt=""></p>
+<p><img src="sublime_01.png" alt></p>
 <h2 id="2-手動設定樣式"><a href="#2-手動設定樣式" class="headerlink" title="2. 手動設定樣式"></a>2. 手動設定樣式</h2><p>在 menu -&gt; View -&gt; Syntax -&gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。</p>
-<p><img src="sublime_02.png" alt=""></p>
+<p><img src="sublime_02.png" alt></p>
 <p>設定完成後，即可顯示正確的顏色。</p>
-<p><img src="sublime_03.png" alt=""></p>
+<p><img src="sublime_03.png" alt></p>
 <h2 id="3-設定使該副檔名未來皆以相同-Syntax-顯示"><a href="#3-設定使該副檔名未來皆以相同-Syntax-顯示" class="headerlink" title="3. 設定使該副檔名未來皆以相同 Syntax 顯示"></a>3. 設定使該副檔名未來皆以相同 Syntax 顯示</h2><p>在目前已經手動設定好樣式的狀態下，選擇：</p>
 <ul>
 <li>Windows: Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
 <li>OSX: Sublime Text &gt; Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
 </ul>
-<p><img src="sublime_04.png" alt=""></p>
+<p><img src="sublime_04.png" alt></p>
 <p>可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 <code>PHP.sublime-settings</code> 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。</p>
-<p><img src="sublime_05.png" alt=""></p>
+<p><img src="sublime_05.png" alt></p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // Which <span class="keyword">file</span> extensions <span class="keyword">go</span> with this <span class="keyword">file</span> <span class="built_in">type</span>?</span><br><span class="line">    <span class="string">"extensions"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"php"</span>,</span><br><span class="line">        <span class="string">"inc"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="4-附註："><a href="#4-附註：" class="headerlink" title="4. 附註："></a>4. 附註：</h2><p>如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：</p>
 <ul>
