@@ -300,21 +300,23 @@
             <div class="entry grey-link-context">
                 <p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p>
 <a id="more"></a>
+
 <h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p>
-<p><img src="sublime_01.png" alt></p>
+<p><img src="sublime_01.png"></p>
 <h2 id="2-手動設定樣式"><a href="#2-手動設定樣式" class="headerlink" title="2. 手動設定樣式"></a>2. 手動設定樣式</h2><p>在 menu -&gt; View -&gt; Syntax -&gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。</p>
-<p><img src="sublime_02.png" alt></p>
+<p><img src="sublime_02.png"></p>
 <p>設定完成後，即可顯示正確的顏色。</p>
-<p><img src="sublime_03.png" alt></p>
+<p><img src="sublime_03.png"></p>
 <h2 id="3-設定使該副檔名未來皆以相同-Syntax-顯示"><a href="#3-設定使該副檔名未來皆以相同-Syntax-顯示" class="headerlink" title="3. 設定使該副檔名未來皆以相同 Syntax 顯示"></a>3. 設定使該副檔名未來皆以相同 Syntax 顯示</h2><p>在目前已經手動設定好樣式的狀態下，選擇：</p>
 <ul>
 <li>Windows: Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
 <li>OSX: Sublime Text &gt; Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
 </ul>
-<p><img src="sublime_04.png" alt></p>
+<p><img src="sublime_04.png"></p>
 <p>可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 <code>PHP.sublime-settings</code> 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。</p>
-<p><img src="sublime_05.png" alt></p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // Which <span class="keyword">file</span> extensions <span class="keyword">go</span> with this <span class="keyword">file</span> <span class="built_in">type</span>?</span><br><span class="line">    <span class="string">"extensions"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"php"</span>,</span><br><span class="line">        <span class="string">"inc"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="sublime_05.png"></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Which file extensions go with this file type?</span></span><br><span class="line">    <span class="attr">"extensions"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"php"</span>,</span><br><span class="line">        <span class="string">"inc"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="4-附註："><a href="#4-附註：" class="headerlink" title="4. 附註："></a>4. 附註：</h2><p>如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：</p>
 <ul>
 <li>Windows: C:\Users{User Name}\AppData\Roaming\Sublime Text 3\Packages\User\</li>
