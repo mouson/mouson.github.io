@@ -1,64 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
+<search> 
   
   
     
     <entry>
-      <title><![CDATA[Utility - 使用 WebSiteBackupTools 備份網站]]></title>
-      <url>https://usedfire.net/Notes/Utility/Utility-HowToUsingWebSiteBackupTools/</url>
-      <content type="html"><![CDATA[<h2 id="前言及緣由"><a href="#前言及緣由" class="headerlink" title="前言及緣由"></a>前言及緣由</h2><p>找了好一陣子，一直沒能弄到自己喜歡＆順手的網站備份工具，想一想自己想要的需求應該不會太難，主要應該要有以下需求：</p>
-<ol>
-<li>使用設定檔方便一台主機上有多個網站需要進行不同的備份</li>
-<li>備份的內容包含檔案及資料庫</li>
-<li>備份檔案上傳 Dropbox</li>
-<li>只保留一週的備份檔</li>
-</ol>
-<p>但，一直沒能找到自己順手的…於是，就自己動手了一個基本符合自己需求的工具 -  <a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="noopener">WebSiteBackupTools</a> ， 這個工具使用了 <a href="https://github.com/andreafabrizi/Dropbox-Uploader/" target="_blank" rel="noopener">Dropbox-Uploader</a> 這個 Dropbox Uploader is a BASH script 也不用再自己額外寫 Dropbox API 的功能，且持續的更新中，不致於發生功能壞掉沒能修的問題。</p>
-<p>以下就繼續說明該如何使用囉！</p>
-<a id="more"></a>
-
-<h2 id="一、下載"><a href="#一、下載" class="headerlink" title="一、下載"></a>一、下載</h2><ul>
-<li><p>參考位置：<a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="noopener">mouson/WebSiteBackupTools: WebStie Backup Tools Support Backup to Dropbox</a></p>
-</li>
-<li><p>直接下載原始檔案</p>
-</li>
-</ul>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//gi</span>thub.com<span class="regexp">/mouson/</span>WebSiteBackupTools<span class="regexp">/releases/</span>download<span class="regexp">/v0.1/</span>WebSiteBackupTools.zip</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>clone source file</li>
-</ul>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="string">//github.com/mouson/WebSiteBackupTools.git</span></span><br><span class="line"><span class="keyword">cd</span> <span class="string">/root/WebSiteBackupTools</span></span><br><span class="line">git submodule update <span class="params">--init</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二、環境設定"><a href="#二、環境設定" class="headerlink" title="二、環境設定"></a>二、環境設定</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /root/WebSiteBackupTools</span><br><span class="line"><span class="keyword">cp</span> Config/config.<span class="keyword">sh</span>.sample Config/config.<span class="keyword">sh</span></span><br><span class="line"><span class="keyword">vim</span> Config/config.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
-
-<p>其中 </p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="comment"># 備份的名稱</span></span><br><span class="line"><span class="attr">backup_name</span>=<span class="string">'BackupName'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 設定後網站檔案資料備份檔名為：BackupName_web_YYYY-MM-DD.sql.bz2</span></span><br><span class="line"><span class="comment"># 設定後網站檔案資料備份檔名為：BackupName_db_YYYY-MM-DD.sql.bz2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Path Setting</span></span><br><span class="line"><span class="comment"># 備份資料夾的路徑</span></span><br><span class="line"><span class="attr">website_folder</span>=<span class="string">'/var/www/website'</span></span><br><span class="line"><span class="comment"># 備份工作處理期間，相關檔案的暫存路徑</span></span><br><span class="line"><span class="attr">working_folder</span>=<span class="string">'/home/username/working'</span></span><br><span class="line"><span class="comment"># 上傳到 Dropbox 的什麼資料夾名稱</span></span><br><span class="line"><span class="attr">dropbox_folder</span>=<span class="string">'backup'</span></span><br><span class="line"><span class="comment"># 備份資料夾中需要排除什麼資料夾</span></span><br><span class="line"><span class="attr">exclude</span>=<span class="string">'wp-content/cache/*'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># MySQL information: replace it with your own</span></span><br><span class="line"><span class="comment"># 資料庫位置</span></span><br><span class="line"><span class="attr">hostname</span>=<span class="string">'localhost'</span></span><br><span class="line"><span class="comment"># 資料庫使用帳號</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">'user'</span></span><br><span class="line"><span class="comment"># 帳號使用的密碼</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">'password'</span></span><br><span class="line"><span class="comment"># 資料庫名稱</span></span><br><span class="line"><span class="attr">database</span>=<span class="string">'daname'</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="三、實際操作"><a href="#三、實際操作" class="headerlink" title="三、實際操作"></a>三、實際操作</h2><p>執行以下指令：</p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sh</span> /root/WebSiteBackupTools/Scripts/Backup2Dropbox.<span class="keyword">sh</span> config.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
-
-<p>當你有多組網站需要備份，也可以這樣使用</p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sh</span> /root/WebSiteBackupTools/Scripts/Backup2Dropbox.<span class="keyword">sh</span> website1_config.<span class="keyword">sh</span></span><br><span class="line"><span class="keyword">sh</span> /root/WebSiteBackupTools/Scripts/Backup2Dropbox.<span class="keyword">sh</span> website2_config.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
-
-<p>如果需要設定 cronjob 排程，也可以進行以下設定：</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">crontab -e</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">2</span> * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website1_config.sh &gt; /dev/null <span class="number">2</span>&gt;&amp;<span class="number">1</span></span><br><span class="line"><span class="symbol">10 </span><span class="number">2</span> * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website2_config.sh &gt; /dev/null <span class="number">2</span>&gt;&amp;<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="四、結語"><a href="#四、結語" class="headerlink" title="四、結語"></a>四、結語</h2><p>這份工具目前還不是我心目中最完美的備份工具，但堪用，之後會持續的更新它，讓它變成我最愛的工具。生日的這天，完成這小工具，還蠻有意思的。</p>
-<p>有任何需求會任何 bug 也歡迎回報。</p>
-]]></content>
+      <title>Utility - 使用 WebSiteBackupTools 備份網站</title>
+      <link href="/Notes/Utility/Utility-HowToUsingWebSiteBackupTools/"/>
+      <url>/Notes/Utility/Utility-HowToUsingWebSiteBackupTools/</url>
       
-        <categories>
-            
-            <category> Notes </category>
-            
-            <category> Utility </category>
-            
-        </categories>
-        
-        
+        <content type="html"><![CDATA[<h2 id="前言及緣由"><a href="#前言及緣由" class="headerlink" title="前言及緣由"></a>前言及緣由</h2><p>找了好一陣子，一直沒能弄到自己喜歡＆順手的網站備份工具，想一想自己想要的需求應該不會太難，主要應該要有以下需求：</p><ol><li>使用設定檔方便一台主機上有多個網站需要進行不同的備份</li><li>備份的內容包含檔案及資料庫</li><li>備份檔案上傳 Dropbox</li><li>只保留一週的備份檔</li></ol><p>但，一直沒能找到自己順手的…於是，就自己動手了一個基本符合自己需求的工具 -  <a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="noopener">WebSiteBackupTools</a> ， 這個工具使用了 <a href="https://github.com/andreafabrizi/Dropbox-Uploader/" target="_blank" rel="noopener">Dropbox-Uploader</a> 這個 Dropbox Uploader is a BASH script 也不用再自己額外寫 Dropbox API 的功能，且持續的更新中，不致於發生功能壞掉沒能修的問題。</p><p>以下就繼續說明該如何使用囉！</p><a id="more"></a><h2 id="一、下載"><a href="#一、下載" class="headerlink" title="一、下載"></a>一、下載</h2><ul><li><p>參考位置：<a href="https://github.com/mouson/WebSiteBackupTools" target="_blank" rel="noopener">mouson/WebSiteBackupTools: WebStie Backup Tools Support Backup to Dropbox</a></p></li><li><p>直接下載原始檔案</p></li></ul><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//gi</span>thub.com<span class="regexp">/mouson/</span>WebSiteBackupTools<span class="regexp">/releases/</span>download<span class="regexp">/v0.1/</span>WebSiteBackupTools.zip</span><br></pre></td></tr></table></figure><ul><li>clone source file</li></ul><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="string">//github.com/mouson/WebSiteBackupTools.git</span></span><br><span class="line"><span class="keyword">cd</span> <span class="string">/root/WebSiteBackupTools</span></span><br><span class="line">git submodule update <span class="params">--init</span></span><br></pre></td></tr></table></figure><h2 id="二、環境設定"><a href="#二、環境設定" class="headerlink" title="二、環境設定"></a>二、環境設定</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /root/WebSiteBackupTools</span><br><span class="line"><span class="keyword">cp</span> Config/config.<span class="keyword">sh</span>.sample Config/config.<span class="keyword">sh</span></span><br><span class="line"><span class="keyword">vim</span> Config/config.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure><p>其中 </p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="comment"># 備份的名稱</span></span><br><span class="line"><span class="attr">backup_name</span>=<span class="string">'BackupName'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 設定後網站檔案資料備份檔名為：BackupName_web_YYYY-MM-DD.sql.bz2</span></span><br><span class="line"><span class="comment"># 設定後網站檔案資料備份檔名為：BackupName_db_YYYY-MM-DD.sql.bz2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Path Setting</span></span><br><span class="line"><span class="comment"># 備份資料夾的路徑</span></span><br><span class="line"><span class="attr">website_folder</span>=<span class="string">'/var/www/website'</span></span><br><span class="line"><span class="comment"># 備份工作處理期間，相關檔案的暫存路徑</span></span><br><span class="line"><span class="attr">working_folder</span>=<span class="string">'/home/username/working'</span></span><br><span class="line"><span class="comment"># 上傳到 Dropbox 的什麼資料夾名稱</span></span><br><span class="line"><span class="attr">dropbox_folder</span>=<span class="string">'backup'</span></span><br><span class="line"><span class="comment"># 備份資料夾中需要排除什麼資料夾</span></span><br><span class="line"><span class="attr">exclude</span>=<span class="string">'wp-content/cache/*'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># MySQL information: replace it with your own</span></span><br><span class="line"><span class="comment"># 資料庫位置</span></span><br><span class="line"><span class="attr">hostname</span>=<span class="string">'localhost'</span></span><br><span class="line"><span class="comment"># 資料庫使用帳號</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">'user'</span></span><br><span class="line"><span class="comment"># 帳號使用的密碼</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">'password'</span></span><br><span class="line"><span class="comment"># 資料庫名稱</span></span><br><span class="line"><span class="attr">database</span>=<span class="string">'daname'</span></span><br></pre></td></tr></table></figure><h2 id="三、實際操作"><a href="#三、實際操作" class="headerlink" title="三、實際操作"></a>三、實際操作</h2><p>執行以下指令：</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sh</span> /root/WebSiteBackupTools/Scripts/Backup2Dropbox.<span class="keyword">sh</span> config.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure><p>當你有多組網站需要備份，也可以這樣使用</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sh</span> /root/WebSiteBackupTools/Scripts/Backup2Dropbox.<span class="keyword">sh</span> website1_config.<span class="keyword">sh</span></span><br><span class="line"><span class="keyword">sh</span> /root/WebSiteBackupTools/Scripts/Backup2Dropbox.<span class="keyword">sh</span> website2_config.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure><p>如果需要設定 cronjob 排程，也可以進行以下設定：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">crontab -e</span></span><br></pre></td></tr></table></figure><figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">2</span> * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website1_config.sh &gt; /dev/null <span class="number">2</span>&gt;&amp;<span class="number">1</span></span><br><span class="line"><span class="symbol">10 </span><span class="number">2</span> * * * sh /root/WebSiteBackupTools/Scripts/Backup2Dropbox.sh website2_config.sh &gt; /dev/null <span class="number">2</span>&gt;&amp;<span class="number">1</span></span><br></pre></td></tr></table></figure><h2 id="四、結語"><a href="#四、結語" class="headerlink" title="四、結語"></a>四、結語</h2><p>這份工具目前還不是我心目中最完美的備份工具，但堪用，之後會持續的更新它，讓它變成我最愛的工具。生日的這天，完成這小工具，還蠻有意思的。</p><p>有任何需求會任何 bug 也歡迎回報。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> Utility </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> DevOps </tag>
@@ -68,38 +29,28 @@
             <tag> Shell </tag>
             
         </tags>
-        
+      
     </entry>
     
+    
+    
     <entry>
-      <title><![CDATA[Utility - 在 Chrome 把連結複製成 Markdown 格式]]></title>
-      <url>https://usedfire.net/Notes/Utility/Utility-copy-hyperlink-as-markdown-format/</url>
-      <content type="html"><![CDATA[<p>這篇筆記的重點不只推薦 <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="noopener">Create Link</a> 這個 Chrome 的套件，也記錄怎麼樣設定，讓 Create Link 可以用快速鍵直接複製為 Markdown 格式的連結。</p>
-<p>由於現在很習慣的使用 Markdown 格式做筆記，所以把想記錄的網址複製為 Markdown 格式是很正常的事情，因此「製作連結」這件事情，就變成了很常做的事情，原本需要自己輸入中括弧、小括弧，而後依據把顯示的名稱、連結貼上去，但做久了覺得麻煩，便開始尋找套件，後來在朋友推薦下，於是知道了  <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="noopener">Create Link</a> ，安裝完之後，在網頁上的右鍵，就可以有複製成 markdown 的選項了。</p>
-<a id="more"></a>
-
-<p><img src="14746148858927.jpg"></p>
-<p>如下圖，安裝完之後，選擇右鍵即可出現 <code>Create Link</code> 選項，而內容中，即有 Plain text、HTML、markdown、mediaWiki 格式。選擇後，即可把 Chrome 該 Tab 的網址，複製為 markdown 格式。</p>
-<p><img src="14746148495883.jpg"></p>
-<p>很好用。已經節省了好幾個步驟。但，人是貪心的，當複製的東西越多，就會覺得，這功能還是不夠快速，如果可以在複製的時候，就直接變成 markdown 格式的話，似乎會更好。於是，我發現了這個功能。</p>
-<p><img src="14746151151072.jpg"></p>
-<p>在右上角 <code>Create Link</code> 的 icon 地方，選擇 <code>Configure...</code> 進入後，可以看到以下的畫面。發現一個 Default is currently 的選項。</p>
-<p><img src="14746151939558.jpg"></p>
-<p>預設是 (not selected)，這時候只要把它設定為 <code>markdown</code>，而後，在點選畫面中出現的 <code>Configure shortcut</code>，點選進入設定。</p>
-<p><img src="14746153524118.jpg"></p>
-<p>接著，找到「擴充功能和應用程式專用鍵盤快速鍵」，找到這個套件<code>Create Link</code>中，<code>Current tab in default format</code>這個選項，在這邊設定您想要的快速鍵，如我使用<code>Ctrl+C</code>，設定完，關閉畫面後，就可以完成使用某個快速鍵，選擇完畢後，即把該 Tab 複製為 Markdown 格式的連結了。</p>
-<p><img src="14746154233318.jpg"></p>
-]]></content>
+      <title>Utility - 在 Chrome 把連結複製成 Markdown 格式</title>
+      <link href="/Notes/Utility/Utility-copy-hyperlink-as-markdown-format/"/>
+      <url>/Notes/Utility/Utility-copy-hyperlink-as-markdown-format/</url>
       
-        <categories>
-            
-            <category> Notes </category>
-            
-            <category> Utility </category>
-            
-        </categories>
-        
-        
+        <content type="html"><![CDATA[<p>這篇筆記的重點不只推薦 <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="noopener">Create Link</a> 這個 Chrome 的套件，也記錄怎麼樣設定，讓 Create Link 可以用快速鍵直接複製為 Markdown 格式的連結。</p><p>由於現在很習慣的使用 Markdown 格式做筆記，所以把想記錄的網址複製為 Markdown 格式是很正常的事情，因此「製作連結」這件事情，就變成了很常做的事情，原本需要自己輸入中括弧、小括弧，而後依據把顯示的名稱、連結貼上去，但做久了覺得麻煩，便開始尋找套件，後來在朋友推薦下，於是知道了  <a href="https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm" target="_blank" rel="noopener">Create Link</a> ，安裝完之後，在網頁上的右鍵，就可以有複製成 markdown 的選項了。</p><a id="more"></a><p><img src="14746148858927.jpg"></p><p>如下圖，安裝完之後，選擇右鍵即可出現 <code>Create Link</code> 選項，而內容中，即有 Plain text、HTML、markdown、mediaWiki 格式。選擇後，即可把 Chrome 該 Tab 的網址，複製為 markdown 格式。</p><p><img src="14746148495883.jpg"></p><p>很好用。已經節省了好幾個步驟。但，人是貪心的，當複製的東西越多，就會覺得，這功能還是不夠快速，如果可以在複製的時候，就直接變成 markdown 格式的話，似乎會更好。於是，我發現了這個功能。</p><p><img src="14746151151072.jpg"></p><p>在右上角 <code>Create Link</code> 的 icon 地方，選擇 <code>Configure...</code> 進入後，可以看到以下的畫面。發現一個 Default is currently 的選項。</p><p><img src="14746151939558.jpg"></p><p>預設是 (not selected)，這時候只要把它設定為 <code>markdown</code>，而後，在點選畫面中出現的 <code>Configure shortcut</code>，點選進入設定。</p><p><img src="14746153524118.jpg"></p><p>接著，找到「擴充功能和應用程式專用鍵盤快速鍵」，找到這個套件<code>Create Link</code>中，<code>Current tab in default format</code>這個選項，在這邊設定您想要的快速鍵，如我使用<code>Ctrl+C</code>，設定完，關閉畫面後，就可以完成使用某個快速鍵，選擇完畢後，即把該 Tab 複製為 Markdown 格式的連結了。</p><p><img src="14746154233318.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> Utility </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> Note </tag>
@@ -107,50 +58,28 @@
             <tag> Chrome </tag>
             
         </tags>
-        
+      
     </entry>
     
+    
+    
     <entry>
-      <title><![CDATA[MAC OSX - 大量移除不需要的 TimeMachine 備份]]></title>
-      <url>https://usedfire.net/Notes/MAC/Remove-unnecessary-backups-from-TimeMachine/</url>
-      <content type="html"><![CDATA[<p>這幾天在整理自己 NAS 的空間，發現 TimeMachine 佔掉硬碟裡許多的空間，甚至比我的 MacBook Air 本身 256G 的空間都還大上好幾倍，大概有個 1.x T的大小。進入細查之後才發現，原來從買了 MAC 之後，就沒有做過備份空間的清除，這就恐怖了。於是試著進入 TimeMachine 中刪除比較舊的備份。</p>
-<p>進入 TimeMachine 之後，可以由右邊的時間軸點選你要選擇的時間點。</p>
-<a id="more"></a>
-
-<p><img src="14741135039721.png" alt="官方 Time Machine 備份"><br>(Image from : <a href="https://support.apple.com/en-us/HT201250" target="_blank" rel="noopener">Use Time Machine to back up or restore your Mac - Apple Support</a>)</p>
-<p>選擇到要刪除的備份快照後，點選如下圖上方的齒輪，即可以看到刪除的樣式。</p>
-<p><img src="14741137605729.jpg"></p>
-<p>很明顯的，這個方案只適合只有幾個需要刪除的情況。於是找到 Apple Develop 手冊上的說法，關於 TimeMachine 有一個 <code>tmutil</code>  (Time Machine Utility) 的工具指令可以使用，<code>tmutil</code> 的功能非常多，舉凡建立新的快照、備份，甚至是進行兩個快照之間的差異比對他都可以。針對刪除不想要的 TimeMachine 備份則可以下以下指令。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/backup-name</span><br></pre></td></tr></table></figure>
-
-<p>以我自己的 MacBook Air 的話，備份路徑就是：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air</span></span><br></pre></td></tr></table></figure>
-
-<p>完整路徑可能就是：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air/2016-09-14-073950</span></span><br></pre></td></tr></table></figure>
-
-<p>可以看到 Time Machine 備份方式每個快照都會以時間日期的方式建立資料夾內容。因此我們就可以透過指令刪除一系列的就備份。</p>
-<p>例如我要刪除 2014 年 1 月的所有備份，就可以執行以下指令：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/2014-01-*</span><br></pre></td></tr></table></figure>
-
-<p>網路上也可以找到有人寫了簡易的批次檔，如這個部落格：<a href="http://thegreyblog.blogspot.tw/2014/03/shrink-your-time-machine-backups-and.html" target="_blank" rel="noopener">The Grey Blog: Shrink Your Time Machine Backups and Free Disk Space</a> 所提供的範例。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sudo bash</span><br><span class="line">Password:</span><br><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> /Volumes/Time\ Machine\ Backups/Backups.backupdb/iMac/2014-01* ; \</span><br><span class="line">  <span class="keyword">do</span> \</span><br><span class="line">    tmutil delete <span class="string">"<span class="variable">$i</span>"</span> ; \</span><br><span class="line">  <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
-
-<p>清除之後，在下次 Time Machine 備份的時候，系統就會使用掉你刪除的空間。而如果需要馬上清除空間，也可以使用 MAC 提供的另外一個工具：<code>hdiutil</code> 詳細的用法可以參考官方手冊：<a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/tmutil.8.html" target="_blank" rel="noopener">tmutil(8) Mac OS X Manual Page</a>，清除的方法如下：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo hdiutil compact /path/to/disk-image</span><br></pre></td></tr></table></figure>
-
-<p>清除完畢之後，就可以獲得可用的空間了。我自己在執行 <code>tmutil delete</code> 時候發現，單獨刪除一個系統本身都還是需要重新計算一次變異，因此效率不是很好。刪除一個 1xG 的快照在無線網路的環境下刪了快半小時。所以，在使用 <code>tmutil</code> 做刪除時，如果時間不允許，砍掉重練或許也是一招。(這什麼結論呀！XD) </p>
-]]></content>
+      <title>MAC OSX - 大量移除不需要的 TimeMachine 備份</title>
+      <link href="/Notes/MAC/Remove-unnecessary-backups-from-TimeMachine/"/>
+      <url>/Notes/MAC/Remove-unnecessary-backups-from-TimeMachine/</url>
       
-        <categories>
-            
-            <category> Notes </category>
-            
-            <category> MAC </category>
-            
-        </categories>
-        
-        
+        <content type="html"><![CDATA[<p>這幾天在整理自己 NAS 的空間，發現 TimeMachine 佔掉硬碟裡許多的空間，甚至比我的 MacBook Air 本身 256G 的空間都還大上好幾倍，大概有個 1.x T的大小。進入細查之後才發現，原來從買了 MAC 之後，就沒有做過備份空間的清除，這就恐怖了。於是試著進入 TimeMachine 中刪除比較舊的備份。</p><p>進入 TimeMachine 之後，可以由右邊的時間軸點選你要選擇的時間點。</p><a id="more"></a><p><img src="14741135039721.png" alt="官方 Time Machine 備份"><br>(Image from : <a href="https://support.apple.com/en-us/HT201250" target="_blank" rel="noopener">Use Time Machine to back up or restore your Mac - Apple Support</a>)</p><p>選擇到要刪除的備份快照後，點選如下圖上方的齒輪，即可以看到刪除的樣式。</p><p><img src="14741137605729.jpg"></p><p>很明顯的，這個方案只適合只有幾個需要刪除的情況。於是找到 Apple Develop 手冊上的說法，關於 TimeMachine 有一個 <code>tmutil</code>  (Time Machine Utility) 的工具指令可以使用，<code>tmutil</code> 的功能非常多，舉凡建立新的快照、備份，甚至是進行兩個快照之間的差異比對他都可以。針對刪除不想要的 TimeMachine 備份則可以下以下指令。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/backup-name</span><br></pre></td></tr></table></figure><p>以我自己的 MacBook Air 的話，備份路徑就是：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air</span></span><br></pre></td></tr></table></figure><p>完整路徑可能就是：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Volumes/Time Machine 備份/Backups.backupdb/mouson<span class="string">'s MacBook Air/2016-09-14-073950</span></span><br></pre></td></tr></table></figure><p>可以看到 Time Machine 備份方式每個快照都會以時間日期的方式建立資料夾內容。因此我們就可以透過指令刪除一系列的就備份。</p><p>例如我要刪除 2014 年 1 月的所有備份，就可以執行以下指令：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tmutil delete /full/path/to/backup/Backups.backupdb/machine/2014-01-*</span><br></pre></td></tr></table></figure><p>網路上也可以找到有人寫了簡易的批次檔，如這個部落格：<a href="http://thegreyblog.blogspot.tw/2014/03/shrink-your-time-machine-backups-and.html" target="_blank" rel="noopener">The Grey Blog: Shrink Your Time Machine Backups and Free Disk Space</a> 所提供的範例。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sudo bash</span><br><span class="line">Password:</span><br><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> /Volumes/Time\ Machine\ Backups/Backups.backupdb/iMac/2014-01* ; \</span><br><span class="line">  <span class="keyword">do</span> \</span><br><span class="line">    tmutil delete <span class="string">"<span class="variable">$i</span>"</span> ; \</span><br><span class="line">  <span class="keyword">done</span></span><br></pre></td></tr></table></figure><p>清除之後，在下次 Time Machine 備份的時候，系統就會使用掉你刪除的空間。而如果需要馬上清除空間，也可以使用 MAC 提供的另外一個工具：<code>hdiutil</code> 詳細的用法可以參考官方手冊：<a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/tmutil.8.html" target="_blank" rel="noopener">tmutil(8) Mac OS X Manual Page</a>，清除的方法如下：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo hdiutil compact /path/to/disk-image</span><br></pre></td></tr></table></figure><p>清除完畢之後，就可以獲得可用的空間了。我自己在執行 <code>tmutil delete</code> 時候發現，單獨刪除一個系統本身都還是需要重新計算一次變異，因此效率不是很好。刪除一個 1xG 的快照在無線網路的環境下刪了快半小時。所以，在使用 <code>tmutil</code> 做刪除時，如果時間不允許，砍掉重練或許也是一招。(這什麼結論呀！XD) </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> MAC </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> Note </tag>
@@ -160,44 +89,28 @@
             <tag> Utility </tag>
             
         </tags>
-        
+      
     </entry>
     
+    
+    
     <entry>
-      <title><![CDATA[PHP - 使用 array_filter 讓你的程式碼更簡潔易讀]]></title>
-      <url>https://usedfire.net/Notes/PHP/Implement-toArray-method-used-array-filter/</url>
-      <content type="html"><![CDATA[<p>早上看到了這一篇關於 PHP 技巧的文章：<a href="https://murze.be/2016/08/improving-readability-using-array_filter/" target="_blank" rel="noopener">Improving readability using array_filter - murze.be</a> 中文翻譯大概可以說是，用 <code>array_filter</code> 使之更具有可讀性。看到也實際測試了一下，覺得不錯，因此作了一些實驗，也發現一些小坑，所以順便作一下記錄。</p>
-<p>以往要在 PHP 的 class 中實作 <code>toArray()</code> method 我們會寫類似的程式碼：</p>
-<a id="more"></a>
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name;</span><br><span class="line">    <span class="keyword">private</span> $city;</span><br><span class="line">    <span class="keyword">private</span> $street_line1;</span><br><span class="line">    <span class="keyword">private</span> $street_line2;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        $address = [</span><br><span class="line">            <span class="string">'name'</span> =&gt; <span class="keyword">$this</span>-&gt;name,</span><br><span class="line">            <span class="string">'city'</span> =&gt; <span class="keyword">$this</span>-&gt;city,</span><br><span class="line">            <span class="string">'street_line1'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line1,</span><br><span class="line">        ];</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">$this</span>-&gt;street_line2 != <span class="string">''</span>) &#123;</span><br><span class="line">            $address[<span class="string">'street_line2'</span>] = <span class="keyword">$this</span>-&gt;street_line2;</span><br><span class="line">        &#125;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>member data 不多的時候，看起來還好。但再多幾個，上面判斷是否為空白的 if 判斷式就會變得非常多，很不好看，也不簡潔。文章內提供的方法就是使用 <code>array_filter</code> 改寫。改寫後的程式碼像這樣。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name;</span><br><span class="line">    <span class="keyword">private</span> $city;</span><br><span class="line">    <span class="keyword">private</span> $street_line1;</span><br><span class="line">    <span class="keyword">private</span> $street_line2;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> array_filter([</span><br><span class="line">            <span class="string">'name'</span> =&gt; <span class="keyword">$this</span>-&gt;name,</span><br><span class="line">            <span class="string">'city'</span> =&gt; <span class="keyword">$this</span>-&gt;city,</span><br><span class="line">            <span class="string">'street_line1'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line1,</span><br><span class="line">            <span class="string">'street_line2'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line2,</span><br><span class="line">            ...</span><br><span class="line">        ]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>整體看起來簡潔多了。使用的就是 <code>array_filter</code> <a href="http://php.net/manual/en/function.array-filter.php" target="_blank" rel="noopener">PHP: array_filter - Manual</a> 的特性。當 <code>array_filter</code> 的第二個參數不帶入 callback function 時，預設的處理方法：「當遇到成員內容為空值或為 null 時，不輸出」。</p>
-<p>因此，在使用的時候也要特別小心。舉例來說，假設 street_line1, street_line2 是空字串，則輸出就會只有 name 及 city：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</span><br><span class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </span><br><span class="line">    <span class="keyword">private</span> $street_line1 = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">private</span> $street_line2 = <span class="string">''</span>;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$address = <span class="keyword">new</span> Address();</span><br><span class="line">print_r($address-&gt;toArray());</span><br><span class="line"></span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//    [name] =&gt; User 1</span></span><br><span class="line"><span class="comment">//    [city] =&gt; Taipei</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure>
-
-<p>而如果直接輸出不存在的 member 也是。如：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</span><br><span class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </span><br><span class="line">    <span class="comment">// private $street_line1 = '';</span></span><br><span class="line">    <span class="comment">// private $street_line2 = '';</span></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$address = <span class="keyword">new</span> Address();</span><br><span class="line">print_r($address-&gt;toArray());</span><br><span class="line"></span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//    [name] =&gt; User 1</span></span><br><span class="line"><span class="comment">//    [city] =&gt; Taipei</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure>
-
-<p>還有，遇到直接是 null 的時候也是：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</span><br><span class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </span><br><span class="line">    <span class="keyword">private</span> $street_line1 = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">private</span> $street_line2 = <span class="keyword">null</span>;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$address = <span class="keyword">new</span> Address();</span><br><span class="line">print_r($address-&gt;toArray());</span><br><span class="line"></span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//    [name] =&gt; User 1</span></span><br><span class="line"><span class="comment">//    [city] =&gt; Taipei</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure>
-
-<p><code>array_filter</code> 遇到空字串、null、不存在時的這些特性就要特別注意。像是無論如何就算是空字串也要輸出佔一個位置的，就要在額外特別處理了。</p>
-<p>看到這樣的運用並且實際作實驗的感覺還蠻有趣的。跟 <a href="https://murze.be/2016/08/improving-readability-using-array_filter/" target="_blank" rel="noopener">Improving readability using array_filter - murze.be</a> 作者一樣，第一次發現 <code>array_filter</code> 可以這樣用。</p>
-]]></content>
+      <title>PHP - 使用 array_filter 讓你的程式碼更簡潔易讀</title>
+      <link href="/Notes/PHP/Implement-toArray-method-used-array-filter/"/>
+      <url>/Notes/PHP/Implement-toArray-method-used-array-filter/</url>
       
-        <categories>
-            
-            <category> Notes </category>
-            
-            <category> PHP </category>
-            
-        </categories>
-        
-        
+        <content type="html"><![CDATA[<p>早上看到了這一篇關於 PHP 技巧的文章：<a href="https://murze.be/2016/08/improving-readability-using-array_filter/" target="_blank" rel="noopener">Improving readability using array_filter - murze.be</a> 中文翻譯大概可以說是，用 <code>array_filter</code> 使之更具有可讀性。看到也實際測試了一下，覺得不錯，因此作了一些實驗，也發現一些小坑，所以順便作一下記錄。</p><p>以往要在 PHP 的 class 中實作 <code>toArray()</code> method 我們會寫類似的程式碼：</p><a id="more"></a><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name;</span><br><span class="line">    <span class="keyword">private</span> $city;</span><br><span class="line">    <span class="keyword">private</span> $street_line1;</span><br><span class="line">    <span class="keyword">private</span> $street_line2;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        $address = [</span><br><span class="line">            <span class="string">'name'</span> =&gt; <span class="keyword">$this</span>-&gt;name,</span><br><span class="line">            <span class="string">'city'</span> =&gt; <span class="keyword">$this</span>-&gt;city,</span><br><span class="line">            <span class="string">'street_line1'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line1,</span><br><span class="line">        ];</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">$this</span>-&gt;street_line2 != <span class="string">''</span>) &#123;</span><br><span class="line">            $address[<span class="string">'street_line2'</span>] = <span class="keyword">$this</span>-&gt;street_line2;</span><br><span class="line">        &#125;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>member data 不多的時候，看起來還好。但再多幾個，上面判斷是否為空白的 if 判斷式就會變得非常多，很不好看，也不簡潔。文章內提供的方法就是使用 <code>array_filter</code> 改寫。改寫後的程式碼像這樣。</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name;</span><br><span class="line">    <span class="keyword">private</span> $city;</span><br><span class="line">    <span class="keyword">private</span> $street_line1;</span><br><span class="line">    <span class="keyword">private</span> $street_line2;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> array_filter([</span><br><span class="line">            <span class="string">'name'</span> =&gt; <span class="keyword">$this</span>-&gt;name,</span><br><span class="line">            <span class="string">'city'</span> =&gt; <span class="keyword">$this</span>-&gt;city,</span><br><span class="line">            <span class="string">'street_line1'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line1,</span><br><span class="line">            <span class="string">'street_line2'</span> =&gt; <span class="keyword">$this</span>-&gt;street_line2,</span><br><span class="line">            ...</span><br><span class="line">        ]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>整體看起來簡潔多了。使用的就是 <code>array_filter</code> <a href="http://php.net/manual/en/function.array-filter.php" target="_blank" rel="noopener">PHP: array_filter - Manual</a> 的特性。當 <code>array_filter</code> 的第二個參數不帶入 callback function 時，預設的處理方法：「當遇到成員內容為空值或為 null 時，不輸出」。</p><p>因此，在使用的時候也要特別小心。舉例來說，假設 street_line1, street_line2 是空字串，則輸出就會只有 name 及 city：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</span><br><span class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </span><br><span class="line">    <span class="keyword">private</span> $street_line1 = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">private</span> $street_line2 = <span class="string">''</span>;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$address = <span class="keyword">new</span> Address();</span><br><span class="line">print_r($address-&gt;toArray());</span><br><span class="line"></span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//    [name] =&gt; User 1</span></span><br><span class="line"><span class="comment">//    [city] =&gt; Taipei</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure><p>而如果直接輸出不存在的 member 也是。如：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</span><br><span class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </span><br><span class="line">    <span class="comment">// private $street_line1 = '';</span></span><br><span class="line">    <span class="comment">// private $street_line2 = '';</span></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$address = <span class="keyword">new</span> Address();</span><br><span class="line">print_r($address-&gt;toArray());</span><br><span class="line"></span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//    [name] =&gt; User 1</span></span><br><span class="line"><span class="comment">//    [city] =&gt; Taipei</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure><p>還有，遇到直接是 null 的時候也是：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Address</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $name = <span class="string">'User 1'</span>;</span><br><span class="line">    <span class="keyword">private</span> $city = <span class="string">'Taipei'</span>; </span><br><span class="line">    <span class="keyword">private</span> $street_line1 = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">private</span> $street_line2 = <span class="keyword">null</span>;</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toArray</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$address = <span class="keyword">new</span> Address();</span><br><span class="line">print_r($address-&gt;toArray());</span><br><span class="line"></span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"><span class="comment">//(</span></span><br><span class="line"><span class="comment">//    [name] =&gt; User 1</span></span><br><span class="line"><span class="comment">//    [city] =&gt; Taipei</span></span><br><span class="line"><span class="comment">//)</span></span><br></pre></td></tr></table></figure><p><code>array_filter</code> 遇到空字串、null、不存在時的這些特性就要特別注意。像是無論如何就算是空字串也要輸出佔一個位置的，就要在額外特別處理了。</p><p>看到這樣的運用並且實際作實驗的感覺還蠻有趣的。跟 <a href="https://murze.be/2016/08/improving-readability-using-array_filter/" target="_blank" rel="noopener">Improving readability using array_filter - murze.be</a> 作者一樣，第一次發現 <code>array_filter</code> 可以這樣用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> PHP </tag>
@@ -205,103 +118,55 @@
             <tag> Note </tag>
             
         </tags>
-        
+      
     </entry>
     
+    
+    
     <entry>
-      <title><![CDATA[Hexo - 使文章依文章分類為資料夾名稱置放]]></title>
-      <url>https://usedfire.net/Notes/Hexo/make-hexo-post-category-by-folder/</url>
-      <content type="html"><![CDATA[<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>轉戰 Hexo 並且開始剛開始以 Hexo 做完技術或資訊相關知識分享的部落格平台，已經有一兩個禮拜了，隨著文章數目越來越多，開始發現，hexo 在原始的方法中，文章一多之後，將很難管理 <code>post</code> 這個資料夾的文章原始檔案。翻了一遍<a href="https://hexo.io/zh-tw/docs/writing.html" target="_blank" rel="noopener">官方教學</a>提到的方法，也僅提到可以將 <code>_config.yml</code> 中的 <code>new_post_name</code> 新文章檔案名稱的參數，修改為以檔案產生日期為檔名，來作為檔案管理方便尋找。但這方法在文章非常多的時候，還是會造成不容易尋找。為了找解決方案，因此出現了這篇筆記。 <a id="more"></a></p>
-<h2 id="二、最終結果"><a href="#二、最終結果" class="headerlink" title="二、最終結果"></a>二、最終結果</h2><p>在透過相關設定後，文章的網址將設定為像以下的結構：</p>
-<h3 id="一-hexo-文章網址的結構如下"><a href="#一-hexo-文章網址的結構如下" class="headerlink" title="(一) hexo 文章網址的結構如下"></a>(一) hexo 文章網址的結構如下</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">http://</span><span class="template-variable">&#123;domain.com&#125;</span><span class="xml">/</span><span class="template-variable">&#123;folder_name&#125;</span><span class="xml">/</span><span class="template-variable">&#123;title_name&#125;</span><span class="xml">/</span></span><br></pre></td></tr></table></figure>
-
-<p>說明：</p>
-<pre><code>domain name: 你的網域名稱
-folder name: 設定的資料夾名稱
-title name: 文章的標題名稱</code></pre>
-<h3 id="二-hexo-source-post-資料夾底下的結構如下"><a href="#二-hexo-source-post-資料夾底下的結構如下" class="headerlink" title="(二) hexo source/_post 資料夾底下的結構如下"></a>(二) hexo source/_post 資料夾底下的結構如下</h3><p><img src="make-hexo-post-category-by-folder%EF%BC%BF01.png"></p>
-<p>以本站的文章為例，我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a>，結構上在 <code>_post</code> 底下有兩層資料夾，除了第一層 Clippings 為資料夾名稱外，還再加上以 2016 也就是依年度再做一次資料夾分類。而其他筆記類的，當然也就可以依據筆記類型、文章屬性等做資料夾分層分類，如此在找文章原始檔的時候，便可以較輕易的找到所需要的內容。</p>
-<h2 id="三、Hexo-設定"><a href="#三、Hexo-設定" class="headerlink" title="三、Hexo 設定"></a>三、Hexo 設定</h2><h3 id="一-hexo-config-yml-設定檔設定"><a href="#一-hexo-config-yml-設定檔設定" class="headerlink" title="(一) hexo _config.yml 設定檔設定"></a>(一) hexo _config.yml 設定檔設定</h3><p>找到 _config.yml 檔做編輯，將 URL 的部分一下做設定：</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">url:</span> <span class="string">https:</span><span class="comment">//&#123;domain name&#125;</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :title/</span><br></pre></td></tr></table></figure>
-
-<p>可以看到，關於 <code>permalink</code> 永久連結的部分，只設定了 <code>:title/</code> ，這部分有兩個說明：</p>
-<ol>
-<li>在 hexo 的環境中，目前實驗出來的結果知道，hexo在產生文章網址的時候，會以 <code>_post</code> 資料夾起，直到你的文章原始檔的路徑，視為 <code>title</code> 文章名稱，同樣以我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a> 為例子，我把創刊號放在 <code>_post</code> 下的路徑「Clippings/2015/MoClippings-1.md」，因此 <code>hexo</code> 會認為該篇文章的文章名稱為 「Clippings/2015/MoClippings-1」。</li>
-<li>在 <code>permalink</code> 我在 <code>:title</code> 的後面加了 <code>/</code> 符號，這部分是因為<strong>我設定了</strong> <code>post_asset_folder = true</code> ，意思是產生文章的時候，順便產生與文章同名的資料夾。目的是為了管理資源，使同一篇文章的圖片或檔案，都收錄在同一資料夾中。因此，如果沒有加上 <code>/</code> 符號，在做 hexo 文章產出 <code>hexo generate</code> 的時候，會<strong>發生 hexo 有錯誤</strong>，顯示某些檔案不存在或不為資料夾。</li>
-</ol>
-<h3 id="二-hexo-post-下資料夾設定"><a href="#二-hexo-post-下資料夾設定" class="headerlink" title="(二) hexo _post 下資料夾設定"></a>(二) hexo _post 下資料夾設定</h3><p>在 <code>_post</code> 資料夾下，基本上也僅需要定義好各個資料夾名稱，把相對應的文章做妥善的資料夾分類即可。</p>
-<p>同樣在以我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a> 為例子，因為我的剪輯一個月可能就兩三篇了，一年會有三四十篇同質的文章，因此我把它設計為文章分類下，再建立年份資料夾，這樣未來就不會產生太多文章而找不到自己想找的內容。</p>
-<p>當然，如果是其他類型的文章，也可以做不一樣的分類，這部分自由度就相當高了。</p>
-<h3 id="三-Hexo-版本"><a href="#三-Hexo-版本" class="headerlink" title="(三) Hexo 版本"></a>(三) Hexo 版本</h3><p>這篇文章目前在 <code>Hexo 3.2.0</code> 的環境驗證測試正常。如為其他版本，需要再額外驗證。</p>
-<h2 id="四、結論"><a href="#四、結論" class="headerlink" title="四、結論"></a>四、結論</h2><ol>
-<li><p>就 Hexo 來說，我們是以自定義的文章分類名稱作為資料夾名稱，這與 <code>Hexo</code> 的 <code>Front-matter</code> 裡頭設定的文章分類 <code>categories</code> 是不一樣的，本來還曾經測試過設定 <code>permalink</code> 為 <code>:category/:title/</code>，但執行 <code>hexo generate</code> 之後，產生的連結會是文章內 <code>Front-matter</code> 設定的分類資料夾再加上 <code>_post</code> 後各個資料夾的名稱加<code>title</code>為連結名稱，這重複了，因此驗證 hexo 並不會看到資料夾名稱與 <code>Front-matter</code> 設定的文章類別一致，就不再產生資料夾。所以才出現這篇文章的解法。</p>
-</li>
-<li><p>如大家習慣以 <code>hexo new draft</code> 作草稿編輯，那在進行 <code>hexo publish {title}</code> 後，hexo 僅會將原本在 <code>_draft</code> 的文章搬到 <code>_post</code> 在搬妥之後還需要自行建立對應的資料夾並搬過去的動作，這部分比較麻煩一些。</p>
-</li>
-</ol>
-<p>希望這篇文章可以幫助到一些人。</p>
-<p>P.S. 在快寫文這篇文章之後才發現，點燈坊也有一篇類似的文章<a href="http://oomusou.io/hexo/hexo-uri-category/" target="_blank" rel="noopener">如何使Hexo以文章分類為URI?</a></p>
-]]></content>
+      <title>Hexo - 使文章依文章分類為資料夾名稱置放</title>
+      <link href="/Notes/Hexo/make-hexo-post-category-by-folder/"/>
+      <url>/Notes/Hexo/make-hexo-post-category-by-folder/</url>
       
-        <categories>
-            
-            <category> Notes </category>
-            
-            <category> Hexo </category>
-            
-        </categories>
-        
-        
+        <content type="html"><![CDATA[<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>轉戰 Hexo 並且開始剛開始以 Hexo 做完技術或資訊相關知識分享的部落格平台，已經有一兩個禮拜了，隨著文章數目越來越多，開始發現，hexo 在原始的方法中，文章一多之後，將很難管理 <code>post</code> 這個資料夾的文章原始檔案。翻了一遍<a href="https://hexo.io/zh-tw/docs/writing.html" target="_blank" rel="noopener">官方教學</a>提到的方法，也僅提到可以將 <code>_config.yml</code> 中的 <code>new_post_name</code> 新文章檔案名稱的參數，修改為以檔案產生日期為檔名，來作為檔案管理方便尋找。但這方法在文章非常多的時候，還是會造成不容易尋找。為了找解決方案，因此出現了這篇筆記。 <a id="more"></a></p><h2 id="二、最終結果"><a href="#二、最終結果" class="headerlink" title="二、最終結果"></a>二、最終結果</h2><p>在透過相關設定後，文章的網址將設定為像以下的結構：</p><h3 id="一-hexo-文章網址的結構如下"><a href="#一-hexo-文章網址的結構如下" class="headerlink" title="(一) hexo 文章網址的結構如下"></a>(一) hexo 文章網址的結構如下</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">http://</span><span class="template-variable">&#123;domain.com&#125;</span><span class="xml">/</span><span class="template-variable">&#123;folder_name&#125;</span><span class="xml">/</span><span class="template-variable">&#123;title_name&#125;</span><span class="xml">/</span></span><br></pre></td></tr></table></figure><p>說明：</p><pre><code>domain name: 你的網域名稱folder name: 設定的資料夾名稱title name: 文章的標題名稱</code></pre><h3 id="二-hexo-source-post-資料夾底下的結構如下"><a href="#二-hexo-source-post-資料夾底下的結構如下" class="headerlink" title="(二) hexo source/_post 資料夾底下的結構如下"></a>(二) hexo source/_post 資料夾底下的結構如下</h3><p><img src="make-hexo-post-category-by-folder%EF%BC%BF01.png"></p><p>以本站的文章為例，我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a>，結構上在 <code>_post</code> 底下有兩層資料夾，除了第一層 Clippings 為資料夾名稱外，還再加上以 2016 也就是依年度再做一次資料夾分類。而其他筆記類的，當然也就可以依據筆記類型、文章屬性等做資料夾分層分類，如此在找文章原始檔的時候，便可以較輕易的找到所需要的內容。</p><h2 id="三、Hexo-設定"><a href="#三、Hexo-設定" class="headerlink" title="三、Hexo 設定"></a>三、Hexo 設定</h2><h3 id="一-hexo-config-yml-設定檔設定"><a href="#一-hexo-config-yml-設定檔設定" class="headerlink" title="(一) hexo _config.yml 設定檔設定"></a>(一) hexo _config.yml 設定檔設定</h3><p>找到 _config.yml 檔做編輯，將 URL 的部分一下做設定：</p><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">url:</span> <span class="string">https:</span><span class="comment">//&#123;domain name&#125;</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :title/</span><br></pre></td></tr></table></figure><p>可以看到，關於 <code>permalink</code> 永久連結的部分，只設定了 <code>:title/</code> ，這部分有兩個說明：</p><ol><li>在 hexo 的環境中，目前實驗出來的結果知道，hexo在產生文章網址的時候，會以 <code>_post</code> 資料夾起，直到你的文章原始檔的路徑，視為 <code>title</code> 文章名稱，同樣以我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a> 為例子，我把創刊號放在 <code>_post</code> 下的路徑「Clippings/2015/MoClippings-1.md」，因此 <code>hexo</code> 會認為該篇文章的文章名稱為 「Clippings/2015/MoClippings-1」。</li><li>在 <code>permalink</code> 我在 <code>:title</code> 的後面加了 <code>/</code> 符號，這部分是因為<strong>我設定了</strong> <code>post_asset_folder = true</code> ，意思是產生文章的時候，順便產生與文章同名的資料夾。目的是為了管理資源，使同一篇文章的圖片或檔案，都收錄在同一資料夾中。因此，如果沒有加上 <code>/</code> 符號，在做 hexo 文章產出 <code>hexo generate</code> 的時候，會<strong>發生 hexo 有錯誤</strong>，顯示某些檔案不存在或不為資料夾。</li></ol><h3 id="二-hexo-post-下資料夾設定"><a href="#二-hexo-post-下資料夾設定" class="headerlink" title="(二) hexo _post 下資料夾設定"></a>(二) hexo _post 下資料夾設定</h3><p>在 <code>_post</code> 資料夾下，基本上也僅需要定義好各個資料夾名稱，把相對應的文章做妥善的資料夾分類即可。</p><p>同樣在以我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a> 為例子，因為我的剪輯一個月可能就兩三篇了，一年會有三四十篇同質的文章，因此我把它設計為文章分類下，再建立年份資料夾，這樣未來就不會產生太多文章而找不到自己想找的內容。</p><p>當然，如果是其他類型的文章，也可以做不一樣的分類，這部分自由度就相當高了。</p><h3 id="三-Hexo-版本"><a href="#三-Hexo-版本" class="headerlink" title="(三) Hexo 版本"></a>(三) Hexo 版本</h3><p>這篇文章目前在 <code>Hexo 3.2.0</code> 的環境驗證測試正常。如為其他版本，需要再額外驗證。</p><h2 id="四、結論"><a href="#四、結論" class="headerlink" title="四、結論"></a>四、結論</h2><ol><li><p>就 Hexo 來說，我們是以自定義的文章分類名稱作為資料夾名稱，這與 <code>Hexo</code> 的 <code>Front-matter</code> 裡頭設定的文章分類 <code>categories</code> 是不一樣的，本來還曾經測試過設定 <code>permalink</code> 為 <code>:category/:title/</code>，但執行 <code>hexo generate</code> 之後，產生的連結會是文章內 <code>Front-matter</code> 設定的分類資料夾再加上 <code>_post</code> 後各個資料夾的名稱加<code>title</code>為連結名稱，這重複了，因此驗證 hexo 並不會看到資料夾名稱與 <code>Front-matter</code> 設定的文章類別一致，就不再產生資料夾。所以才出現這篇文章的解法。</p></li><li><p>如大家習慣以 <code>hexo new draft</code> 作草稿編輯，那在進行 <code>hexo publish {title}</code> 後，hexo 僅會將原本在 <code>_draft</code> 的文章搬到 <code>_post</code> 在搬妥之後還需要自行建立對應的資料夾並搬過去的動作，這部分比較麻煩一些。</p></li></ol><p>希望這篇文章可以幫助到一些人。</p><p>P.S. 在快寫文這篇文章之後才發現，點燈坊也有一篇類似的文章<a href="http://oomusou.io/hexo/hexo-uri-category/" target="_blank" rel="noopener">如何使Hexo以文章分類為URI?</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> Hexo </tag>
             
         </tags>
-        
+      
     </entry>
     
+    
+    
     <entry>
-      <title><![CDATA[Sublime - 針對特定副檔名設定預設樣式( Syntax ) Highlight]]></title>
-      <url>https://usedfire.net/Notes/Sublime/set-sublime-text-extensions-default-syntax/</url>
-      <content type="html"><![CDATA[<p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p>
-<a id="more"></a>
-
-<h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p>
-<p><img src="sublime_01.png"></p>
-<h2 id="2-手動設定樣式"><a href="#2-手動設定樣式" class="headerlink" title="2. 手動設定樣式"></a>2. 手動設定樣式</h2><p>在 menu -&gt; View -&gt; Syntax -&gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。</p>
-<p><img src="sublime_02.png"></p>
-<p>設定完成後，即可顯示正確的顏色。</p>
-<p><img src="sublime_03.png"></p>
-<h2 id="3-設定使該副檔名未來皆以相同-Syntax-顯示"><a href="#3-設定使該副檔名未來皆以相同-Syntax-顯示" class="headerlink" title="3. 設定使該副檔名未來皆以相同 Syntax 顯示"></a>3. 設定使該副檔名未來皆以相同 Syntax 顯示</h2><p>在目前已經手動設定好樣式的狀態下，選擇：</p>
-<ul>
-<li>Windows: Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
-<li>OSX: Sublime Text &gt; Prefences &gt; Setting-More &gt; Syntax Specific - User</li>
-</ul>
-<p><img src="sublime_04.png"></p>
-<p>可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 <code>PHP.sublime-settings</code> 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。</p>
-<p><img src="sublime_05.png"></p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Which file extensions go with this file type?</span></span><br><span class="line">    <span class="attr">"extensions"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"php"</span>,</span><br><span class="line">        <span class="string">"inc"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-附註："><a href="#4-附註：" class="headerlink" title="4. 附註："></a>4. 附註：</h2><p>如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：</p>
-<ul>
-<li>Windows: C:\Users{User Name}\AppData\Roaming\Sublime Text 3\Packages\User\</li>
-<li>MAC OSX: ~/Library/Application Support/Sublime Text 3/Packages/User</li>
-</ul>
-<p>只要找到對應要修改的 Syntax 即可。</p>
-<h2 id="參考連結："><a href="#參考連結：" class="headerlink" title="參考連結："></a>參考連結：</h2><ol>
-<li><a href="http://www.granneman.com/webdev/editors/sublime-text/configuring-sublime-text/" target="_blank" rel="noopener">Configuring Sublime Text</a></li>
-</ol>
-]]></content>
+      <title>Sublime - 針對特定副檔名設定預設樣式( Syntax ) Highlight</title>
+      <link href="/Notes/Sublime/set-sublime-text-extensions-default-syntax/"/>
+      <url>/Notes/Sublime/set-sublime-text-extensions-default-syntax/</url>
       
-        <categories>
-            
-            <category> Notes </category>
-            
-            <category> Sublime </category>
-            
-        </categories>
-        
-        
+        <content type="html"><![CDATA[<p>這陣子因為在修改舊版 php 程式，有些程式的副檔名並不是以 .php 命名，是以 .inc 之類的形式存在，因此以 Sublime 開啟的時候，會以預設的樣式( Syntax )，開始而不是 PHP 的樣式。而這篇內容就是記錄怎麼在 Sublime 下設定特定的副檔名文件，以呈現所設定的樣式呈現。</p><a id="more"></a><h2 id="1-開啟無法預設樣式的檔案"><a href="#1-開啟無法預設樣式的檔案" class="headerlink" title="1. 開啟無法預設樣式的檔案"></a>1. 開啟無法預設樣式的檔案</h2><p>以下圖來說，由於該 php 程式副檔名為 inc ，因此在開啟時並無法被判斷為 PHP 程式，導致呈現黯淡無光的狀態，沒有套用到預設的 syntex。</p><p><img src="sublime_01.png"></p><h2 id="2-手動設定樣式"><a href="#2-手動設定樣式" class="headerlink" title="2. 手動設定樣式"></a>2. 手動設定樣式</h2><p>在 menu -&gt; View -&gt; Syntax -&gt; 選擇設定要的語言，或在畫面右下角直接選擇 Syntax 。</p><p><img src="sublime_02.png"></p><p>設定完成後，即可顯示正確的顏色。</p><p><img src="sublime_03.png"></p><h2 id="3-設定使該副檔名未來皆以相同-Syntax-顯示"><a href="#3-設定使該副檔名未來皆以相同-Syntax-顯示" class="headerlink" title="3. 設定使該副檔名未來皆以相同 Syntax 顯示"></a>3. 設定使該副檔名未來皆以相同 Syntax 顯示</h2><p>在目前已經手動設定好樣式的狀態下，選擇：</p><ul><li>Windows: Prefences &gt; Setting-More &gt; Syntax Specific - User</li><li>OSX: Sublime Text &gt; Prefences &gt; Setting-More &gt; Syntax Specific - User</li></ul><p><img src="sublime_04.png"></p><p>可以發現出現一個新的檔案，以目前的 Syntax 設定為 PHP 為例，目前的檔名為 <code>PHP.sublime-settings</code> 為空白內容。這時候只要加上如下的內容，並存檔後即可。之後只要開啟副檔名為 php 或 inc 的文件，就都會以 PHP 的這個 Syntax 顯示。</p><p><img src="sublime_05.png"></p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Which file extensions go with this file type?</span></span><br><span class="line">    <span class="attr">"extensions"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"php"</span>,</span><br><span class="line">        <span class="string">"inc"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="4-附註："><a href="#4-附註：" class="headerlink" title="4. 附註："></a>4. 附註：</h2><p>如果之後有需要修改，或增加也可以再次開啟。其路徑置放於：</p><ul><li>Windows: C:\Users{User Name}\AppData\Roaming\Sublime Text 3\Packages\User\</li><li>MAC OSX: ~/Library/Application Support/Sublime Text 3/Packages/User</li></ul><p>只要找到對應要修改的 Syntax 即可。</p><h2 id="參考連結："><a href="#參考連結：" class="headerlink" title="參考連結："></a>參考連結：</h2><ol><li><a href="http://www.granneman.com/webdev/editors/sublime-text/configuring-sublime-text/" target="_blank" rel="noopener">Configuring Sublime Text</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> Sublime </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> Sublime </tag>
@@ -309,24 +174,34 @@ title name: 文章的標題名稱</code></pre>
             <tag> 筆記 </tag>
             
         </tags>
-        
+      
     </entry>
+    
     
   
   
     
-    <entry>
-      <title><![CDATA[關於我]]></title>
-      <url>https://usedfire.net/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是<code>墨嗓</code> ( <code>mouson</code> )，本名「<code>陳佑竹</code>」，在學期間經歷電機、電子、通訊及資訊工程等系所的學術歷程薰陶；就業後開始參與線上全台最大之物流中心系統主機維運、開發等事務，而後因緣際會轉職專案型公司，參與新系統規劃、分析及專案管理、營運行銷等大小瑣事，因此奠定了T型人在資訊技術上的知識水平。</p>
-]]></content>
-    </entry>
     
     <entry>
-      <title><![CDATA[藏書閣]]></title>
-      <url>https://usedfire.net/reading/index.html</url>
-      <content type="html"></content>
+      <title>關於我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>大家好，我是<code>墨嗓</code> ( <code>mouson</code> )，本名「<code>陳佑竹</code>」，在學期間經歷電機、電子、通訊及資訊工程等系所的學術歷程薰陶；就業後開始參與線上全台最大之物流中心系統主機維運、開發等事務，而後因緣際會轉職專案型公司，參與新系統規劃、分析及專案管理、營運行銷等大小瑣事，因此奠定了T型人在資訊技術上的知識水平。</p>]]></content>
+      
     </entry>
+    
+    
+    
+    <entry>
+      <title>藏書閣</title>
+      <link href="/reading/index.html"/>
+      <url>/reading/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
     
   
 </search>
