@@ -192,14 +192,6 @@
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Notes/Hexo/">
-                    Hexo <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Notes/MAC/">
                     MAC <span class="right">1 篇</span></a>
                 </a>
@@ -208,8 +200,8 @@
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Notes/Utility/">
-                    Utility <span class="right">2 篇</span></a>
+                <a class="no-padding" href="/categories/Notes/Hexo/">
+                    Hexo <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -218,6 +210,14 @@
             <li class="collapse-level-1" collapse-level="1">
                 <a class="no-padding" href="/categories/Notes/Sublime/">
                     Sublime <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Notes/Utility/">
+                    Utility <span class="right">2 篇</span></a>
                 </a>
             </li>
 
@@ -296,9 +296,9 @@
 
 
             <div class="entry grey-link-context">
-                <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>轉戰 Hexo 並且開始剛開始以 Hexo 做完技術或資訊相關知識分享的部落格平台，已經有一兩個禮拜了，隨著文章數目越來越多，開始發現，hexo 在原始的方法中，文章一多之後，將很難管理 <code>post</code> 這個資料夾的文章原始檔案。翻了一遍<a href="https://hexo.io/zh-tw/docs/writing.html" target="_blank" rel="noopener">官方教學</a>提到的方法，也僅提到可以將 <code>_config.yml</code> 中的 <code>new_post_name</code> 新文章檔案名稱的參數，修改為以檔案產生日期為檔名，來作為檔案管理方便尋找。但這方法在文章非常多的時候，還是會造成不容易尋找。為了找解決方案，因此出現了這篇筆記。 <a id="more"></a></p>
+                <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>轉戰 Hexo 並且開始剛開始以 Hexo 做完技術或資訊相關知識分享的部落格平台，已經有一兩個禮拜了，隨著文章數目越來越多，開始發現，hexo 在原始的方法中，文章一多之後，將很難管理 <code>post</code> 這個資料夾的文章原始檔案。翻了一遍<a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/writing.html">官方教學</a>提到的方法，也僅提到可以將 <code>_config.yml</code> 中的 <code>new_post_name</code> 新文章檔案名稱的參數，修改為以檔案產生日期為檔名，來作為檔案管理方便尋找。但這方法在文章非常多的時候，還是會造成不容易尋找。為了找解決方案，因此出現了這篇筆記。 <a id="more"></a></p>
 <h2 id="二、最終結果"><a href="#二、最終結果" class="headerlink" title="二、最終結果"></a>二、最終結果</h2><p>在透過相關設定後，文章的網址將設定為像以下的結構：</p>
-<h3 id="一-hexo-文章網址的結構如下"><a href="#一-hexo-文章網址的結構如下" class="headerlink" title="(一) hexo 文章網址的結構如下"></a>(一) hexo 文章網址的結構如下</h3><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">http://</span><span class="template-variable">&#123;domain.com&#125;</span><span class="xml">/</span><span class="template-variable">&#123;folder_name&#125;</span><span class="xml">/</span><span class="template-variable">&#123;title_name&#125;</span><span class="xml">/</span></span><br></pre></td></tr></table></figure>
+<h3 id="一-hexo-文章網址的結構如下"><a href="#一-hexo-文章網址的結構如下" class="headerlink" title="(一) hexo 文章網址的結構如下"></a>(一) hexo 文章網址的結構如下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//</span>&#123;domain.com&#125;<span class="regexp">/&#123;folder_name&#125;/</span>&#123;title_name&#125;/</span><br></pre></td></tr></table></figure>
 
 <p>說明：</p>
 <pre><code>domain name: 你的網域名稱
@@ -307,7 +307,7 @@ title name: 文章的標題名稱</code></pre>
 <h3 id="二-hexo-source-post-資料夾底下的結構如下"><a href="#二-hexo-source-post-資料夾底下的結構如下" class="headerlink" title="(二) hexo source/_post 資料夾底下的結構如下"></a>(二) hexo source/_post 資料夾底下的結構如下</h3><p><img src="make-hexo-post-category-by-folder%EF%BC%BF01.png"></p>
 <p>以本站的文章為例，我的 <a href="https://usedfire.net/categories/Clippings/">Clippings 剪報類文章</a>，結構上在 <code>_post</code> 底下有兩層資料夾，除了第一層 Clippings 為資料夾名稱外，還再加上以 2016 也就是依年度再做一次資料夾分類。而其他筆記類的，當然也就可以依據筆記類型、文章屬性等做資料夾分層分類，如此在找文章原始檔的時候，便可以較輕易的找到所需要的內容。</p>
 <h2 id="三、Hexo-設定"><a href="#三、Hexo-設定" class="headerlink" title="三、Hexo 設定"></a>三、Hexo 設定</h2><h3 id="一-hexo-config-yml-設定檔設定"><a href="#一-hexo-config-yml-設定檔設定" class="headerlink" title="(一) hexo _config.yml 設定檔設定"></a>(一) hexo _config.yml 設定檔設定</h3><p>找到 _config.yml 檔做編輯，將 URL 的部分一下做設定：</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">url:</span> <span class="string">https:</span><span class="comment">//&#123;domain name&#125;</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :title/</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="attr">https:</span><span class="comment">//&#123;domain name&#125;</span></span><br><span class="line"><span class="attr">root:</span> /</span><br><span class="line"><span class="attr">permalink:</span> :title/</span><br></pre></td></tr></table></figure>
 
 <p>可以看到，關於 <code>permalink</code> 永久連結的部分，只設定了 <code>:title/</code> ，這部分有兩個說明：</p>
 <ol>
@@ -321,11 +321,11 @@ title name: 文章的標題名稱</code></pre>
 <h2 id="四、結論"><a href="#四、結論" class="headerlink" title="四、結論"></a>四、結論</h2><ol>
 <li><p>就 Hexo 來說，我們是以自定義的文章分類名稱作為資料夾名稱，這與 <code>Hexo</code> 的 <code>Front-matter</code> 裡頭設定的文章分類 <code>categories</code> 是不一樣的，本來還曾經測試過設定 <code>permalink</code> 為 <code>:category/:title/</code>，但執行 <code>hexo generate</code> 之後，產生的連結會是文章內 <code>Front-matter</code> 設定的分類資料夾再加上 <code>_post</code> 後各個資料夾的名稱加<code>title</code>為連結名稱，這重複了，因此驗證 hexo 並不會看到資料夾名稱與 <code>Front-matter</code> 設定的文章類別一致，就不再產生資料夾。所以才出現這篇文章的解法。</p>
 </li>
-<li><p>如大家習慣以 <code>hexo new draft</code> 作草稿編輯，那在進行 <code>hexo publish {title}</code> 後，hexo 僅會將原本在 <code>_draft</code> 的文章搬到 <code>_post</code> 在搬妥之後還需要自行建立對應的資料夾並搬過去的動作，這部分比較麻煩一些。</p>
+<li><p>如大家習慣以 <code>hexo new draft</code> 作草稿編輯，那在進行 <code>hexo publish &#123;title&#125;</code> 後，hexo 僅會將原本在 <code>_draft</code> 的文章搬到 <code>_post</code> 在搬妥之後還需要自行建立對應的資料夾並搬過去的動作，這部分比較麻煩一些。</p>
 </li>
 </ol>
 <p>希望這篇文章可以幫助到一些人。</p>
-<p>P.S. 在快寫文這篇文章之後才發現，點燈坊也有一篇類似的文章<a href="http://oomusou.io/hexo/hexo-uri-category/" target="_blank" rel="noopener">如何使Hexo以文章分類為URI?</a></p>
+<p>P.S. 在快寫文這篇文章之後才發現，點燈坊也有一篇類似的文章<a target="_blank" rel="noopener" href="http://oomusou.io/hexo/hexo-uri-category/">如何使Hexo以文章分類為URI?</a></p>
 
                 
 <p class="grey-link-context">
