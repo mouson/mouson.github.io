@@ -183,22 +183,22 @@
     
     
     <entry>
-      <title>藏書閣</title>
-      <link href="/reading/index.html"/>
-      <url>/reading/index.html</url>
+      <title>關於我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>大家好，我是<code>墨嗓</code> ( <code>mouson</code> )，本名「<code>陳佑竹</code>」，在學期間經歷電機、電子、通訊及資訊工程等系所的學術歷程薰陶；就業後開始參與線上全台最大之物流中心系統主機維運、開發等事務，而後因緣際會轉職專案型公司，參與新系統規劃、分析及專案管理、營運行銷等大小瑣事，因此奠定了T型人在資訊技術上的知識水平。</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>關於我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>藏書閣</title>
+      <link href="/reading/index.html"/>
+      <url>/reading/index.html</url>
       
-        <content type="html"><![CDATA[<p>大家好，我是<code>墨嗓</code> ( <code>mouson</code> )，本名「<code>陳佑竹</code>」，在學期間經歷電機、電子、通訊及資訊工程等系所的學術歷程薰陶；就業後開始參與線上全台最大之物流中心系統主機維運、開發等事務，而後因緣際會轉職專案型公司，參與新系統規劃、分析及專案管理、營運行銷等大小瑣事，因此奠定了T型人在資訊技術上的知識水平。</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
